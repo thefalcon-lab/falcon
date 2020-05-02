@@ -11,7 +11,7 @@ import {
   FaGithub,
   FaGitlab,
   FaInstagram,
-  FaLinkedin,
+  FaLinkedinIn,
   FaMastodon,
   FaMedium,
   FaPinterest,
@@ -28,7 +28,7 @@ import {
   FaYoutube,
 } from 'react-icons/fa'
 
-const SocialFollows = () => {
+const SocialFollows = ({ ...props }) => {
   const supportedIcons = [
     'behance',
     'codepen',
@@ -65,7 +65,7 @@ const SocialFollows = () => {
     FaGithub,
     FaGitlab,
     FaInstagram,
-    FaLinkedin,
+    FaLinkedinIn,
     FaMastodon,
     FaMedium,
     FaPinterest,
@@ -85,7 +85,7 @@ const SocialFollows = () => {
   const { social } = useSiteMetadata()
 
   return (
-    <Box className="widget widget-socialFollow">
+    <Box className="widget widget-socialFollow" {...props}>
       {social &&
         social.map(({ name, url }) => {
           const index = supportedIcons.indexOf(name.toLowerCase())

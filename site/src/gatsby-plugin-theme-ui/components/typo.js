@@ -43,7 +43,7 @@ const heading = {
 export const a = {
   variant: 'transitions.m',
   color: 'accent',
-  fontWeight: 'bold',
+  // fontWeight: 'bold',
   textDecoration: 'none',
   '&:hover': {
     color: 'primary',
