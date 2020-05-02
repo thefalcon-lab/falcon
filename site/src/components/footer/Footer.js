@@ -5,22 +5,39 @@ import SocialFollow from '../social/SocialFollows'
 import socialStyles from '../../styles/socialStyles'
 
 const Footer = () => (
-  <footer sx={{ variant: 'footer' }}>
-    <Container sx={{ py: 0 }}>
-      <FooterContent />
-      <Box className="inverse">
-        <Flex
-          sx={{
-            ...socialStyles.follow,
-            mt: `xs`,
-            mb: 0,
-          }}
-        >
-          <SocialFollow />
-        </Flex>
+  <footer sx={{ ...styles }}>
+    <Container className="footerContainer">
+      <Box>
+        <h3>Contact</h3>
+      </Box>
+      <Box>
+        <h3>News</h3>
+      </Box>
+      <Box>
+        <h3>Services</h3>
       </Box>
     </Container>
   </footer>
 )
+
+const styles = {
+  bg: 'footerBg',
+  pt: 75,
+  pb: 120,
+  color: 'footerColor',
+  fontSize: 's',
+  a: {
+    color: 'footerColor',
+    '&:hover': {
+      color: 'accent',
+    },
+  },
+  '.footerContainer': {
+    display: 'flex',
+  },
+  h3: {
+    color: 'white',
+  },
+}
 
 export default Footer

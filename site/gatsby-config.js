@@ -9,24 +9,12 @@ module.exports = {
     siteUrl: 'https://www.thefalconlab.com/',
     social: [
       {
-        name: 'twitter',
-        url: 'https://twitter.com/gatsbyjs',
-      },
-      {
-        name: 'GitHub',
-        url: 'https://github.com/gatsbyjs',
-      },
-      {
-        name: 'CodePen',
-        url: 'https://codepen.io/pehaa',
-      },
-      {
         name: 'Instagram',
-        url: '#',
+        url: 'https://www.instagram.com/thefalconlab/',
       },
       {
-        name: 'Linkedin',
-        url: '#',
+        name: 'linkedin',
+        url: 'https://www.linkedin.com/company/falcon-design-and-print/',
       },
     ],
   },
