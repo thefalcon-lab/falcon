@@ -1,15 +1,39 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx, Flex } from 'theme-ui'
 import { Link } from 'gatsby'
+import logo from '../../images/logo.svg'
 
-const SiteBranding = ({ title }) => {
+const SiteBranding = ({ title, ...props }) => {
   return (
-    <h1 sx={{ variant: `text.branding` }}>
-      <Link to="/" rel="home">
-        {title}
-      </Link>
-    </h1>
+    <Link as="Link" to="/" rel="home">
+      <Flex sx={{ ...styles }} {...props}>
+        <img src={logo} alt="falcon lab logo" />
+        <h1>{title}</h1>
+      </Flex>
+    </Link>
   )
 }
 
+const styles = {
+  alignItems: 'center',
+  img: {
+    maxWidth: [50, 73],
+    mb: 0,
+    mr: [10, 22],
+  },
+  h1: {
+    fontSize: ['m', 'l'],
+    textTransform: 'uppercase',
+    fontFamily: 'heading',
+    fontWeight: 500,
+    letterSpacing: [4, 9],
+    lineHeight: 1.5,
+    color: 'headerColor',
+    variant: 'transitions.m',
+    '&:hover': {
+      color: 'primary',
+    },
+    m: 0,
+  },
+}
 export default SiteBranding

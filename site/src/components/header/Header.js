@@ -5,19 +5,12 @@ import { Fragment } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import SlideSidebar from './SlideSidebar'
 import SiteBranding from './SiteBranding'
+import Menu from './Menu'
+import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
 
 import Headroom from 'react-headroom'
 
-import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
-import SearchForm from '../search/SearchForm'
-import ColorSwitch from '../ColorSwitch'
-
 const Header = () => {
-  const { search } = useThemeOptions()
-  const styles = search
-    ? { justifyContent: [`flex-start`, `flex-start`, `center`] }
-    : { justifyContent: `flex-start` }
-
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       wp {
@@ -30,58 +23,69 @@ const Header = () => {
   `)
 
   const { title } = data.wp.generalSettings
+  const { menuName } = useThemeOptions()
 
   return (
     <Fragment>
       <Headroom>
-        <header className="header" sx={{ variant: `header` }}>
+        <header className="header" sx={{ ...styles }}>
           <Container className="container">
-            {search && (
-              <Box
-                sx={{
-                  width: [`100%`, `100%`, `33%`],
-                  display: `flex`,
-                  justifyContent: [`center`, `center`, `flex-start`],
-                }}
-              >
-                <SearchForm />
-              </Box>
-            )}
-            <Box
-              sx={{
-                width: [`50%`, `50%`, `33%`],
-                display: `flex`,
-                ...styles,
-              }}
-            >
-              <SiteBranding title={title} />
-            </Box>
-            <Box
-              sx={{
-                width: [`50%`, `50%`, `33%`],
-                display: `flex`,
-                justifyContent: `flex-end`,
-              }}
-            >
-              <SlideSidebar />
-            </Box>
+            <SiteBranding title={title} />
+            <Menu menuName={menuName} sx={{ ...menuStyles }} />
+            <SlideSidebar sx={{ display: ['block', 'block', 'none'] }} />
           </Container>
-          <Flex
-            sx={{
-              position: `absolute`,
-              right: [`6%`, `6%`, `2%`],
-              top: [15, 15, 25],
-              '.headroom--pinned &': {
-                top: [10, 10, 15],
-              },
-            }}
-          >
-            <ColorSwitch />
-          </Flex>
         </header>
       </Headroom>
     </Fragment>
   )
+}
+
+const styles = {
+  bg: 'headerBg',
+  color: 'headerColor',
+  margin: 'none',
+
+  '.container': {
+    display: ['flex'],
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    // flexWrap: 'wrap',
+    alignItems: 'center',
+    fontSize: 'm',
+    margin: '0 auto',
+    maxWidth: 'container',
+    py: 'xs',
+    width: '90vw',
+  },
+
+  '.headroom--pinned &': {
+    '>div': {
+      py: 'xxs',
+    },
+  },
+}
+
+const menuStyles = {
+  display: ['none', 'none', 'block'],
+  '>ul': {
+    display: 'flex',
+    m: 0,
+  },
+
+  '.menu-item': {
+    listStyleType: 'none',
+    mx: 17,
+    a: {
+      color: 'black',
+      fontSize: 14,
+      textTransform: 'uppercase',
+      fontWeight: 'normal',
+      letterSpacing: 1.6,
+      '&:hover': {
+        color: 'primary',
+      },
+    },
+  },
 }
 
 export default Header

@@ -6,7 +6,6 @@ import {
   text,
   card,
   gradients,
-  header,
   footer,
   list,
 } from './components'
@@ -31,7 +30,6 @@ export default {
   search,
   form,
   list,
-  header,
   footer,
   sizes: {
     container: 1200,
