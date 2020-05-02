@@ -85,6 +85,20 @@ const menuStyles = {
         color: 'primary',
       },
     },
+    '&.login': {
+      bg: 'primary',
+      variant: 'transitions.m',
+      '&:hover': {
+        transform: 'translateY(-3px)',
+      },
+      a: {
+        color: 'white',
+        fontWeight: 'bold',
+      },
+
+      borderRadius: 84,
+      px: 15,
+    },
   },
 }
 

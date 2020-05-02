@@ -14,7 +14,7 @@ const config = {
   // addSiteMap: false,
   // siteMapOptions: {},
 
-  skipTitle: 'about',
+  skipTitle: ['about-us', 'home'],
   layoutWidth: {
     page: 'container',
     post: 'container',
