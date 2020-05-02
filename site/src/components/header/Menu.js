@@ -21,7 +21,10 @@ const renderLink = (menuItem, wordPressUrl, postsPath) => {
   if (menuItem.connectedObject.__typename === 'WpMenuItem') {
     const parsedUrl = new URIParser(url)
     if (menuItem.url.startsWith(`#`)) {
-      if (menuItem.slug === postsPath) {
+      if (
+        menuItem.label.toLowerCase() ===
+        postsPath.toLowerCase().replace('/', '')
+      ) {
         return <Link to={`${postsPath}`}>{menuItem.label}</Link>
       } else {
         return (
