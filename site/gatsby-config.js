@@ -6,7 +6,7 @@ module.exports = {
     description: 'Gatsby starter site for Gatsby Theme Wordpress Theme.',
     author: '@alexadark',
     wordPressUrl: config.wordpressUrl,
-    siteUrl: 'http://vcard.pehaa.com',
+    siteUrl: 'https://www.thefalconlab.com/',
     social: [
       {
         name: 'twitter',
@@ -50,11 +50,20 @@ module.exports = {
       },
     },
     'gatsby-plugin-wordpress-fancybox',
+    // {
+    //   resolve: 'gatsby-plugin-mailchimp',
+    //   options: {
+    //     endpoint:
+    //       'https://gmail.us20.list-manage.com/subscribe/post?u=264367957087f30a2e5e30279&amp;id=338936df19',
+    //   },
+    // },
     {
-      resolve: 'gatsby-plugin-mailchimp',
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        endpoint:
-          'https://gmail.us20.list-manage.com/subscribe/post?u=264367957087f30a2e5e30279&amp;id=338936df19',
+        custom: {
+          families: ['gobold_boldregular, have_heart_oneregular'],
+          urls: ['/fonts/fonts.css'],
+        },
       },
     },
   ],

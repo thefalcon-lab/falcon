@@ -1,13 +1,13 @@
 import { rem } from 'polished'
 
 export const fonts = {
-  body: 'IBM Plex Mono',
-  heading: 'Roboto Slab',
+  body: 'Source sans pro, sans-serif',
+  heading: 'gobold, sans-serif',
 }
 
 export const fontWeights = {
   body: 400,
-  heading: 'bold',
+  heading: 'normal',
   bold: 700,
 }
 
