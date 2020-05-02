@@ -1,9 +1,9 @@
 const config = {
-  wordPressUrl: 'https://starter.alexaspalato.website',
+  wordPressUrl: 'https://falcon.gatsby-wp.com/',
   // wordPressUrl: "http://gatsbystarter.wst/",
 
   // uploadsPath: 'wp-content/uploads',
-  // postsPath: '/blog',
+  postsPath: '/blog',
   // paginationPrefix: 'page',
   postsPerPage: 3,
   // disqus: 'webstantly',
@@ -14,23 +14,23 @@ const config = {
   // addSiteMap: false,
   // siteMapOptions: {},
 
-  skipTitle: 'all',
+  skipTitle: 'about',
   layoutWidth: {
-    page: 'l',
-    post: 'l',
-    archive: 'l',
+    page: 'container',
+    post: 'container',
+    archive: 'container',
   },
-  sidebarWidgets: [
-    'Categories',
-    'RecentPosts',
-    'Tags',
-    'SocialFollow',
-    'Newsletter',
-  ],
-  slideMenuWidgets: ['Categories', 'RecentPosts', 'SocialFollow', 'Newsletter'],
+  // sidebarWidgets: [
+  //   'Categories',
+  //   'RecentPosts',
+  //   'Tags',
+  //   'SocialFollow',
+  //   'Newsletter',
+  // ],
+  // slideMenuWidgets: ['Categories', 'RecentPosts', 'SocialFollow', 'Newsletter'],
   // archiveSidebar: "left",
 
-  fonts: ['Baumans', 'Khand:400,600'],
+  // fonts: ['Baumans', 'Khand:400,600'],
   // siteUrl: "https://example.com",
   // title: 'Blog Title Placeholder',
   // author: 'Name Placeholder',
@@ -59,8 +59,8 @@ const config = {
   // addSiteMap: false,
   // siteMapOptions: {},
 
-  mailchimpEndpoint:
-    'https://gmail.us20.list-manage.com/subscribe/post?u=264367957087f30a2e5e30279&amp;id=338936df19',
+  // mailchimpEndpoint:
+  //   'https://gmail.us20.list-manage.com/subscribe/post?u=264367957087f30a2e5e30279&amp;id=338936df19',
 }
 
 module.exports = config

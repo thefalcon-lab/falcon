@@ -21,11 +21,15 @@ const renderLink = (menuItem, wordPressUrl, postsPath) => {
   if (menuItem.connectedObject.__typename === 'WpMenuItem') {
     const parsedUrl = new URIParser(url)
     if (menuItem.url.startsWith(`#`)) {
-      return (
-        <AnchorLink offset={25} href={menuItem.url}>
-          {menuItem.label}
-        </AnchorLink>
-      )
+      if (menuItem.slug === postsPath) {
+        return <Link to={`${postsPath}`}>{menuItem.label}</Link>
+      } else {
+        return (
+          <AnchorLink offset={25} href={menuItem.url}>
+            {menuItem.label}
+          </AnchorLink>
+        )
+      }
     }
     if (parsedUrl.is('relative')) {
       url = subdirectoryCorrection(url, wordPressUrl)
@@ -90,7 +94,7 @@ const renderSubMenu = (menuItem, wordPressUrl, postsPath) => {
       {renderLink(menuItem, wordPressUrl, postsPath)}
       <Collapse menuItem={menuItem}>
         <ul className="menuItemGroup sub-menu">
-          {menuItem.childItems.nodes.map(item =>
+          {menuItem.childItems.nodes.map((item) =>
             renderMenuItem(item, wordPressUrl, postsPath)
           )}
         </ul>
@@ -101,7 +105,7 @@ const renderSubMenu = (menuItem, wordPressUrl, postsPath) => {
 
 const Menu = ({ menuName }) => {
   const menuEdges = useMenusQuery()
-  const menuEdge = menuEdges.find(n => menuName === n.name)
+  const menuEdge = menuEdges.find((n) => menuName === n.name)
   const menuItems = menuEdge ? menuEdge.menuItems : null
 
   const { postsPath, wordPressUrl } = useThemeOptions()
@@ -111,7 +115,7 @@ const Menu = ({ menuName }) => {
       <nav className="menu" aria-label="main">
         {/* eslint-disable-next-line jsx-a11y/no-noninteractive-element-to-interactive-role */}
         <ul role="menu" className="menuItemGroup">
-          {menuItems.nodes.map(menuItem => {
+          {menuItems.nodes.map((menuItem) => {
             if (menuItem.childItems.nodes.length) {
               return renderSubMenu(menuItem, wordPressUrl, postsPath)
             } else {
