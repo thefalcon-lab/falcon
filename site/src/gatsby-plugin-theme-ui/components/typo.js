@@ -1,8 +1,9 @@
 import { rem } from 'polished'
 
 export const fonts = {
-  body: 'Source sans pro, sans-serif',
+  body: 'proxima_novaregular, sans-serif',
   heading: 'gobold, sans-serif',
+  bold: 'proxima_novabold, sans-serif',
 }
 
 export const fontWeights = {
@@ -14,7 +15,7 @@ export const fontWeights = {
 export const fontSizes = {
   xxs: rem('12px'),
   xs: rem('14px'),
-  s: rem('16px'),
+  s: rem('18px'),
   m: rem('20px'),
   l: rem('24px'),
   xl: rem('32px'),
@@ -35,6 +36,7 @@ const heading = {
   lineHeight: 'heading',
   fontWeight: 'heading',
   color: 'text',
+  textTransform: 'uppercase',
   a: {
     borderBottom: 'none',
   },

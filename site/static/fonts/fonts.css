@@ -13,3 +13,43 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'proxima_novalight';
+  src: url('proximanova-light-webfont.woff2') format('woff2'),
+    url('proximanova-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaregular';
+  src: url('proximanova-regular-webfont.woff2') format('woff2'),
+    url('proximanova-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novalight_italic';
+  src: url('proximanova-lightitalic-webfont.woff2') format('woff2'),
+    url('proximanova-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novaregular_italic';
+  src: url('proximanova-regitalic-webfont.woff2') format('woff2'),
+    url('proximanova-regitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'proxima_novabold';
+  src: url('proximanova-bold-webfont.woff2') format('woff2'),
+    url('proximanova-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

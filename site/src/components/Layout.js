@@ -37,7 +37,7 @@ const Layout = ({ children, page, type = 'page' }) => {
         <Header />
         <main
           sx={{
-            py: `xxl`,
+            pt: `xxl`,
             '.fullWidth &': {
               py: 0,
               mt: -32,

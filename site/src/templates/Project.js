@@ -1,6 +1,11 @@
 /** @jsx jsx */
 import { jsx, Container, Box } from 'theme-ui'
 import { graphql } from 'gatsby'
+import {
+  ProjectHeader,
+  ProjectGallery,
+  ProjectSections,
+} from '../components/project'
 import Layout from '../components/Layout'
 
 const Project = ({ data }) => {
@@ -11,10 +16,11 @@ const Project = ({ data }) => {
     terms,
   } = data.wpProject
 
-  console.log(data.wpProject)
   return (
     <Layout>
-      <h1>{title}</h1>
+      <ProjectHeader title={title} subtitle={terms[0].name} />
+      <ProjectGallery items={projectImages} />
+      <ProjectSections items={projectSections} />
     </Layout>
   )
 }

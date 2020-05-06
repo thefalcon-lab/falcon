@@ -34,7 +34,7 @@ export default {
   sizes: {
     container: 1200,
     s: 300,
-    m: 600,
+    m: 750,
     l: 900,
   },
   shadows: {
