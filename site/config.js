@@ -28,7 +28,7 @@ const config = {
   //   'Newsletter',
   // ],
   // slideMenuWidgets: ['Categories', 'RecentPosts', 'SocialFollow', 'Newsletter'],
-  // archiveSidebar: "left",
+  archiveSidebar: 'right',
 
   // fonts: ['Baumans', 'Khand:400,600'],
   // siteUrl: "https://example.com",

@@ -81,7 +81,7 @@ const menuStyles = {
     mx: 17,
     a: {
       color: 'black',
-      fontSize: 14,
+      fontSize: 12,
       textTransform: 'uppercase',
       fontWeight: 'normal',
       letterSpacing: 1.6,
@@ -102,6 +102,7 @@ const menuStyles = {
 
       borderRadius: 84,
       px: 15,
+      pt: 1,
     },
     //submenu
     '>.sub-menu': {
