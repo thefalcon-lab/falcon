@@ -7,6 +7,7 @@ import SlideSidebar from './SlideSidebar'
 import SiteBranding from './SiteBranding'
 import Menu from './Menu'
 import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
+import { FormDown } from 'grommet-icons'
 
 import Headroom from 'react-headroom'
 
@@ -74,6 +75,7 @@ const menuStyles = {
 
   '.menu-item': {
     listStyleType: 'none',
+    position: 'relative',
     mx: 17,
     a: {
       color: 'black',
@@ -99,8 +101,32 @@ const menuStyles = {
       borderRadius: 84,
       px: 15,
     },
-    button: {
-      display: 'none',
+    //submenu
+    '>.sub-menu': {
+      opacity: 0,
+      visibility: 'hidden',
+      transform: 'translateY(-5px)',
+      m: 0,
+      position: 'absolute',
+      top: 32,
+      left: 0,
+      bg: 'black',
+      a: { color: 'white', '&:hover': { color: 'primary' } },
+      width: 'auto',
+      whiteSpace: 'nowrap',
+      variant: 'transitions.m',
+      zIndex: 10,
+      py: 10,
+      fontFamily: 'bold',
+    },
+  },
+  '.has-subMenu': {
+    '&:hover': {
+      '>.sub-menu': {
+        opacity: 1,
+        visibility: 'visible',
+        transform: 'translateY(0)',
+      },
     },
   },
 }
