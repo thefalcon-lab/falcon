@@ -4,7 +4,7 @@ import { Spacer } from '../ui-components'
 
 export const ProjectHeader = ({ title, subtitle, ...props }) => (
   <Container sx={{ maxWidth: 'l' }} {...props}>
-    <h1>{title}</h1>
+    <h1 dangerouslySetInnerHTML={{ __html: title }} />
     <Spacer />
     <Box
       className="subtitle"
