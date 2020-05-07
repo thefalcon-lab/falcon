@@ -33,7 +33,9 @@ const Header = () => {
           <Container className="container">
             <SiteBranding title={title} />
             <Menu menuName={menuName} sx={{ ...menuStyles }} />
-            <SlideSidebar sx={{ display: ['block', 'block', 'none'] }} />
+            <SlideSidebar
+              sx={{ display: ['block', 'block', 'block', 'none'] }}
+            />
           </Container>
         </header>
       </Headroom>
@@ -67,7 +69,7 @@ const styles = {
 }
 
 const menuStyles = {
-  display: ['none', 'none', 'block'],
+  display: ['none', 'none', 'none', 'block'],
   '>ul': {
     display: 'flex',
     m: 0,
