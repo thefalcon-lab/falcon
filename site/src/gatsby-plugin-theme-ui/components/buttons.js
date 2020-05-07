@@ -6,14 +6,14 @@ const sharedButtonStyles = {
   fontFamily: 'body',
   textTransform: 'uppercase',
   fontSize: 'xs',
+  fontFamily: 'bold',
   variant: 'transitions.m',
   letterSpacing: 1,
   boxShadow: 'medium',
   lineHeight: 'tight',
   py: 'xs',
   px: 'm',
-  borderRadius: 'xs',
-  fontWeight: 500,
+  borderRadius: 0,
 
   '&:hover': {
     transform: 'translateY(-5px)',

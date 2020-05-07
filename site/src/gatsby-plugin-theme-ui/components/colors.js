@@ -6,7 +6,8 @@ const lightGrey = '#efefef'
 
 export const colors = {
   primary,
-
+  darkGrey,
+  lightGrey,
   accent: primary,
   background: 'white',
   bgInverse: 'black',
