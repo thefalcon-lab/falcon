@@ -58,7 +58,7 @@ const SlideSidebar = ({ ...props }) => {
             onClick={closeMenu}
           />
 
-          <Menu menuName={menuName} />
+          <Menu orientation="vertical" menuName={menuName} />
 
           {slideMenuWidgets &&
             slideMenuWidgets.length > 0 &&

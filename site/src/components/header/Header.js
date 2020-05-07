@@ -99,6 +99,9 @@ const menuStyles = {
       borderRadius: 84,
       px: 15,
     },
+    button: {
+      display: 'none',
+    },
   },
 }
 
