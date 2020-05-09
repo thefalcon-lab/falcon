@@ -23,11 +23,6 @@ export const query = graphql`
     excerpt
     date
     databaseId
-    postFormats {
-      taxonomyInfo {
-        name
-      }
-    }
     template {
       ...PageTemplates_starter
     }
