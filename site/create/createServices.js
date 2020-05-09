@@ -1,5 +1,5 @@
 const path = require(`path`)
-const serviceTemplate = path.resolve(`./src/templates/service.js`)
+const serviceTemplate = path.resolve(`./src/templates/Service.js`)
 
 module.exports = async ({ actions, graphql }) => {
   const GET_SERVICES = `
