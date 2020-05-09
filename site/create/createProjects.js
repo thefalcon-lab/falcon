@@ -1,5 +1,5 @@
 const path = require(`path`)
-const projectTemplate = path.resolve(`./src/templates/project.js`)
+const projectTemplate = path.resolve(`./src/templates/Project.js`)
 
 module.exports = async ({ actions, graphql }) => {
   const GET_PROJECTS = `
