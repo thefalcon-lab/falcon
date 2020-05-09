@@ -1,10 +1,11 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box } from 'theme-ui'
-import PostEntry from '../post/PostEntry'
+import { jsx, Container, Flex, Box, Grid } from 'theme-ui'
+import ArchiveItem from './ArchiveItem'
 import Pagination from './Pagination'
 import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
 import Sidebar from '../Sidebar.js'
 import ArchiveTitle from './ArchiveTitle'
+import { Spacer } from '../ui-components'
 
 const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
   const { layoutWidth, archiveSidebar, sidebarWidgets } = useThemeOptions()
@@ -39,9 +40,13 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
         }}
       >
         <Box className="posts-list">
-          {posts.map(post => (
-            <PostEntry key={post.id} location="archive" post={post} />
-          ))}
+          <h1 sx={{ fontSize: 100 }}>BLOG</h1>
+          <Spacer />
+          <Grid columns={[1, 2]} gap={25}>
+            {posts.map((post) => (
+              <ArchiveItem key={post.id} post={post} sx={{}} />
+            ))}
+          </Grid>
         </Box>
         {archiveSidebar && <Sidebar widgets={sidebarWidgets} />}
       </Flex>

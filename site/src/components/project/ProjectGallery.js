@@ -1,8 +1,17 @@
 /** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { jsx, Box, Flex } from 'theme-ui'
 
 export const ProjectGallery = ({ items, ...props }) => (
-  <Box className="gallery" {...props}>
-    <h3>Gallery</h3>
-  </Box>
+  <Flex className="gallery" sx={{ ...styles }} {...props}>
+    {/* {items && items.map((item, i)=> {
+      return <Box>
+
+      </Box>
+
+    })} */}
+  </Flex>
 )
+
+const styles = {
+  flexWrap: 'wrap',
+}

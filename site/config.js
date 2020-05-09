@@ -5,7 +5,7 @@ const config = {
   // uploadsPath: 'wp-content/uploads',
   postsPath: '/blog',
   // paginationPrefix: 'page',
-  postsPerPage: 3,
+  postsPerPage: 4,
   // disqus: 'webstantly',
   menuName: 'main',
   // addWordPressComments: 1,
