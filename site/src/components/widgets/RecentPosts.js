@@ -18,7 +18,7 @@ const RECENT_POSTS_QUERY = graphql`
         featuredImage {
           altText
           sourceUrl
-          remoteFile {
+          localFile {
             childImageSharp {
               fixed(width: 72, height: 48, quality: 80) {
                 ...GatsbyImageSharpFixed
@@ -43,7 +43,7 @@ const RecentPosts = () => {
       <h2 className="widget-title">Recent Posts</h2>
       <ul>
         {nodes.length
-          ? nodes.map(post => {
+          ? nodes.map((post) => {
               const uri = normalize(`/${post.uri}`)
               return (
                 <li key={post.id}>
@@ -52,7 +52,7 @@ const RecentPosts = () => {
                       <Img
                         alt={post.featuredImage.altText}
                         fixed={
-                          post.featuredImage.remoteFile.childImageSharp.fixed
+                          post.featuredImage.localFile.childImageSharp.fixed
                         }
                       />
                     )}

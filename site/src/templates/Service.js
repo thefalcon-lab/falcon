@@ -13,8 +13,9 @@ const Service = ({ data }) => {
   const {
     title,
     content,
-    serviceFields: { serviceIntro, servicesTags },
+    serviceFields: { serviceIntro, servicesTags, serviceProjects },
   } = data.wpService
+  console.log(serviceProjects)
 
   return (
     <Layout>
@@ -47,18 +48,18 @@ export const pageQuery = graphql`
         servicesTags {
           item
         }
-        # serviceProjects {
-        #   __typename
-        #   ... on WpProject {
-        #     title
-        #     projectFields {
-        #       projectType
-        #     }
-        #     featuredImage {
-        #       ...GatsbyImageQuery
-        #     }
-        #   }
-        # }
+        serviceProjects {
+          __typename
+          ... on WpProject {
+            title
+            projectFields {
+              projectType
+            }
+            featuredImage {
+              ...GatsbyImageQuery
+            }
+          }
+        }
       }
     }
   }

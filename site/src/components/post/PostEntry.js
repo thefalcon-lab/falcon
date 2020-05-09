@@ -14,7 +14,7 @@ import gutenberg from '../../styles/theme-gutenberg'
 const PostEntry = ({ post, location }) => {
   const noImgClass = !post.featuredImage ? 'no-img' : ''
   const media = post.featuredImage
-    ? post.featuredImage.remoteFile.childImageSharp.fluid.src
+    ? post.featuredImage.localFile.childImageSharp.fluid.src
     : null
   return (
     <article
@@ -23,7 +23,7 @@ const PostEntry = ({ post, location }) => {
         ...articleStyles,
         '.entry-content': {
           pb: `m`,
-          borderBottom: t => `1px solid ${t.colors.border}`,
+          borderBottom: (t) => `1px solid ${t.colors.border}`,
         },
       }}
     >
