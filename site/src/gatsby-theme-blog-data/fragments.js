@@ -23,6 +23,17 @@ export const fragments = graphql`
       }
     }
   }
+  fragment ImageTeamFragment on WpMediaItem {
+    altText
+    sourceUrl
+    localFile {
+      childImageSharp {
+        fluid(maxWidth: 600, maxHeight: 600, toFormat: WEBP, quality: 80) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
   fragment PostTemplateFragment_starter on WpPost {
     id
     uri
