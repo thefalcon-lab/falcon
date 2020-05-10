@@ -15,6 +15,7 @@ import {
   // ProjectsBlock,
   CoverBlock,
   ColumnsBlock,
+  SpacerBlock,
   // TestimonialsBlock,
   // SubscribeBlock,
 } from '../AcfBlocks'
@@ -115,6 +116,8 @@ const Page = ({ page }) => {
               return <CoverBlock {...block} />
             case 'WpPage_Flexlayouts_FlexibleLayouts_ColumnsBlock':
               return <ColumnsBlock {...block} />
+            case 'WpPage_Flexlayouts_FlexibleLayouts_SpacerBlock':
+              return <SpacerBlock {...block} />
 
             default:
               return ''

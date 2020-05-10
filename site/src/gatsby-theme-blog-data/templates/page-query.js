@@ -21,6 +21,7 @@ export const pageQuery = graphql`
           ...buttonBlockFragment
           ...coverBlockFragment
           ...columnsBlockFragment
+          ...spacerBlockFragment
           # ...testimonialsBlockFragment
           # ...subscribeBlockFragment
         }
