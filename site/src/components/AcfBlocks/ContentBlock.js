@@ -59,16 +59,16 @@ export const ContentBlock = ({
   )
 }
 const styles = {
-  '&.aboutSubtitle,&.aboutContent': {
+  '&.subtitle,&.content': {
     '.container': {
       maxWidth: 'm',
     },
   },
-  '&.aboutSubtitle': {
+  '&.subtitle': {
     mt: [50, 100],
     variant: 'text.subtitle',
   },
-  '&.aboutContent': {
+  '&.content': {
     mb: [50, 100],
     mt: 20,
   },
