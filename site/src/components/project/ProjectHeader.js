@@ -9,10 +9,8 @@ export const ProjectHeader = ({ title, subtitle, ...props }) => (
     <Box
       className="subtitle"
       sx={{
-        textTransform: 'uppercase',
-        fontFamily: 'bold',
+        variant: 'text.subtitle',
         maxWidth: 640,
-        lineHeight: 1.77,
       }}
     >
       {subtitle}

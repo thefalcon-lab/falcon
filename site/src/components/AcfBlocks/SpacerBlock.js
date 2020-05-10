@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx, Container } from 'theme-ui'
 import { graphql } from 'gatsby'
 import { Spacer } from '../ui-components'
 
@@ -10,5 +10,18 @@ export const fragment = graphql`
 `
 
 export const SpacerBlock = ({ cssclass, ...props }) => (
-  <Spacer className={`spacer ${cssclass || ''}`} {...props} />
+  <div className={` ${cssclass || ''}`} sx={{ ...styles }} {...props}>
+    <Container className="container">
+      <Spacer className="spacer" />
+    </Container>
+  </div>
 )
+
+const styles = {
+  '&.aboutSpacer': {
+    '.spacer': {
+      width: 200,
+    },
+    '.container': { display: 'flex', justifyContent: 'center' },
+  },
+}

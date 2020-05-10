@@ -11,6 +11,11 @@ const specialSharedStyles = {
 }
 
 export const text = {
+  subtitle: {
+    textTransform: 'uppercase',
+    fontFamily: 'bold',
+    lineHeight: 1.77,
+  },
   branding: {
     fontSize: ['m', 'l'],
     textTransform: 'uppercase',

@@ -55,6 +55,7 @@ export const a = {
 export const p = {
   fontSize: ['s'],
   lineHeight: 'body',
+  color: 'text',
 }
 
 export const h1 = {
