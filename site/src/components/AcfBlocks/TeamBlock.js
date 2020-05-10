@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { jsx, Box, Flex } from 'theme-ui'
 import { graphql } from 'gatsby'
 import ParsedContent from '../../utils/ParsedContent'
 import BgImage from '../images/BgImage'
@@ -33,7 +33,7 @@ export const TeamBlock = ({
     <Box
       as="section"
       id={anchor}
-      className={`${cssclass || ''} contentBlock`}
+      className={`${cssclass || ''} teamBlock`}
       sx={{
         ...styles,
       }}
@@ -45,35 +45,72 @@ export const TeamBlock = ({
           <ParsedContent content={content} />
         </Box>
       )}
-      {team.length > 0 &&
-        team.map((item, i) => {
-          const { image, name, role } = item
-          return (
-            <Box key={i} className="teamMember">
-              <BgImage img={image}>
-                <Box className="content">
-                  <h3>{name}</h3>
-                  <h4>{role}</h4>
-                </Box>
-              </BgImage>
-            </Box>
-          )
-        })}
+      {team.length > 0 && (
+        <Box className="team">
+          {team.map((item, i) => {
+            const { image, name, role } = item
+            return (
+              <Box key={i} className="teamMember">
+                <BgImage className="bgImage" img={image}>
+                  <Box className="overlay">
+                    <Box className="content">
+                      <h3>{name}</h3>
+                      <h4>{role}</h4>
+                    </Box>
+                  </Box>
+                </BgImage>
+              </Box>
+            )
+          })}
+        </Box>
+      )}
     </Box>
   )
 }
 const styles = {
-  '&.aboutSubtitle,&.aboutContent': {
-    '.container': {
-      maxWidth: 'm',
+  '.team': {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+  '.teamMember': {
+    px: 2,
+    py: 1,
+    cursor: 'pointer',
+    width: ['100%', '50%', '33%', '25%'],
+    'h3,h4': {
+      m: 0,
+    },
+    '&:hover': {
+      '.overlay': {
+        opacity: 1,
+        transform: 'translateX(0)',
+      },
     },
   },
-  '&.aboutSubtitle': {
-    mt: [50, 100],
-    variant: 'text.subtitle',
+  '.bgImage': {
+    height: 500,
+    position: 'relative',
+    overflow: 'hidden',
   },
-  '&.aboutContent': {
-    mb: [50, 100],
-    mt: 20,
+  '.overlay': {
+    opacity: 0,
+    variant: 'transitions.m',
+    position: 'absolute',
+    left: 0,
+    top: 0,
+    height: '100%',
+    width: '100%',
+    bg: 'rgba(214, 63, 24, .75)',
+    display: 'flex',
+    alignItems: 'flex-end',
+    p: 25,
+    transform: 'translateX(-500px)',
+  },
+  '.content': {
+    h3: {
+      color: 'white',
+      fontSize: 30,
+      mb: 10,
+    },
   },
 }
