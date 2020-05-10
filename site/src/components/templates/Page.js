@@ -7,6 +7,17 @@ import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
 import Sidebar from '../Sidebar'
 import articleStyles from '../../styles/articleStyles'
 import gutenberg from '../../styles/theme-gutenberg'
+import {
+  ButtonBlock,
+  ContentBlock,
+  HeadingBlock,
+  ImageBlock,
+  // ProjectsBlock,
+  CoverBlock,
+  ColumnsBlock,
+  // TestimonialsBlock,
+  // SubscribeBlock,
+} from '../AcfBlocks'
 
 const Page = ({ page }) => {
   const {
@@ -16,6 +27,7 @@ const Page = ({ page }) => {
     slug,
     uri,
     template: { templateName },
+    flexLayouts: { flexibleLayouts },
   } = page
   const pageTemplate = templateName.toLowerCase()
   const { skipTitle, layoutWidth, sidebarWidgets } = useThemeOptions()
@@ -52,7 +64,7 @@ const Page = ({ page }) => {
         ogType={ogType}
         ogUrl={ogType === 'website' ? '' : uri}
       />
-      <Container sx={{ ...containerStyles }} className="mainContainer">
+      {/* <Container sx={{ ...containerStyles }} className="mainContainer">
         <Flex
           sx={{
             ...sidebarSide,
@@ -85,7 +97,29 @@ const Page = ({ page }) => {
           </article>
           {sidebarPage && <Sidebar widgets={sidebarWidgets} />}
         </Flex>
-      </Container>
+      </Container> */}
+      {flexibleLayouts &&
+        flexibleLayouts.length > 0 &&
+        flexibleLayouts.map((block) => {
+          switch (block.__typename) {
+            case 'WpPage_Flexlayouts_FlexibleLayouts_ContentBlock':
+              return <ContentBlock {...block} />
+            case 'WpPage_Flexlayouts_FlexibleLayouts_HeadingBlock':
+              return <HeadingBlock {...block} />
+            case 'WpPage_Flexlayouts_FlexibleLayouts_ImageBlock':
+              return <ImageBlock {...block} />
+            case 'WpPage_Flexlayouts_FlexibleLayouts_ButtonBlock':
+              return <ButtonBlock {...block} />
+
+            case 'WpPage_Flexlayouts_FlexibleLayouts_CoverBlock':
+              return <CoverBlock {...block} />
+            case 'WpPage_Flexlayouts_FlexibleLayouts_ColumnsBlock':
+              return <ColumnsBlock {...block} />
+
+            default:
+              return ''
+          }
+        })}
     </Layout>
   )
 }

@@ -11,6 +11,20 @@ export const pageQuery = graphql`
       uri
       slug
       isFrontPage
+      flexLayouts {
+        flexibleLayouts {
+          __typename
+          ...contentBlockFragment
+          # ...projectsBlockFragment
+          ...imageBlockFragment
+          ...headingBlockFragment
+          ...buttonBlockFragment
+          ...coverBlockFragment
+          ...columnsBlockFragment
+          # ...testimonialsBlockFragment
+          # ...subscribeBlockFragment
+        }
+      }
       template {
         ...PageTemplates_starter
       }
