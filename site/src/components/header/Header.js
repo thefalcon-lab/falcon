@@ -79,9 +79,9 @@ const menuStyles = {
     listStyleType: 'none',
     position: 'relative',
     mx: 17,
+    fontSize: 12,
     a: {
       color: 'black',
-      fontSize: 12,
       textTransform: 'uppercase',
       fontWeight: 'normal',
       letterSpacing: 1.6,
