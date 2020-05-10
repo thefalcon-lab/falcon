@@ -20,7 +20,7 @@ module.exports = async ({ actions, graphql }, options) => {
   const pagesQuery = await graphql(GET_PAGES)
   const pages = pagesQuery.data.allWpPage.nodes
 
-  pages.map(page => {
+  pages.map((page) => {
     /* dont create page for postsPath */
     if (
       slashes(normalize(`/${page.uri}`)) ===
@@ -33,7 +33,7 @@ module.exports = async ({ actions, graphql }, options) => {
       (page.isFrontPage && options.postsPath !== `/`) ||
       (page.isFrontPage && options.postsPath === false)
         ? `/`
-        : `/${page.uri}`
+        : `${page.uri}`
     console.log(`create page: ${path}`)
     createPage({
       path,
