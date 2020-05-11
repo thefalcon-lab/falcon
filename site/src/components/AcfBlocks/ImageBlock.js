@@ -38,15 +38,28 @@ export const ImageBlock = ({
       sx={{
         ...margins,
         ...sectionsStyles,
-        ...imageBlockStyles,
+        ...styles,
       }}
     >
       <Container
         className="container"
         sx={{ display: 'flex', justifyContent: 'center' }}
       >
-        <GatsbyImg img={image} />
+        {image.localFile.childImageSharp ? (
+          <GatsbyImg img={image} />
+        ) : (
+          <img src={image.localFile.publicURL} />
+        )}
       </Container>
     </Box>
   )
+}
+
+const styles = {
+  '&.aboutImage': {
+    mb: [50, 100],
+    '.container': {
+      maxWidth: 'm',
+    },
+  },
 }

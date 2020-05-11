@@ -5,6 +5,7 @@ export const fragments = graphql`
     altText
     sourceUrl
     localFile {
+      publicURL
       childImageSharp {
         fluid(maxWidth: 1200, maxHeight: 600, quality: 80) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -16,6 +17,7 @@ export const fragments = graphql`
     altText
     sourceUrl
     localFile {
+      publicURL
       childImageSharp {
         fluid(maxWidth: 1920, toFormat: WEBP, quality: 80) {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -27,6 +29,7 @@ export const fragments = graphql`
     altText
     sourceUrl
     localFile {
+      publicURL
       childImageSharp {
         fluid(maxWidth: 600, toFormat: WEBP, quality: 80) {
           ...GatsbyImageSharpFluid_tracedSVG
