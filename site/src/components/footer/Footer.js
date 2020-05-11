@@ -1,44 +1,16 @@
 /** @jsx jsx */
-import { Container, jsx, Flex, Box } from 'theme-ui'
-import { useStaticQuery, graphql, Link } from 'gatsby'
+import { Container, jsx, Box } from 'theme-ui'
+import { Link } from 'gatsby'
 import SocialFollow from '../social/SocialFollows'
-
-import { LocationIcon, PhoneIcon, MailIcon } from '../Icons'
-
-const CONTACT_QUERY = graphql`
-  query {
-    wp {
-      themeOptions {
-        info {
-          address
-          mail
-          phone
-        }
-      }
-    }
-  }
-`
+import ContactInfo from '../ContactInfo'
 
 const Footer = () => {
-  const data = useStaticQuery(CONTACT_QUERY)
-  const { address, mail, phone } = data.wp.themeOptions.info
   return (
     <footer sx={{ ...styles }}>
       <Container className="footerContainer">
         <Box>
           <h3>Contact</h3>
-          <Flex className="contactItem">
-            <PhoneIcon />
-            <a href={`tel:${phone}`}>{phone}</a>
-          </Flex>
-          <Flex className="contactItem">
-            <MailIcon sx={{ mt: 3 }} />
-            <a href={`mailto:${mail}`}>{mail}</a>
-          </Flex>
-          <Flex className="contactItem">
-            <LocationIcon />
-            <Box dangerouslySetInnerHTML={{ __html: address }} />
-          </Flex>
+          <ContactInfo />
           <Box className="social" sx={{ fontWeight: 'bold' }}>
             follow us on
             <Box className="socialItems" sx={{ ...socialStyles }}>
@@ -78,13 +50,6 @@ const styles = {
     textTransform: 'uppercase',
     fontSize: 36,
     mb: 50,
-  },
-  '.contactItem': {
-    mb: 50,
-    svg: {
-      mr: 15,
-    },
-    lineHeight: 1.2,
   },
 }
 

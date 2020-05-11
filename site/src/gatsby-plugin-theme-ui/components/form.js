@@ -49,14 +49,16 @@ const sharedFormStyles = {
 }
 
 export const form = {
-  ...sharedFormStyles,
-  mb: 'l',
-  py: 'xl',
-  px: 'l',
-  boxShadow: 'default',
-  borderRadius: 5,
-
-  raw: {
+  '&:not(.contact-form)': {
     ...sharedFormStyles,
+    mb: 'l',
+    py: 'xl',
+    px: 'l',
+    boxShadow: 'default',
+    borderRadius: 5,
+
+    raw: {
+      ...sharedFormStyles,
+    },
   },
 }
