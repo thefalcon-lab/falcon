@@ -6,20 +6,32 @@ import ParsedContent from '../../utils/ParsedContent'
 
 const ContactPage = ({ page, ...props }) => {
   return (
-    <Container sx={{ maxWidth: 'l' }} sx={{ ...styles }} {...props}>
+    <Container
+      sx={{ maxWidth: 'l', position: 'relative' }}
+      sx={{ ...styles }}
+      {...props}
+    >
       <ProjectHeader
         title="contact"
         subtitle="We would love to work with yOU!"
         sx={{ mb: 100 }}
       />
-      <Flex sx={{ flexWrap: 'wrap', justifyContent: 'space-around' }}>
-        <Box>
+      <Box
+        sx={{
+          maxWidth: 900,
+          mx: 'auto',
+          display: ['block', 'block', 'flex'],
+          flexWrap: 'wrap',
+          justifyContent: 'space-between',
+        }}
+      >
+        <Box sx={{ width: ['100%', '100%', '33%'] }}>
           <ContactInfo sx={{ color: 'text', a: { color: 'text' } }} />
         </Box>
-        <Box sx={{ maxWidth: 600 }}>
+        <Box className="formContainer" sx={{ width: ['100%', '100%', '60%'] }}>
           <ParsedContent content={page.content} />
         </Box>
-      </Flex>
+      </Box>
     </Container>
   )
 }
@@ -27,18 +39,21 @@ const ContactPage = ({ page, ...props }) => {
 export default ContactPage
 
 const styles = {
+  '.formContainer': {
+    maxWidth: 700,
+  },
   '.contact-form': {
     '.row': {
-      display: 'flex',
+      display: ['block', 'flex'],
       flexWrap: 'wrap',
       div: {
-        width: '50%',
-        pr: 5,
+        width: ['100%', '50%'],
+        pr: [0, 5],
         pb: 5,
         '&:nth-child(even)': {
           pr: 0,
         },
-        input: { width: '100%' },
+        'input, textarea': { width: '100%' },
       },
     },
     'input[type="text"],input[type="email"], textarea': {
@@ -52,6 +67,25 @@ const styles = {
     'input[type="file"]': {
       border: 'none',
       bg: 'primary',
+    },
+    textarea: {
+      height: 150,
+      width: '100%',
+    },
+    '#inputFile': {
+      width: '0.1px',
+      height: '0.1px',
+      opacity: '0',
+      overflow: 'hidden',
+      position: 'absolute',
+      zIndex: '-1',
+    },
+    'label[for="inputFile"]': {
+      variant: 'buttons.primary',
+    },
+    '.buttons': {
+      display: ['block', 'flex'],
+      justifyContent: 'space-between',
     },
   },
 }
