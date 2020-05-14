@@ -25,6 +25,21 @@ export const fragments = graphql`
       }
     }
   }
+
+  fragment galleryImageFragment on WpMediaItem {
+    altText
+    sourceUrl
+    localFile {
+      publicURL
+      childImageSharp {
+        fluid(maxWidth: 500, toFormat: WEBP, fit: COVER, quality: 80) {
+          aspectRatio
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+
   fragment ImageTeamFragment on WpMediaItem {
     altText
     sourceUrl

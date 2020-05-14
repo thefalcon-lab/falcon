@@ -19,7 +19,7 @@ import {
   // TestimonialsBlock,
   // SubscribeBlock,
 } from '../AcfBlocks'
-import ContactPage from './ContactPage'
+import { ContactPage, WorkPage } from './templateParts'
 
 const Page = ({ page }) => {
   const {
@@ -44,6 +44,7 @@ const Page = ({ page }) => {
         ogUrl={ogType === 'website' ? '' : uri}
       />
       {page.slug.includes('contact') && <ContactPage page={page} />}
+      {page.slug.includes('work') && <WorkPage page={page} />}
       {flexibleLayouts &&
         flexibleLayouts.length > 0 &&
         flexibleLayouts.map((block) => {
