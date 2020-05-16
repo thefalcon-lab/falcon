@@ -6,9 +6,9 @@ import BrandAnimation from '../../BrandAnimation'
 
 export const FrontPageAnimations = ({ page, ...props }) => {
   return (
-    <>
+    <Box {...props}>
       <Parallax />
       <BrandAnimation />
-    </>
+    </Box>
   )
 }

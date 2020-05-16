@@ -66,6 +66,13 @@ const styles = {
       py: 'xxs',
     },
   },
+  '.home-page &,.contact-page &': {
+    bg: 'transparent',
+    // position: 'absolute',
+    // top: 0,
+    // width: '100%',
+    zIndex: 10,
+  },
 }
 
 const menuStyles = {
@@ -81,6 +88,9 @@ const menuStyles = {
     mx: 17,
     fontSize: 12,
     a: {
+      '.home-page &,.contact-page &': {
+        color: 'white',
+      },
       color: 'black',
       textTransform: 'uppercase',
       fontWeight: 'normal',

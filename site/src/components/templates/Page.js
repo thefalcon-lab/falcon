@@ -46,7 +46,12 @@ const Page = ({ page }) => {
       />
       {page.slug.includes('contact') && <ContactPage page={page} />}
       {page.slug.includes('work') && <WorkPage page={page} />}
-      {isFrontPage && <FrontPageAnimations page={page} />}
+      {isFrontPage && (
+        <FrontPageAnimations
+          page={page}
+          sx={{ position: 'relative', top: -46 }}
+        />
+      )}
       {flexibleLayouts &&
         flexibleLayouts.length > 0 &&
         flexibleLayouts.map((block) => {
