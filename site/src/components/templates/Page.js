@@ -19,7 +19,7 @@ import {
   // TestimonialsBlock,
   // SubscribeBlock,
 } from '../AcfBlocks'
-import { ContactPage, WorkPage } from './templateParts'
+import { ContactPage, WorkPage, FrontPageAnimations } from './templateParts'
 
 const Page = ({ page }) => {
   const {
@@ -30,6 +30,7 @@ const Page = ({ page }) => {
     uri,
     template: { templateName },
     flexLayouts: { flexibleLayouts },
+    isFrontPage,
   } = page
   const pageTemplate = templateName.toLowerCase()
 
@@ -45,6 +46,7 @@ const Page = ({ page }) => {
       />
       {page.slug.includes('contact') && <ContactPage page={page} />}
       {page.slug.includes('work') && <WorkPage page={page} />}
+      {isFrontPage && <FrontPageAnimations page={page} />}
       {flexibleLayouts &&
         flexibleLayouts.length > 0 &&
         flexibleLayouts.map((block) => {
