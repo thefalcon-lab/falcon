@@ -8258,6 +8258,11 @@ grommet@^2.13.0:
     react-desc "^4.1.2"
     recompose "^0.30.0"
 
+gsap@^3.2.6:
+  version "3.2.6"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.2.6.tgz#fbaddab30c8c2fb029d61ef56f667b42f99c932f"
+  integrity sha512-QX7WQWZUAooS9tOCYg4kKLcnjBreA4Xyu11EVx6zp4BbKijnMK+NtzkB47las/E0luFE84hGscOZm5vd13KzZA==
+
 gud@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/gud/-/gud-1.0.0.tgz#a489581b17e6a70beca9abe3ae57de7a499852c0"
@@ -12801,6 +12806,11 @@ react-fast-compare@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-3.0.1.tgz#884d339ce1341aad22392e7a88664c71da48600e"
   integrity sha512-C5vP0J644ofZGd54P8++O7AvrqMEbrGf8Ue0eAUJLJyw168dAX2aiYyX/zcY/eSNwO0IDjsKUaLE6n83D+TnEg==
 
+react-gsap@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/react-gsap/-/react-gsap-2.0.5.tgz#75d89e5800aa0ad12b59757fffc2b7bedc238b73"
+  integrity sha512-LcK55W9Qp1U7tOZDc0OGgiKCrEF1tc8o8P4Nt1Xf2VypW0ZZ5jHbBOkcs/puVHObPB0xw4IciDW8+ngh79RkSA==
+
 react-headroom@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-headroom/-/react-headroom-3.0.0.tgz#6d74102ccc04b060269ddee6e5b788f476e0eca6"
@@ -12913,6 +12923,11 @@ react-refresh@^0.7.0:
   version "0.7.2"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.7.2.tgz#f30978d21eb8cac6e2f2fde056a7d04f6844dd50"
   integrity sha512-u5l7fhAJXecWUJzVxzMRU2Zvw8m4QmDNHlTrT5uo3KBlYBhmChd7syAakBoay1yIiVhx/8Fi7a6v6kQZfsw81Q==
+
+react-scrollmagic@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/react-scrollmagic/-/react-scrollmagic-2.2.0.tgz#6e5ca428411221605ce4edb667819394c6a4e6c0"
+  integrity sha512-2DlzgJVuFohka0HG71haN4fugXoNUIZ4xT0mb4k03Xx1CyGXqPMxKekFEGhVjYyqpQmibtdTOfh49ZsHzuNVtw==
 
 react-share@^4.1.0:
   version "4.1.0"
