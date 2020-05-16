@@ -74,7 +74,7 @@ export const WorkPage = ({ page, ...props }) => {
               aspectRatio,
             } = featuredImage.localFile.childImageSharp.fluid
 
-            const minHeight = 500 / aspectRatio
+            const minHeight = aspectRatio < 1 ? 500 / aspectRatio : 200
             console.log('feat', aspectRatio, minHeight)
 
             return (
