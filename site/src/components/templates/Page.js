@@ -49,7 +49,7 @@ const Page = ({ page }) => {
       {isFrontPage && (
         <FrontPageAnimations
           page={page}
-          sx={{ position: 'relative', top: -46, height: 2000 }}
+          sx={{ position: 'relative', top: -46 }}
         />
       )}
       {flexibleLayouts &&

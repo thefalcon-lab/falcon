@@ -27,7 +27,7 @@ const Parallax = (props) => {
       <Scene
         duration="100%"
         triggerHook="onLeave"
-        pin={true}
+        pin={{ pushFollowers: false, spacerClass: 'homeSpacer' }}
         enabled={true}
         indicators={true}
       >
