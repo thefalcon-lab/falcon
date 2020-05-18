@@ -2,7 +2,7 @@ import { rem } from 'polished'
 
 export const fonts = {
   body: 'proxima_novaregular, sans-serif',
-  heading: 'gobold, sans-serif',
+  heading: 'gobold_boldregular, sans-serif',
   bold: 'proxima_novabold, sans-serif',
 }
 
