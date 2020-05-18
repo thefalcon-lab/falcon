@@ -1,35 +1,22 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box } from 'theme-ui'
-import React, { useRef, useEffect, useState } from 'react'
+import { jsx, Flex, Box } from 'theme-ui'
+import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from './images/BgImage'
-// import ScrollMagic from 'scrollmagic'
-import * as ScrollMagic from 'scrollmagic-with-ssr'
+import * as ScrollMagic from 'scrollmagic'
 import { TweenMax, TimelineMax } from 'gsap'
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap'
-// import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'
 
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax)
-// import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'
 
 const Parallax = (props) => {
-  // const [elements, setElements] = useState({})
-  const overlayRef = useRef(null),
-    triggerRef = useRef(null),
-    textOneRef = useRef(null),
-    textTwoRef = useRef(null)
-  // triggerEl = triggerRef.current,
-  // overlayEl = overlayRef.current,
-  // textOneEl = textOneRef.current,
-  // textTwoEl = textTwoRef.current
-
   useEffect(() => {
     const controller = new ScrollMagic.Controller()
     var parallaxTl = new TimelineMax()
     parallaxTl
       .to('.overlay', 2, { backgroundColor: 'rgba(0,0,0,.85)' })
       .to('.textOne', 1, { y: -300, autoAlpha: 0 }, 0)
-      .from('.textTwo', 1, { y: 300, autoAlpha: 0 }, 0.5)
+      .to('.textTwo', 1, { y: -300, autoAlpha: 1 }, 0.5)
 
     var parallaxScene = new ScrollMagic.Scene({
       triggerElement: '.slideOne',
@@ -59,13 +46,13 @@ const Parallax = (props) => {
   const { heroImage } = data.wp.themeOptions.homeImage
 
   return (
-    <Box className="slideOne" ref={triggerRef} sx={{ ...styles }} {...props}>
+    <Box className="slideOne" sx={{ ...styles }} {...props}>
       <BgImage img={heroImage} className="bgImage" sx={{ minHeight: '100vh' }}>
-        <Flex ref={overlayRef} className="overlay">
-          <h1 ref={textOneRef} className="textOne">
+        <Flex className="overlay">
+          <h1 className="textOne">
             this is your <span>Design Lab</span>
           </h1>
-          <h2 ref={textTwoRef} className="textTwo">
+          <h2 className="textTwo">
             At The Falcon Lab, We strive to intimately understand your brand so
             we are able to fluidly execute your vision.
           </h2>
@@ -100,13 +87,17 @@ const styles = {
     },
     '.textOne': {
       fontSize: [50, 80],
+      position: 'relative',
+      top: '20%',
     },
     '.textTwo': {
-      opacity: 0,
-      visibilty: 'hidden',
       maxWidth: 550,
       lineHeight: 1.3,
       fontSize: 45,
+      position: 'relative',
+      top: 200,
+      opacity: 0,
+      visibility: 'hidden',
     },
   },
 }
