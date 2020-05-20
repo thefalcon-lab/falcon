@@ -23,7 +23,7 @@ export const pageQuery = graphql`
           ...columnsBlockFragment
           ...spacerBlockFragment
           ...teamBlockFragment
-          # ...testimonialsBlockFragment
+          ...testimonialsBlockFragment
           # ...subscribeBlockFragment
         }
       }

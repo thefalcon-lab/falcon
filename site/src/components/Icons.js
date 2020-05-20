@@ -101,3 +101,21 @@ export const LocationIcon = (props) => (
     </g>
   </svg>
 )
+
+export const QuoteBottom = (props) => (
+  <svg width="67" height="53" viewBox="0 0 67 53" fill="none" {...props}>
+    <path
+      d="M39.031.702h27.686v22.781l-8.464 28.793H43.698l4.588-25.866h-9.255V.702zm-38.76 0h27.686v22.781l-8.464 28.793H4.938L9.526 26.41H.271V.702z"
+      fill="#D83E00"
+    />
+  </svg>
+)
+
+export const QuoteTop = (props) => (
+  <svg width="67" height="53" viewBox="0 0 67 53" fill="none" {...props}>
+    <path
+      d="M27.9688 52.2979H0.283203V29.5166L8.74707 0.723633H23.3018L18.7139 26.5898H27.9688V52.2979ZM66.7285 52.2979H39.043V29.5166L47.5068 0.723633H62.0615L57.4736 26.5898H66.7285V52.2979Z"
+      fill="#D83E00"
+    />
+  </svg>
+)

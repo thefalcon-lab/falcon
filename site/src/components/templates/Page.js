@@ -16,7 +16,7 @@ import {
   ColumnsBlock,
   SpacerBlock,
   TeamBlock,
-  // TestimonialsBlock,
+  TestimonialsBlock,
   // SubscribeBlock,
 } from '../AcfBlocks'
 import { ContactPage, WorkPage, FrontPageAnimations } from './templateParts'
@@ -73,6 +73,8 @@ const Page = ({ page }) => {
               return <SpacerBlock {...block} />
             case 'WpPage_Flexlayouts_FlexibleLayouts_TeamBlock':
               return <TeamBlock {...block} />
+            case 'WpPage_Flexlayouts_FlexibleLayouts_TestimonialsBlock':
+              return <TestimonialsBlock {...block} />
 
             default:
               return ''
