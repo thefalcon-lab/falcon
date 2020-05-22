@@ -1,4 +1,5 @@
 const config = require('./config')
+const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
@@ -37,6 +38,13 @@ module.exports = {
         wordPressUrl: config.wordPressUrl,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
     'gatsby-plugin-wordpress-fancybox',
     // {
     //   resolve: 'gatsby-plugin-mailchimp',
@@ -52,6 +60,13 @@ module.exports = {
           families: ['gobold_boldregular, have_heart_oneregular'],
           urls: ['/fonts/fonts.css'],
         },
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        type: `user-profile`,
+        username: `thefalconlab`,
       },
     },
   ],
