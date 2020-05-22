@@ -19,7 +19,12 @@ import {
   TestimonialsBlock,
   // SubscribeBlock,
 } from '../AcfBlocks'
-import { ContactPage, WorkPage, FrontPageAnimations } from './templateParts'
+import {
+  ContactPage,
+  WorkPage,
+  FrontPageAnimations,
+  Instagram,
+} from './templateParts'
 
 const Page = ({ page }) => {
   const {
@@ -80,6 +85,7 @@ const Page = ({ page }) => {
               return ''
           }
         })}
+      {isFrontPage && <Instagram />}
     </Layout>
   )
 }
