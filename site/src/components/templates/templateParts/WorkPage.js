@@ -15,6 +15,11 @@ const PROJECTS_QUERY = graphql`
         }
         uri
         title
+        projectCategories {
+          nodes {
+            slug
+          }
+        }
         featuredImage {
           ...galleryImageFragment
         }
@@ -34,9 +39,17 @@ export const WorkPage = ({ page, ...props }) => {
 
   const filters = data.allWpProjectCategory.nodes
 
-  const projects = data.allWpProject.nodes
   const [filter, setFilter] = useState(null)
 
+  let projects = data.allWpProject.nodes
+  const filteredProjects = projects.filter((project) => {
+    return project.projectCategories.nodes
+      .map((item) => item.slug)
+      .includes(filter)
+  })
+  projects = filter ? filteredProjects : projects
+
+  console.log(filter, filteredProjects)
   const handleSetFilter = (e) => {
     setFilter(e.currentTarget.value)
   }
@@ -96,6 +109,7 @@ export const WorkPage = ({ page, ...props }) => {
                   minHeight,
                   display: 'grid',
                   backgroundSize: 'fit !important',
+                  transition: 0.4,
                 }}
               ></BgImage>
             )
