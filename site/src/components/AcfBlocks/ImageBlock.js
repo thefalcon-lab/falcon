@@ -8,7 +8,7 @@ import sectionsStyles from '../../styles/acfBlocksStyles/sectionsStyles'
 export const fragment = graphql`
   fragment imageBlockFragment on WpPage_Flexlayouts_FlexibleLayouts_ImageBlock {
     image {
-      ...ImageFluidFragment
+      ...ImageBlockFragment
     }
     cssclass
     anchor
@@ -61,5 +61,9 @@ const styles = {
     '.container': {
       maxWidth: 'm',
     },
+  },
+  '&.servicesImage': {
+    bg: 'black',
+    py: 50,
   },
 }

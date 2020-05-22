@@ -30,7 +30,7 @@ const styles = {
     lineHeight: 1.5,
     color: 'headerColor',
     variant: 'transitions.m',
-    '.home-page &,.contact-page &': {
+    '.home-page &,.contact-page &,.services-page &': {
       color: 'white',
     },
     '&:hover': {

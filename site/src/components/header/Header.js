@@ -74,6 +74,9 @@ const styles = {
     // width: '100%',
     zIndex: 10,
   },
+  '.services-page &': {
+    bg: 'black',
+  },
 }
 
 const menuStyles = {
@@ -89,7 +92,7 @@ const menuStyles = {
     mx: 17,
     fontSize: 12,
     a: {
-      '.home-page &,.contact-page &': {
+      '.home-page &,.contact-page &,.services-page &': {
         color: 'white',
       },
       color: 'black',

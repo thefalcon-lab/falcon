@@ -13,6 +13,19 @@ export const fragments = graphql`
       }
     }
   }
+
+  fragment ImageBlockFragment on WpMediaItem {
+    altText
+    sourceUrl
+    localFile {
+      publicURL
+      childImageSharp {
+        fluid(maxWidth: 1200, quality: 80) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
   fragment ImageCoverFragment on WpMediaItem {
     altText
     sourceUrl
