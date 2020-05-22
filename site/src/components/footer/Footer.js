@@ -3,6 +3,7 @@ import { Container, jsx, Box } from 'theme-ui'
 import { Link } from 'gatsby'
 import SocialFollow from '../social/SocialFollows'
 import ContactInfo from '../ContactInfo'
+import Menu from '../header/Menu'
 
 const Footer = () => {
   return (
@@ -23,6 +24,7 @@ const Footer = () => {
         </Box>
         <Box>
           <h3>Services</h3>
+          <Menu menuName="footer" sx={{ ...footerMenuStyles }} />
         </Box>
       </Container>
     </footer>
@@ -31,8 +33,8 @@ const Footer = () => {
 
 const styles = {
   bg: 'footerBg',
-  pt: 75,
-  pb: 120,
+  pt: 50,
+  pb: 70,
   color: 'footerColor',
   fontSize: 18,
   a: {
@@ -48,8 +50,7 @@ const styles = {
   h3: {
     color: 'white',
     textTransform: 'uppercase',
-    fontSize: 36,
-    mb: 50,
+    mb: 35,
   },
 }
 
@@ -79,6 +80,15 @@ const socialStyles = {
     width: 22,
     height: 22,
     variant: 'transitions.m',
+  },
+}
+
+const footerMenuStyles = {
+  ul: {
+    m: 0,
+  },
+  '.menu-item': {
+    listStyleType: 'none',
   },
 }
 
