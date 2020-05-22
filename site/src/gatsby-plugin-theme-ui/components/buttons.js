@@ -38,6 +38,7 @@ const small = {
   fontSize: 'xxs',
   fontWeight: 'bold',
 }
+
 const outline = {
   ...sharedButtonStyles,
   padding: 'xxs',
@@ -73,6 +74,20 @@ const gradientSecondary = {
 }
 
 export const buttons = {
+  invisible: {
+    bg: 'transparent',
+    color: 'grey',
+    textTransform: 'uppercase',
+    fontFamily: 'bold',
+    fontSize: 16,
+    variant: 'transitions.m',
+    cursor: 'pointer',
+    '&:hover,&:active,&:focus': {
+      color: 'text',
+      border: 'none',
+      outlineWidth: 0,
+    },
+  },
   primary: {
     ...primary,
     gradient: {

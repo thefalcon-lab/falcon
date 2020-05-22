@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box } from 'theme-ui'
-import React from 'react'
+import { jsx, Container, Flex, Box, Button } from 'theme-ui'
+import React, { useState } from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { ProjectHeader } from '../../project'
 import { Masonry } from '../../ui-components'
@@ -10,13 +10,6 @@ const PROJECTS_QUERY = graphql`
   query {
     allWpProject(limit: 1000) {
       nodes {
-        projectCategories {
-          nodes {
-            name
-            slug
-          }
-        }
-
         projectFields {
           projectType
         }
@@ -27,38 +20,55 @@ const PROJECTS_QUERY = graphql`
         }
       }
     }
+    allWpProjectCategory {
+      nodes {
+        name
+        slug
+      }
+    }
   }
 `
 
 export const WorkPage = ({ page, ...props }) => {
   const data = useStaticQuery(PROJECTS_QUERY)
-  // const {
-  //   projectCategories,
-  //   projectFields: { projectType },
-  //   title,
-  //   uri,
-  //   featuredImage,
-  // } = data.allWpProject.nodes
+
+  const filters = data.allWpProjectCategory.nodes
 
   const projects = data.allWpProject.nodes
-  const filters = []
-  // filters = projects.map((item) =>
-  //   item.projectCategories.nodes.map((cat) => {
-  //     return filters.push([cat.name, cat.slug])
-  //   })
-  // )
-  // console.log('filters', filters)
+  const [filter, setFilter] = useState(null)
 
-  // const filters = projectCategories.nodes
+  const handleSetFilter = (e) => {
+    setFilter(e.currentTarget.value)
+  }
+
+  const cleanFilters = (e) => {
+    setFilter(null)
+  }
+
   return (
     <>
       <Container sx={{ ...styles }} {...props}>
         <ProjectHeader title="Our Work" sx={{ mb: 100 }} />
-        <Flex className="filters">
-          {/* {filters &&
-          filters.map((filter, i) => (
-            <Box key={i} dangerouslySetInnerHTML={{ __html: filter.name }} />
-          ))} */}
+        <Flex className="filters" sx={{ ...filtersStyles }}>
+          <Box className="filter" key="all">
+            <Button
+              variant="invisible"
+              value="all"
+              dangerouslySetInnerHTML={{ __html: 'all' }}
+              onClick={cleanFilters}
+            />
+          </Box>
+          {filters &&
+            filters.map((filter) => (
+              <Box className="filter" key={filter.slug}>
+                <Button
+                  variant="invisible"
+                  value={filter.slug}
+                  dangerouslySetInnerHTML={{ __html: filter.name }}
+                  onClick={handleSetFilter}
+                />
+              </Box>
+            ))}
         </Flex>
       </Container>
       <Masonry minWidth={500}>
@@ -99,4 +109,13 @@ const styles = {
   mt: 100,
   maxWidth: 'l',
   position: 'relative',
+}
+
+const filtersStyles = {
+  mb: 50,
+  flexWrap: 'wrap',
+  justifyContent: ['flex-start', 'flex-start', 'space-between'],
+  '.filter': {
+    pr: [20, 20, 0],
+  },
 }

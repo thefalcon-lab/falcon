@@ -8,6 +8,7 @@ export const colors = {
   primary,
   darkGrey,
   lightGrey,
+  grey: '#949494',
   accent: primary,
   background: 'white',
   bgInverse: 'black',
