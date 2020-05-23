@@ -84,6 +84,15 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
         <Box className="sidebar" sx={{ ...sidebarStyles }}>
           <h3>Date</h3>
           <Flex className="months">
+            <Button
+              variant="invisible"
+              className={!filter ? 'month active' : 'month'}
+              value="all"
+              onClick={() => setFilter(null)}
+            >
+              <span className="checkMonth"></span>
+              All Posts
+            </Button>
             {months.map((month) => {
               const filterClass = month === filter ? 'month active' : 'month'
               return (
