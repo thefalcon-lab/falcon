@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Box, Button } from 'theme-ui'
+import { jsx, Container, Flex } from 'theme-ui'
 import { graphql, Link } from 'gatsby'
 import {
   ProjectHeader,
@@ -12,6 +12,7 @@ import ParsedContent from '../utils/ParsedContent'
 const Service = ({ data }) => {
   const {
     title,
+    uri,
     content,
     serviceFields: { serviceIntro, servicesTags, serviceProjects },
   } = data.wpService
@@ -19,7 +20,38 @@ const Service = ({ data }) => {
 
   return (
     <Layout>
-      <ProjectHeader title={title} subtitle={serviceIntro} sx={{ pb: 100 }} />
+      <Container sx={{ px: 20 }} sx={{ position: 'relative' }}>
+        <Flex
+          as="nav"
+          className="breadcrumbs"
+          sx={{
+            position: 'absolute',
+            top: -65,
+            left: [83, 115],
+            fontSize: 14,
+
+            a: {
+              color: 'grey',
+              mr: 15,
+              '&.current,&:hover': { color: 'black' },
+            },
+            textTransform: 'uppercase',
+            fontFamily: 'bold',
+          }}
+        >
+          <Link to="services">Services</Link>
+          <Link
+            className="current"
+            to={uri}
+            dangerouslySetInnerHTML={{ __html: title }}
+          />
+        </Flex>
+      </Container>
+      <ProjectHeader
+        title={title}
+        subtitle={serviceIntro}
+        sx={{ pb: 100, pt: 50 }}
+      />
       {/* <ProjectGallery items={projectImages} /> */}
 
       <ProjectTags items={servicesTags} />
@@ -29,7 +61,9 @@ const Service = ({ data }) => {
           to="/services"
           sx={{ display: 'flex', justifyContent: 'center', pt: 60 }}
         >
-          <Button>More Services</Button>
+          <Link to="services" sx={{ variant: `buttons.primary` }}>
+            More Services
+          </Link>
         </Link>
       </Container>
     </Layout>
