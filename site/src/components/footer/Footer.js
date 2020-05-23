@@ -22,7 +22,7 @@ const Footer = () => {
         </Box>
         <Box>
           <h3>News</h3>
-          <FeaturedPosts />
+          <FeaturedPosts location="footer" />
         </Box>
         <Box>
           <h3>Services</h3>

@@ -10,6 +10,7 @@ import { Spacer } from '../ui-components'
 import moment from 'moment/moment'
 import uniq from 'lodash/uniq'
 import { DateFilter, FeaturedPosts } from '../widgets'
+import Sidebar from '../Sidebar'
 
 const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
   const { layoutWidth, archiveSidebar, sidebarWidgets } = useThemeOptions()
@@ -78,14 +79,14 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
             ))}
           </Grid>
         </Box>
-        <Box className="sidebar" sx={{ ...sidebarStyles }}>
-          <Box className="widgets">
-            <DateFilter filter={filter} setFilter={setFilter} months={months} />
-            <FeaturedPosts location="sidebar" />
-          </Box>
-        </Box>
+        <Sidebar
+          filter={filter}
+          setFilter={setFilter}
+          months={months}
+          location="archive"
+        />
       </Flex>
-      {!filter && <Pagination ctx={ctx} />}
+      {!filter && <Pagination ctx={ctx} sx={{ py: 50 }} />}
     </Container>
   )
 }
@@ -131,6 +132,9 @@ const sidebarStyles = {
       fontSize: 16,
       '.widget-post-title': {
         color: 'grey',
+        '&:hover': {
+          color: 'primary',
+        },
       },
       time: {
         color: '#C3CCD3',

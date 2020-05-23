@@ -55,7 +55,7 @@ export const FeaturedPosts = ({ location, ...props }) => {
                   sx={{ alignItems: 'center' }}
                 >
                   <Link to={post.uri}>
-                    {location === 'sidebar' && post.featuredImage && (
+                    {location !== 'footer' && post.featuredImage && (
                       <Img
                         alt={post.featuredImage.altText}
                         fixed={
@@ -69,7 +69,7 @@ export const FeaturedPosts = ({ location, ...props }) => {
                       {post.title}
                     </Link>
                     <Link className="widget-post-date" to={post.uri}>
-                      {location === 'sidebar' && (
+                      {location !== 'footer' && (
                         <time
                           className="entry-date"
                           dateTime={post.date}
