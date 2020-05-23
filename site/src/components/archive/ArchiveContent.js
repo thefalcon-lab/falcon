@@ -63,6 +63,7 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
   return (
     <Container sx={{ ...containerStyles }} className="mainContainer">
       <h1 sx={{ fontSize: 100 }}>BLOG</h1>
+      <Spacer sx={{ mb: [50, 100] }} />
       <Flex
         sx={{
           ...sidebarSide,
@@ -71,7 +72,6 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
         }}
       >
         <Box className="posts-list">
-          <Spacer />
           <Grid columns={[1, 2]} gap={25}>
             {filteredPosts.map((post) => (
               <ArchiveItem key={post.id} post={post} sx={{}} />
@@ -79,8 +79,10 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
           </Grid>
         </Box>
         <Box className="sidebar" sx={{ ...sidebarStyles }}>
-          <DateFilter filter={filter} setFilter={setFilter} months={months} />
-          <FeaturedPosts location="sidebar" />
+          <Box className="widgets">
+            <DateFilter filter={filter} setFilter={setFilter} months={months} />
+            <FeaturedPosts location="sidebar" />
+          </Box>
         </Box>
       </Flex>
       {!filter && <Pagination ctx={ctx} />}
@@ -89,4 +91,50 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
 }
 
 export default ArchiveContent
-const sidebarStyles = {}
+const sidebarStyles = {
+  pl: [0, 0, 0, 70],
+  // pt: 50,
+  '.widgets': {
+    border: '1.4px solid',
+    borderColor: 'lightGrey',
+    px: 20,
+    pt: 30,
+  },
+  '.widget': {
+    pb: 30,
+    '&:last-of-type': { pb: 50 },
+  },
+  '.widget-title': {
+    fontFamily: 'bold',
+    fontSize: 20,
+    pb: 15,
+    borderBottom: '1.4px solid',
+    borderColor: 'lightGrey',
+  },
+  '.month': {
+    fontSize: 'xs',
+    pb: 15,
+    fontFamily: 'body',
+    fontWeight: 700,
+    '&:last-of-type': { pb: 0 },
+  },
+  '.featuredPosts': {
+    '.gatsby-image-wrapper': {
+      borderRadius: 50,
+    },
+    '.postItem': {
+      pb: 20,
+      '&:last-of-type': { pb: 0 },
+    },
+    '.textual': {
+      pl: 10,
+      fontSize: 16,
+      '.widget-post-title': {
+        color: 'grey',
+      },
+      time: {
+        color: '#C3CCD3',
+      },
+    },
+  },
+}

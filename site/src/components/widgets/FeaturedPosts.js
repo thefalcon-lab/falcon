@@ -24,7 +24,7 @@ const FEATURED_POSTS = graphql`
           sourceUrl
           localFile {
             childImageSharp {
-              fixed(width: 70, height: 70, quality: 80) {
+              fixed(width: 65, height: 65, quality: 80) {
                 ...GatsbyImageSharpFixed
               }
             }

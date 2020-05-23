@@ -6,7 +6,7 @@ export const DateFilter = ({ filter, setFilter, months, ...props }) => {
     setFilter(e.currentTarget.value)
   }
   return (
-    <Box className="dateFilter" sx={{ ...styles }} {...props}>
+    <Box className="widget dateFilter" sx={{ ...styles }} {...props}>
       <h3 className="widget-title">Date</h3>
       <Flex className="months">
         <Button
