@@ -3,7 +3,7 @@ import { jsx, Flex } from 'theme-ui'
 import SocialFollows from '../social/SocialFollows'
 import CategoriesWidget from '../widgets/Categories'
 import TagsWidget from '../widgets/Tags'
-import RecentPosts from '../widgets/RecentPosts'
+// import RecentPosts from '../widgets/RecentPosts'
 import Newsletter from '../widgets/Newsletter'
 import socialStyles from '../../styles/socialStyles'
 
@@ -19,8 +19,8 @@ const Widgets = ({ widget }) => {
           <SocialFollows />
         </Flex>
       )
-    case 'RecentPosts':
-      return <RecentPosts />
+    // case 'RecentPosts':
+    //   return <RecentPosts />
     case 'Categories':
       return <CategoriesWidget />
     case 'Tags':

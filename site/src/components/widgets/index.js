@@ -1,4 +1,4 @@
 export * from './Categories'
 export * from './Tags'
-export * from './RecentPosts'
+export * from './FeaturedPosts'
 export * from './DateFilter'

@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import SocialFollow from '../social/SocialFollows'
 import ContactInfo from '../ContactInfo'
 import Menu from '../header/Menu'
+import { FeaturedPosts } from '../widgets'
 
 const Footer = () => {
   return (
@@ -21,6 +22,7 @@ const Footer = () => {
         </Box>
         <Box>
           <h3>News</h3>
+          <FeaturedPosts />
         </Box>
         <Box>
           <h3>Services</h3>

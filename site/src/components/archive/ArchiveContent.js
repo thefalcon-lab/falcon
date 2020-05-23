@@ -9,7 +9,7 @@ import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
 import { Spacer } from '../ui-components'
 import moment from 'moment/moment'
 import uniq from 'lodash/uniq'
-import { DateFilter } from '../widgets'
+import { DateFilter, FeaturedPosts } from '../widgets'
 
 const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
   const { layoutWidth, archiveSidebar, sidebarWidgets } = useThemeOptions()
@@ -80,6 +80,7 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
         </Box>
         <Box className="sidebar" sx={{ ...sidebarStyles }}>
           <DateFilter filter={filter} setFilter={setFilter} months={months} />
+          <FeaturedPosts location="sidebar" />
         </Box>
       </Flex>
       {!filter && <Pagination ctx={ctx} />}

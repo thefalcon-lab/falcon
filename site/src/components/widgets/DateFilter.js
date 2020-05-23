@@ -7,7 +7,7 @@ export const DateFilter = ({ filter, setFilter, months, ...props }) => {
   }
   return (
     <Box className="dateFilter" sx={{ ...styles }} {...props}>
-      <h3>Date</h3>
+      <h3 className="widget-title">Date</h3>
       <Flex className="months">
         <Button
           variant="invisible"
