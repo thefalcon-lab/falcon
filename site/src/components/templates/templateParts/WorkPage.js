@@ -49,7 +49,6 @@ export const WorkPage = ({ page, ...props }) => {
   })
   projects = filter ? filteredProjects : projects
 
-  console.log(filter, filteredProjects)
   const handleSetFilter = (e) => {
     setFilter(e.currentTarget.value)
   }
