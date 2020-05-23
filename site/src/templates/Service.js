@@ -1,22 +1,19 @@
 /** @jsx jsx */
 import { jsx, Container, Flex } from 'theme-ui'
 import { graphql, Link } from 'gatsby'
-import {
-  ProjectHeader,
-  ProjectGallery,
-  ProjectTags,
-} from '../components/project'
+import { ProjectHeader, ProjectTags } from '../components/project'
 import Layout from '../components/Layout'
 import ParsedContent from '../utils/ParsedContent'
+import ServiceProjects from '../components/ServiceProjects'
 
 const Service = ({ data }) => {
   const {
     title,
     uri,
     content,
-    serviceFields: { serviceIntro, servicesTags, serviceProjects },
+    slug,
+    serviceFields: { serviceIntro, servicesTags },
   } = data.wpService
-  console.log(serviceProjects)
 
   return (
     <Layout>
@@ -52,7 +49,8 @@ const Service = ({ data }) => {
         subtitle={serviceIntro}
         sx={{ pb: 100, pt: 50 }}
       />
-      {/* <ProjectGallery items={projectImages} /> */}
+
+      <ServiceProjects slug={slug} />
 
       <ProjectTags items={servicesTags} />
       <Container sx={{ maxWidth: 'm', py: 100 }}>
@@ -77,22 +75,11 @@ export const pageQuery = graphql`
     wpService(uri: { eq: $uri }) {
       title
       content
+      slug
       serviceFields {
         serviceIntro
         servicesTags {
           item
-        }
-        serviceProjects {
-          __typename
-          ... on WpProject {
-            title
-            projectFields {
-              projectType
-            }
-            featuredImage {
-              ...GatsbyImageQuery
-            }
-          }
         }
       }
     }
