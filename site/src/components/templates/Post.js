@@ -24,29 +24,23 @@ const Post = ({ post }) => {
   const { layoutWidth } = useThemeOptions()
   const { disqus, addWordPressComments, sidebarWidgets } = useThemeOptions()
 
-  const pageTemplate = templateName.toLowerCase()
-  const sidebarPage = pageTemplate.includes('sidebar')
+  const containerStyles = {
+    '.entry': {
+      width: [`100%`, `100%`, `100%`, `70%`],
+    },
+    '.sidebar': { width: [`100%`, `100%`, `100%`, `30%`] },
+  }
 
-  const containerStyles =
-    sidebarWidgets && sidebarPage
-      ? {
-          '.entry': {
-            width: [`100%`, `100%`, `100%`, `70%`],
-          },
-          '.sidebar': { width: [`100%`, `100%`, `100%`, `30%`] },
-        }
-      : { maxWidth: layoutWidth.post }
-
-  const sidebarSide = sidebarPage
-    ? pageTemplate === `left sidebar`
-      ? {
-          flexDirection: `row-reverse`,
-          '.entry': { pl: [0, 0, 0, layoutWidth.page] },
-        }
-      : pageTemplate === `right sidebar`
-      ? { '.entry': { pr: [0, 0, 0, layoutWidth.page] } }
-      : ''
-    : ''
+  // const sidebarSide = sidebarPage
+  //   ? pageTemplate === `left sidebar`
+  //     ? {
+  //         flexDirection: `row-reverse`,
+  //         '.entry': { pl: [0, 0, 0, layoutWidth.page] },
+  //       }
+  //     : pageTemplate === `right sidebar`
+  //     ? { '.entry': { pr: [0, 0, 0, layoutWidth.page] } }
+  //     : ''
+  //   : ''
   const disqusConfig = {
     shortname: disqus,
     config: { identifier: slug, title },
@@ -63,13 +57,12 @@ const Post = ({ post }) => {
       <Container sx={{ ...containerStyles }} className="mainContainer">
         <Flex
           sx={{
-            ...sidebarSide,
             flexWrap: [`wrap`, `wrap`, `wrap`, `nowrap`],
             alignItems: `flex-start`,
           }}
         >
           <PostEntry post={post} location="single" />
-          {sidebarPage && <Sidebar widgets={sidebarWidgets} />}
+          <Sidebar />
         </Flex>
         {addWordPressComments && post.commentStatus === 'open' && (
           <Container sx={{ maxWidth: layoutWidth.post }}>

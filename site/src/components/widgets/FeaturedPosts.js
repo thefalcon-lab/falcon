@@ -42,9 +42,7 @@ export const FeaturedPosts = ({ location, ...props }) => {
 
   return (
     <Box sx={{}} className="widget featuredPosts" {...props}>
-      {location === 'sidebar' && (
-        <h3 className="widget-title">Popular Posts</h3>
-      )}
+      {location !== 'footer' && <h3 className="widget-title">Popular Posts</h3>}
       <Flex className="postsWrap" sx={{ flexDirection: 'column' }}>
         {posts.length
           ? posts.map((post) => {
