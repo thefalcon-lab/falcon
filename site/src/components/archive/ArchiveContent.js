@@ -5,11 +5,11 @@ import { useStaticQuery, graphql } from 'gatsby'
 import ArchiveItem from './ArchiveItem'
 import Pagination from './Pagination'
 import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
-import Sidebar from '../Sidebar.js'
-import ArchiveTitle from './ArchiveTitle'
+
 import { Spacer } from '../ui-components'
 import moment from 'moment/moment'
 import uniq from 'lodash/uniq'
+import { DateFilter } from '../widgets'
 
 const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
   const { layoutWidth, archiveSidebar, sidebarWidgets } = useThemeOptions()
@@ -32,9 +32,6 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
   const months = uniq(allPosts.map((post) => getMonth(post.date))).slice(0, 4)
 
   const [filter, setFilter] = useState(null)
-  const handleSetFilter = (e) => {
-    setFilter(e.currentTarget.value)
-  }
 
   const filteredPosts = filter
     ? allPosts.filter((post) => {
@@ -82,43 +79,7 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
           </Grid>
         </Box>
         <Box className="sidebar" sx={{ ...sidebarStyles }}>
-          <h3>Date</h3>
-          <Flex className="months">
-            <Button
-              variant="invisible"
-              className={!filter ? 'month active' : 'month'}
-              value="all"
-              onClick={() => setFilter(null)}
-            >
-              <span className="checkMonth"></span>
-              All Posts
-            </Button>
-            {months.map((month) => {
-              const filterClass = month === filter ? 'month active' : 'month'
-              return (
-                <Button
-                  variant="invisible"
-                  className={filterClass}
-                  value={month}
-                  onClick={handleSetFilter}
-                >
-                  <span className="checkMonth"></span>
-                  {month}
-                </Button>
-              )
-            })}
-            {months.length === 4 && (
-              <Button
-                variant="invisible"
-                className={'older' === filter ? 'month active' : 'month'}
-                value="older"
-                onClick={handleSetFilter}
-              >
-                <span className="checkMonth"></span>
-                older
-              </Button>
-            )}
-          </Flex>
+          <DateFilter filter={filter} setFilter={setFilter} months={months} />
         </Box>
       </Flex>
       {!filter && <Pagination ctx={ctx} />}
@@ -127,31 +88,4 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
 }
 
 export default ArchiveContent
-const sidebarStyles = {
-  '.months': { flexDirection: 'column' },
-  '.month': {
-    textAlign: 'left',
-    '&.active': {
-      color: 'black',
-    },
-  },
-  '.checkMonth': {
-    width: 10,
-    height: 10,
-    borderRadius: 50,
-    border: '1px solid',
-    borderColor: 'grey',
-    display: 'inline-block',
-    mr: 10,
-    '.active &': {
-      border: 'none',
-      bg: 'primary',
-    },
-  },
-  '.active': {
-    '.checkMonth': {
-      border: 'none',
-      bg: 'primary',
-    },
-  },
-}
+const sidebarStyles = {}
