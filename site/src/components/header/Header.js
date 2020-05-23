@@ -58,8 +58,8 @@ const styles = {
     margin: '0 auto',
     maxWidth: 'container',
     py: 'xs',
-    px: 0,
-    width: '90vw',
+    px: 20,
+    // width: ['90vw', '90vw', '100vw'],
   },
 
   '.headroom--pinned &': {

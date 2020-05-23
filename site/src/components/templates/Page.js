@@ -17,6 +17,7 @@ import {
   SpacerBlock,
   TeamBlock,
   TestimonialsBlock,
+  LogosBlock,
   // SubscribeBlock,
 } from '../AcfBlocks'
 import {
@@ -80,6 +81,8 @@ const Page = ({ page }) => {
               return <TeamBlock {...block} />
             case 'WpPage_Flexlayouts_FlexibleLayouts_TestimonialsBlock':
               return <TestimonialsBlock {...block} />
+            case 'WpPage_Flexlayouts_FlexibleLayouts_LogosBlock':
+              return <LogosBlock {...block} />
 
             default:
               return ''

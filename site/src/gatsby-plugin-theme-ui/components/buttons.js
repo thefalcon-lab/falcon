@@ -18,6 +18,7 @@ const sharedButtonStyles = {
   '&:hover': {
     transform: 'translateY(-5px)',
     boxShadow: 'hover',
+    color: 'white',
     a: {
       color: 'white',
     },
