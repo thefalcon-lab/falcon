@@ -17,6 +17,7 @@ const Post = ({ post }) => {
     featuredImage,
     uri,
     template: { templateName },
+    postSubtitle: { postSubtitle },
   } = post
   const media = featuredImage
     ? featuredImage.localFile.childImageSharp.fluid.src
@@ -25,22 +26,13 @@ const Post = ({ post }) => {
   const { disqus, addWordPressComments, sidebarWidgets } = useThemeOptions()
 
   const containerStyles = {
+    maxWidth: 1050,
     '.entry': {
       width: [`100%`, `100%`, `100%`, `70%`],
     },
     '.sidebar': { width: [`100%`, `100%`, `100%`, `30%`] },
   }
 
-  // const sidebarSide = sidebarPage
-  //   ? pageTemplate === `left sidebar`
-  //     ? {
-  //         flexDirection: `row-reverse`,
-  //         '.entry': { pl: [0, 0, 0, layoutWidth.page] },
-  //       }
-  //     : pageTemplate === `right sidebar`
-  //     ? { '.entry': { pr: [0, 0, 0, layoutWidth.page] } }
-  //     : ''
-  //   : ''
   const disqusConfig = {
     shortname: disqus,
     config: { identifier: slug, title },
@@ -62,7 +54,7 @@ const Post = ({ post }) => {
           }}
         >
           <PostEntry post={post} location="single" />
-          <Sidebar />
+          <Sidebar sx={{ pt: [0, 0, 0, 160] }} />
         </Flex>
         {addWordPressComments && post.commentStatus === 'open' && (
           <Container sx={{ maxWidth: layoutWidth.post }}>

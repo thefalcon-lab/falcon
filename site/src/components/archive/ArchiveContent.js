@@ -42,32 +42,20 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
       })
     : posts
 
-  const containerStyles =
-    sidebarWidgets && archiveSidebar
-      ? {
-          '.posts-list': {
-            width: [`100%`, `100%`, `100%`, `70%`],
-          },
-          '.sidebar': { width: [`100%`, `100%`, `100%`, `30%`] },
-        }
-      : { maxWidth: layoutWidth.archive }
+  const containerStyles = {
+    maxWidth: 1100,
+    '.posts-list': {
+      width: [`100%`, `100%`, `100%`, `70%`],
+    },
+    '.sidebar': { width: [`100%`, `100%`, `100%`, `30%`] },
+  }
 
-  const sidebarSide =
-    sidebarWidgets && archiveSidebar
-      ? archiveSidebar === `left`
-        ? {
-            flexDirection: `row-reverse`,
-            '.posts-list': { pl: [0, 0, 0, layoutWidth.archive] },
-          }
-        : { '.posts-list': { pr: [0, 0, 0, layoutWidth.archive] } }
-      : ''
   return (
     <Container sx={{ ...containerStyles }} className="mainContainer">
       <h1 sx={{ fontSize: 100 }}>BLOG</h1>
       <Spacer sx={{ mb: [50, 100] }} />
       <Flex
         sx={{
-          ...sidebarSide,
           flexWrap: [`wrap`, `wrap`, `wrap`, `nowrap`],
           alignItems: `flex-start`,
         }}

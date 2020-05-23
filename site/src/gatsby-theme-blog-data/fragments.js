@@ -73,11 +73,9 @@ export const fragments = graphql`
     excerpt
     date
     databaseId
-    # postFormats {
-    #   taxonomyInfo {
-    #     name
-    #   }
-    # }
+    postSubtitle {
+      postSubtitle
+    }
     template {
       ...PageTemplates_starter
     }
