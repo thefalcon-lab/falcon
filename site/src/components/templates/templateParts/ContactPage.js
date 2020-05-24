@@ -6,33 +6,38 @@ import ParsedContent from '../../../utils/ParsedContent'
 
 export const ContactPage = ({ page, ...props }) => {
   return (
-    <Container
-      sx={{ maxWidth: 'l', position: 'relative' }}
-      sx={{ ...styles }}
-      {...props}
-    >
-      <ProjectHeader
-        title="contact"
-        subtitle="We would love to work with yOU!"
-        sx={{ mb: 100 }}
-      />
-      <Box
-        sx={{
-          maxWidth: 900,
-          mx: 'auto',
-          display: ['block', 'block', 'flex'],
-          flexWrap: 'wrap',
-          justifyContent: 'space-between',
-        }}
+    <div>
+      <Container
+        sx={{ maxWidth: 'l', position: 'relative' }}
+        sx={{ ...styles }}
+        {...props}
       >
-        <Box sx={{ width: ['100%', '100%', '33%'] }}>
-          <ContactInfo sx={{ color: 'text', a: { color: 'text' } }} />
+        <ProjectHeader
+          title="contact"
+          subtitle="We would love to work with yOU!"
+          sx={{ mb: 100, h1: { fontSize: [50, 80] } }}
+        />
+        <Box
+          sx={{
+            maxWidth: 900,
+            mx: 'auto',
+            display: ['block', 'block', 'flex'],
+            flexWrap: 'wrap',
+            justifyContent: 'space-between',
+          }}
+        >
+          <Box sx={{ width: ['100%', '100%', '33%'] }}>
+            <ContactInfo sx={{ color: 'text', a: { color: 'text' } }} />
+          </Box>
+          <Box
+            className="formContainer"
+            sx={{ width: ['100%', '100%', '60%'] }}
+          >
+            <ParsedContent content={page.content} />
+          </Box>
         </Box>
-        <Box className="formContainer" sx={{ width: ['100%', '100%', '60%'] }}>
-          <ParsedContent content={page.content} />
-        </Box>
-      </Box>
-    </Container>
+      </Container>
+    </div>
   )
 }
 
@@ -80,10 +85,16 @@ const styles = {
     },
     'label[for="inputFile"]': {
       variant: 'buttons.primary',
+      py: [15, 15, 15, 12],
+      top: [10, 10, 10, 'initial'],
+      position: ['relative', 'relative', 'relative', 'absolute'],
+      // bottom: ['initial', -20],
+      left: ['initial', 'initial', 'initial', '20%'],
     },
     '.buttons': {
-      display: ['block', 'flex'],
+      display: 'flex',
       justifyContent: 'space-between',
+      flexDirection: 'row-reverse',
     },
   },
 }

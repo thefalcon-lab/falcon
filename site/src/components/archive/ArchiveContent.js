@@ -50,7 +50,7 @@ const ArchiveContent = ({ posts, ctx }) => {
 
   return (
     <Container sx={{ ...containerStyles, pb: 50 }} className="mainContainer">
-      <h1 sx={{ fontSize: 100 }}>BLOG</h1>
+      <h1 sx={{ fontSize: [50, 80] }}>BLOG</h1>
       <Spacer sx={{ mb: [50, 100] }} />
       <Flex
         sx={{

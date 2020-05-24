@@ -35,6 +35,22 @@ const Layout = ({ children, page, type = 'page' }) => {
         className={`${layoutClass}-${type} ${fullWidthClass}`}
       >
         <Header />
+        {page.slug && page.slug.includes('contact') && (
+          <iframe
+            src="https://snazzymaps.com/embed/239524"
+            width="100%"
+            height="600px"
+            sx={{
+              border: 'none',
+              position: 'relative',
+              top: -80,
+              left: 0,
+              mb: -80,
+              '.gm-style-mtc': { display: 'none !important' },
+            }}
+          ></iframe>
+        )}
+
         <main
           sx={{
             pt: `xxl`,
