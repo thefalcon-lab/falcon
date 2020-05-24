@@ -61,12 +61,6 @@ const styles = {
     px: 20,
     // width: ['90vw', '90vw', '100vw'],
   },
-
-  '.headroom--pinned &': {
-    '>div': {
-      py: 'xxs',
-    },
-  },
   '.home-page &,.contact-page &': {
     bg: 'transparent',
     // position: 'absolute',
@@ -76,6 +70,16 @@ const styles = {
   },
   '.services-page &': {
     bg: 'black',
+  },
+
+  '.headroom--pinned &': {
+    '.home-page &,.contact-page &, .services-page &': {
+      bg: 'black',
+    },
+
+    '>div': {
+      py: 'xxs',
+    },
   },
 }
 

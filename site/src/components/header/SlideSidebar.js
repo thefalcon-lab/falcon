@@ -30,6 +30,11 @@ const SlideSidebar = ({ ...props }) => {
         className={openClass ? 'btn-menu-opened' : 'btn-menu-closing'}
         sx={{
           variant: `buttons.hamburger`,
+          '.home-page &,.contact-page &, .services-page &': {
+            svg: {
+              stroke: 'white',
+            },
+          },
         }}
       />
       {isMenuOpen && (
