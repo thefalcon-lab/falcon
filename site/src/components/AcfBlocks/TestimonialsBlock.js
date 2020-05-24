@@ -103,10 +103,11 @@ const styles = {
   '.container': { maxWidth: 'm' },
   '.testimonial': {
     bg: 'lightGrey',
+    pt: [30, 30, 0],
   },
   '.text': {
     fontFamily: 'heading',
-    fontSize: 25,
+    fontSize: [18, 25],
     lineHeight: 1.25,
     mb: 50,
     maxWidth: 600,
@@ -121,10 +122,12 @@ const styles = {
     '&.quoteTop': {
       top: 0,
       left: 0,
+      width: [30, 40, 67],
     },
     '&.quoteBottom': {
       bottom: 30,
       right: 0,
+      width: [30, 40, 67],
     },
   },
 }
