@@ -12,11 +12,12 @@ const loader = () => <div>Loading.....</div>
 //   loading: loader,
 // })
 
-const MyParallaxComponent = loadable(() => import('../../Parallax'))
+const LoadedParallax = loadable(() => import('../../Parallax'))
+LoadedParallax.preload()
 export const FrontPageAnimations = ({ page, ...props }) => {
   return (
     <Box {...props}>
-      <MyParallaxComponent />
+      <LoadedParallax />
       <BrandAnimation />
     </Box>
   )
