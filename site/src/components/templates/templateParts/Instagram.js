@@ -11,8 +11,8 @@ export const Instagram = () => {
           localFile {
             publicURL
             childImageSharp {
-              fluid(maxWidth: 600, toFormat: WEBP, quality: 80) {
-                ...GatsbyImageSharpFluid_withWebp
+              fluid(maxWidth: 600, quality: 80) {
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }

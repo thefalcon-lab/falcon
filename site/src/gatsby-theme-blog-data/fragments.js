@@ -8,7 +8,7 @@ export const fragments = graphql`
       publicURL
       childImageSharp {
         fluid(maxWidth: 1200, maxHeight: 600, quality: 80) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
@@ -21,7 +21,7 @@ export const fragments = graphql`
       publicURL
       childImageSharp {
         fluid(maxWidth: 1200, quality: 80) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
@@ -33,7 +33,7 @@ export const fragments = graphql`
       publicURL
       childImageSharp {
         fluid(maxWidth: 1920, toFormat: WEBP, quality: 80) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
@@ -47,7 +47,7 @@ export const fragments = graphql`
       childImageSharp {
         fluid(maxWidth: 500, toFormat: WEBP, quality: 80) {
           aspectRatio
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
@@ -60,7 +60,7 @@ export const fragments = graphql`
       publicURL
       childImageSharp {
         fluid(maxWidth: 600, toFormat: WEBP, quality: 80) {
-          ...GatsbyImageSharpFluid_withWebp
+          ...GatsbyImageSharpFluid_noBase64
         }
       }
     }
