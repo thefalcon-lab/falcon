@@ -32,7 +32,7 @@ export const fragments = graphql`
     localFile {
       publicURL
       childImageSharp {
-        fluid(maxWidth: 1920, toFormat: WEBP, quality: 80) {
+        fluid(maxWidth: 1920, quality: 80) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
@@ -45,7 +45,7 @@ export const fragments = graphql`
     localFile {
       publicURL
       childImageSharp {
-        fluid(maxWidth: 500, toFormat: WEBP, quality: 80) {
+        fluid(maxWidth: 500, quality: 80) {
           aspectRatio
           ...GatsbyImageSharpFluid_noBase64
         }
@@ -59,7 +59,7 @@ export const fragments = graphql`
     localFile {
       publicURL
       childImageSharp {
-        fluid(maxWidth: 600, toFormat: WEBP, quality: 80) {
+        fluid(maxWidth: 600, quality: 80) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }
