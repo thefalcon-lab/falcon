@@ -54,7 +54,7 @@ const Post = ({ post }) => {
           }}
         >
           <PostEntry post={post} location="single" />
-          <Sidebar sx={{ pt: [0, 0, 0, 160] }} />
+          <Sidebar className="sidebar" sx={{ pt: [0, 0, 0, 160] }} />
         </Flex>
         {addWordPressComments && post.commentStatus === 'open' && (
           <Container sx={{ maxWidth: layoutWidth.post }}>

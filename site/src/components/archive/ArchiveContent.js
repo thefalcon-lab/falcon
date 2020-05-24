@@ -9,11 +9,9 @@ import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
 import { Spacer } from '../ui-components'
 import moment from 'moment/moment'
 import uniq from 'lodash/uniq'
-import { DateFilter, FeaturedPosts } from '../widgets'
 import Sidebar from '../Sidebar'
 
-const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
-  const { layoutWidth, archiveSidebar, sidebarWidgets } = useThemeOptions()
+const ArchiveContent = ({ posts, ctx }) => {
   const data = useStaticQuery(graphql`
     query {
       allWpPost(limit: 10000) {
@@ -51,7 +49,7 @@ const ArchiveContent = ({ posts, ctx, paginationPrefix, name }) => {
   }
 
   return (
-    <Container sx={{ ...containerStyles }} className="mainContainer">
+    <Container sx={{ ...containerStyles, pb: 50 }} className="mainContainer">
       <h1 sx={{ fontSize: 100 }}>BLOG</h1>
       <Spacer sx={{ mb: [50, 100] }} />
       <Flex

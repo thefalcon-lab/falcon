@@ -22,7 +22,10 @@ const Footer = () => {
         </Box>
         <Box>
           <h3>News</h3>
-          <FeaturedPosts location="footer" />
+          <FeaturedPosts
+            location="footer"
+            sx={{ a: { display: 'inline-block', mb: 10.8 } }}
+          />
         </Box>
         <Box>
           <h3>Services</h3>
