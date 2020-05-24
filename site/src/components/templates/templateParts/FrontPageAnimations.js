@@ -1,23 +1,31 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Box } from 'theme-ui'
 import React from 'react'
-// import Parallax from '../../Parallax'
 import BrandAnimation from '../../BrandAnimation'
-import Loadable from 'react-loadable'
-import loadable from '@loadable/component'
-const loader = () => <div>Loading.....</div>
+import Loader from 'react-spinners/BeatLoader'
 
-// const MyParallaxComponent = Loadable({
-//   loader: () => import('../../Parallax'),
-//   loading: loader,
-// })
+import loadable from '@loadable/component'
 
 const LoadedParallax = loadable(() => import('../../Parallax'))
 LoadedParallax.preload()
+
 export const FrontPageAnimations = ({ page, ...props }) => {
   return (
     <Box {...props}>
-      <LoadedParallax />
+      <LoadedParallax
+        fallback={
+          <Flex
+            sx={{
+              bg: 'black',
+              height: '100vh',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <Loader color="primary" />
+          </Flex>
+        }
+      />
       <BrandAnimation />
     </Box>
   )
