@@ -25,6 +25,7 @@ import {
   WorkPage,
   FrontPageAnimations,
   Instagram,
+  FooterGallery,
 } from './templateParts'
 
 const Page = ({ page }) => {
@@ -89,6 +90,7 @@ const Page = ({ page }) => {
           }
         })}
       {isFrontPage && <Instagram />}
+      {page.slug.includes('about') && <FooterGallery />}
     </Layout>
   )
 }
