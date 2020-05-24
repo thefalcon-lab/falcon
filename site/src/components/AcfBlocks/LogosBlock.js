@@ -71,7 +71,7 @@ export const LogosBlock = ({
               return (
                 <Box
                   sx={{
-                    minWidth: 200,
+                    minWidth: [150, 200],
                     img: { m: 0 },
                   }}
                 >
