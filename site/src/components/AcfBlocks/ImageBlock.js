@@ -2,8 +2,10 @@
 import { jsx, Box, Container } from 'theme-ui'
 import { graphql } from 'gatsby'
 import GatsbyImg from '../images/Image'
-import imageBlockStyles from '../../styles/acfBlocksStyles/imageBlockStyles'
+
 import sectionsStyles from '../../styles/acfBlocksStyles/sectionsStyles'
+const { detect } = require('detect-browser')
+const browser = detect()
 
 export const fragment = graphql`
   fragment imageBlockFragment on WpPage_Flexlayouts_FlexibleLayouts_ImageBlock {
@@ -29,6 +31,21 @@ export const ImageBlock = ({
     mt: marginTop,
     mb: marginBottom,
   }
+
+  const styles = {
+    '&.aboutImage': {
+      mb: browser.name !== 'safari' ? [50, 100] : [-100, 0],
+      mt: browser.name === 'safari' && [-170, -100],
+      '.container': {
+        maxWidth: 'm',
+      },
+    },
+    '&.servicesImage': {
+      bg: 'black',
+      py: 50,
+    },
+  }
+
   return (
     <Box
       as="section"
@@ -53,17 +70,4 @@ export const ImageBlock = ({
       </Container>
     </Box>
   )
-}
-
-const styles = {
-  '&.aboutImage': {
-    mb: [50, 100],
-    '.container': {
-      maxWidth: 'm',
-    },
-  },
-  '&.servicesImage': {
-    bg: 'black',
-    py: 50,
-  },
 }
