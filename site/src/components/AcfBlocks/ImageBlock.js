@@ -44,6 +44,12 @@ export const ImageBlock = ({
       bg: 'black',
       py: 50,
     },
+    ' &.brandImage': {
+      bg: 'black',
+      mt: -50,
+      mb: 50,
+      py: 50,
+    },
   }
 
   return (

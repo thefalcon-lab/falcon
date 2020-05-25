@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Box } from 'theme-ui'
 import React from 'react'
-import BrandAnimation from '../../BrandAnimation'
+// import BrandAnimation from '../../BrandAnimation'
 import Loader from 'react-spinners/BeatLoader'
 
 import loadable from '@loadable/component'
@@ -26,7 +26,7 @@ export const FrontPageAnimations = ({ page, ...props }) => {
           </Flex>
         }
       />
-      <BrandAnimation />
+      {/* <BrandAnimation /> */}
     </Box>
   )
 }

@@ -78,12 +78,15 @@ export const LogosBlock = ({
                   {url ? (
                     <WithLink>
                       <img
-                        src={image.localFile.publicURL}
+                        src={image && image.localFile.publicURL}
                         alt={image.altText}
                       />
                     </WithLink>
                   ) : (
-                    <img src={image.localFile.publicURL} alt={image.altText} />
+                    <img
+                      src={image && image.localFile.publicURL}
+                      alt={image.altText}
+                    />
                   )}
                 </Box>
               )
