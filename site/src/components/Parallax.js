@@ -6,6 +6,8 @@ import BgImage from './images/BgImage'
 import * as ScrollMagic from 'scrollmagic'
 import { TweenMax, TimelineMax } from 'gsap'
 import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { FormDown } from 'grommet-icons'
 
 ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax)
 
@@ -56,6 +58,25 @@ const Parallax = (props) => {
             At The Falcon Lab, We strive to intimately understand your brand so
             we are able to fluidly execute your vision.
           </h2>
+        </Flex>
+        <Flex
+          sx={{
+            height: '100vh',
+            width: '100%',
+            justifyContent: 'center',
+            alignItems: 'flex-end',
+            pb: 50,
+          }}
+        >
+          <AnchorLink href="#brand" sx={{ position: 'relative', bottom: 0 }}>
+            <Flex className="scrollDown">
+              <FormDown
+                color="white"
+                size="large"
+                sx={{ polyline: { strokeWidth: 1 } }}
+              />
+            </Flex>
+          </AnchorLink>
         </Flex>
       </BgImage>
     </Box>
