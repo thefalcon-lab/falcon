@@ -36,18 +36,26 @@ const Layout = ({ children, page, type = 'page' }) => {
       >
         <Header />
         {page && page.slug && page.slug.includes('contact') && (
-          <iframe
-            src="https://snazzymaps.com/embed/240089"
-            width="100%"
-            height="600px"
+          <div
             sx={{
-              border: 'none',
+              width: '100%',
+              height: 600,
+              bg: 'black',
               position: 'relative',
               top: -80,
               left: 0,
               mb: -80,
             }}
-          ></iframe>
+          >
+            <iframe
+              src="https://snazzymaps.com/embed/240089"
+              width="100%"
+              height="600px"
+              sx={{
+                border: 'none',
+              }}
+            ></iframe>
+          </div>
         )}
 
         <main
