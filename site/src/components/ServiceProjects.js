@@ -1,13 +1,13 @@
 /** @jsx jsx */
-import { jsx } from 'theme-ui'
+import { jsx, Box } from 'theme-ui'
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import { Masonry, MasonryItem } from './ui-components'
-import BgImage from './images/BgImage'
+import overlayStyles from '../styles/overlayStyles'
 
 const PROJECTS_QUERY = graphql`
   query {
-    allWpProject(limit: 100) {
+    allWpProject(limit: 1000) {
       nodes {
         title
         featuredImage {
@@ -47,7 +47,6 @@ const ServiceProjects = ({ slug, ...props }) => {
             title,
             uri,
           } = project
-          console.log('project', project, bgc, height)
 
           return (
             <>
@@ -57,7 +56,23 @@ const ServiceProjects = ({ slug, ...props }) => {
                   height={height}
                   bgc={bgc}
                   img={featuredImage.localFile.publicURL}
-                />
+                >
+                  {/* <Link to={uri}> */}
+                  <Box
+                    className="overlay"
+                    sx={{
+                      ...overlayStyles,
+                    }}
+                  >
+                    <Box className="content">
+                      <h3 dangerouslySetInnerHTML={{ __html: title }} />
+                      {projectType && (
+                        <h4 dangerouslySetInnerHTML={{ __html: projectType }} />
+                      )}
+                    </Box>
+                  </Box>
+                  {/* </Link> */}
+                </MasonryItem>
               )}
             </>
           )

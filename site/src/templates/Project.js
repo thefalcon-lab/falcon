@@ -1,11 +1,8 @@
 /** @jsx jsx */
 import { jsx, Container, Box } from 'theme-ui'
 import { graphql } from 'gatsby'
-import {
-  ProjectHeader,
-  ProjectGallery,
-  ProjectSections,
-} from '../components/project'
+import { ProjectHeader, ProjectSections } from '../components/project'
+import { Masonry, MasonryItem } from '../components/ui-components'
 import Layout from '../components/Layout'
 
 const Project = ({ data }) => {
@@ -19,7 +16,21 @@ const Project = ({ data }) => {
   return (
     <Layout>
       <ProjectHeader title={title} subtitle={terms[0].name} />
-      <ProjectGallery items={projectImages} />
+      <Masonry minWidth={500}>
+        {projectImages &&
+          projectImages.map((item, i) => {
+            const { height, bgc, image } = item
+            return (
+              <MasonryItem
+                key={i}
+                height={height}
+                bgc={bgc}
+                img={image.localFile.publicURL}
+              />
+            )
+          })}
+      </Masonry>
+
       <ProjectSections items={projectSections} />
     </Layout>
   )
@@ -34,8 +45,12 @@ export const pageQuery = graphql`
       projectFields {
         projectType
         projectImages {
+          bgc
+          height
           image {
-            ...GatsbyImageQuery
+            localFile {
+              publicURL
+            }
           }
         }
         projectSections {
@@ -50,7 +65,9 @@ export const pageQuery = graphql`
         }
       }
       featuredImage {
-        ...GatsbyImageQuery
+        localFile {
+          publicURL
+        }
       }
     }
   }

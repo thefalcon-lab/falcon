@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { ProjectHeader } from '../../project'
 import { Masonry, MasonryItem } from '../../ui-components'
-import BgImage from '../../images/BgImage'
+import overlayStyles from '../../../styles/overlayStyles'
 
 const PROJECTS_QUERY = graphql`
   query {
@@ -94,6 +94,7 @@ export const WorkPage = ({ page, ...props }) => {
               title,
               uri,
             } = project
+            console.log('uri', uri)
 
             return (
               <>
@@ -103,7 +104,25 @@ export const WorkPage = ({ page, ...props }) => {
                     height={height}
                     bgc={bgc}
                     img={featuredImage.localFile.publicURL}
-                  />
+                  >
+                    {/* <Link to={uri}> */}
+                    <Box
+                      className="overlay"
+                      sx={{
+                        ...overlayStyles,
+                      }}
+                    >
+                      <Box className="content">
+                        <h3 dangerouslySetInnerHTML={{ __html: title }} />
+                        {projectType && (
+                          <h4
+                            dangerouslySetInnerHTML={{ __html: projectType }}
+                          />
+                        )}
+                      </Box>
+                    </Box>
+                    {/* </Link> */}
+                  </MasonryItem>
                 )}
               </>
             )
