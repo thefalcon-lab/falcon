@@ -30,7 +30,7 @@ export default {
     h1: {
       color: 'white',
       fontSize: [60, 90, 120],
-      textShadow: '0 10px 10px rgba(0, 0, 0, 0.16)',
+      textShadow: '0 20px 20px rgba(0, 0, 0, 0.9)',
     },
   },
 }
