@@ -9,6 +9,7 @@ const BgImage = ({ img, children, ...props }) =>
       fluid={img.localFile.childImageSharp.fluid}
       alt={img.altText}
       tag="div"
+      // backgroundColor="black"
       sx={{
         width: `100%`,
         backgroundRepeat: `no-repeat`,

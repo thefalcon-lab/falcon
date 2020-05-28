@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 import ParsedContent from '../../utils/ParsedContent'
 import BgImage from '../images/BgImage'
 import overlayStyles from '../../styles/overlayStyles'
+import { LinkedinOption } from 'grommet-icons'
 
 export const fragment = graphql`
   fragment teamBlockFragment on WpPage_Flexlayouts_FlexibleLayouts_TeamBlock {
@@ -17,6 +18,7 @@ export const fragment = graphql`
       }
       name
       role
+      linkedin
     }
   }
 `
@@ -49,7 +51,7 @@ export const TeamBlock = ({
       {team.length > 0 && (
         <Box className="team">
           {team.map((item, i) => {
-            const { image, name, role } = item
+            const { image, name, role, linkedin } = item
             return (
               <Box key={i} className="teamMember">
                 <BgImage className="bgImage" img={image}>
@@ -57,6 +59,16 @@ export const TeamBlock = ({
                     <Box className="content">
                       <h3>{name}</h3>
                       <h4>{role}</h4>
+
+                      {linkedin && (
+                        <a
+                          href={linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <LinkedinOption color="white" sx={{ mt: 10 }} />
+                        </a>
+                      )}
                     </Box>
                   </Box>
                 </BgImage>

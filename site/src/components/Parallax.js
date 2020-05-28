@@ -49,7 +49,12 @@ const Parallax = (props) => {
 
   return (
     <Box className="slideOne" sx={{ ...styles }} {...props}>
-      <BgImage img={heroImage} className="bgImage" sx={{ minHeight: '100vh' }}>
+      <BgImage
+        img={heroImage}
+        className="bgImage"
+        backgroundColor="black"
+        sx={{ minHeight: '100vh', bg: 'black' }}
+      >
         <Flex className="overlay">
           <h1 className="textOne">
             this is your <span>Design Lab</span>
