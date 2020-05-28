@@ -41,7 +41,7 @@ const styles = {
   pt: 50,
   pb: 70,
   color: 'footerColor',
-  fontSize: 18,
+  fontSize: 16,
   a: {
     color: 'footerColor',
     '&:hover': {
@@ -50,12 +50,14 @@ const styles = {
   },
   '.footerContainer': {
     display: ['block', 'flex', 'flex'],
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
+    maxWidth: 'l',
   },
   h3: {
     color: 'white',
     textTransform: 'uppercase',
-    mb: 35,
+    mb: 25,
+    fontSize: 18,
   },
 }
 
@@ -71,7 +73,8 @@ const socialStyles = {
   justifyContent: 'center',
   '.widget': {
     position: ['relative', 'absolute'],
-    right: ['initial', '20%'],
+    right: ['initial', '3%'],
+    top: [3, 8],
   },
   a: {
     '&:hover': {
@@ -81,7 +84,7 @@ const socialStyles = {
     },
   },
   svg: {
-    mr: 12,
+    mr: 20,
     width: 22,
     height: 22,
     variant: 'transitions.m',

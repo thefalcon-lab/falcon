@@ -17,6 +17,18 @@ module.exports = {
         name: 'linkedin',
         url: 'https://www.linkedin.com/company/falcon-design-and-print/',
       },
+      {
+        name: 'twitter',
+        url: 'https://twitter.com/thefalconlab/',
+      },
+      {
+        name: 'facebook',
+        url: 'https://www.facebook.com/thefalconlab',
+      },
+      {
+        name: 'youtube',
+        url: 'https://www.youtube.com/channel/UCsNpeIkuQ8FqyPBxu_INMZA/',
+      },
     ],
   },
   plugins: [
