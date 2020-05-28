@@ -15,10 +15,10 @@ const Project = ({ data }) => {
 
   return (
     <Layout>
-      <ProjectHeader title={title} subtitle={terms[0].name} />
-      <Masonry minWidth={500}>
-        {projectImages &&
-          projectImages.map((item, i) => {
+      <ProjectHeader title={title} subtitle={terms && terms[0].name} />
+      {projectImages && (
+        <Masonry minWidth={500}>
+          {projectImages.map((item, i) => {
             const { height, bgc, image } = item
             return (
               <MasonryItem
@@ -26,10 +26,11 @@ const Project = ({ data }) => {
                 height={height}
                 bgc={bgc}
                 img={image.localFile.publicURL}
-              />
+              ></MasonryItem>
             )
           })}
-      </Masonry>
+        </Masonry>
+      )}
 
       <ProjectSections items={projectSections} />
     </Layout>
