@@ -1,11 +1,13 @@
 /** @jsx jsx */
 import { jsx, Flex } from 'theme-ui'
+import { motion } from 'framer-motion'
 
 export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
   return (
-    <Flex
+    <div
       className="masonryItem"
       sx={{
+        display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         minHeight: `${height}px`,
@@ -22,8 +24,14 @@ export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
       }}
       {...props}
     >
-      <img src={img} sx={{ m: 0 }} />
+      <motion.img
+        initial={{ opacity: 0, y: 30, scale: 0.9 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        transition={{ duration: 1.2 }}
+        src={img}
+        sx={{ m: 0 }}
+      />
       {children}
-    </Flex>
+    </div>
   )
 }
