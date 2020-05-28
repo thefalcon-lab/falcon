@@ -1,7 +1,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
+import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Masonry } from './ui-components'
+import { Masonry, MasonryItem } from './ui-components'
 import BgImage from './images/BgImage'
 
 const PROJECTS_QUERY = graphql`
@@ -10,7 +11,9 @@ const PROJECTS_QUERY = graphql`
       nodes {
         title
         featuredImage {
-          ...galleryImageFragment
+          localFile {
+            publicURL
+          }
         }
         projectCategories {
           nodes {
@@ -19,6 +22,8 @@ const PROJECTS_QUERY = graphql`
         }
         projectFields {
           projectType
+          bgc
+          height
         }
       }
     }
@@ -38,27 +43,23 @@ const ServiceProjects = ({ slug, ...props }) => {
         projects.map((project, i) => {
           const {
             featuredImage,
-            projectFields: { projectType },
+            projectFields: { projectType, height, bgc },
             title,
             uri,
           } = project
-          const { aspectRatio } = featuredImage.localFile.childImageSharp.fluid
-
-          const minHeight = aspectRatio < 1 ? 500 / aspectRatio : 200
-          console.log('feat', aspectRatio, minHeight)
+          console.log('project', project, bgc, height)
 
           return (
-            <BgImage
-              img={featuredImage}
-              className="bgImage"
-              key={i}
-              sx={{
-                minHeight,
-                display: 'grid',
-                backgroundSize: 'fit !important',
-                transition: 0.4,
-              }}
-            ></BgImage>
+            <>
+              {featuredImage && (
+                <MasonryItem
+                  key={i}
+                  height={height}
+                  bgc={bgc}
+                  img={featuredImage.localFile.publicURL}
+                />
+              )}
+            </>
           )
         })}
     </Masonry>

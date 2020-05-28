@@ -3,7 +3,7 @@ import { jsx, Container, Flex, Box, Button } from 'theme-ui'
 import React, { useState } from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { ProjectHeader } from '../../project'
-import { Masonry } from '../../ui-components'
+import { Masonry, MasonryItem } from '../../ui-components'
 import BgImage from '../../images/BgImage'
 
 const PROJECTS_QUERY = graphql`
@@ -12,6 +12,8 @@ const PROJECTS_QUERY = graphql`
       nodes {
         projectFields {
           projectType
+          height
+          bgc
         }
         uri
         title
@@ -88,29 +90,22 @@ export const WorkPage = ({ page, ...props }) => {
           projects.map((project, i) => {
             const {
               featuredImage,
-              projectFields: { projectType },
+              projectFields: { projectType, height, bgc },
               title,
               uri,
             } = project
-            const {
-              aspectRatio,
-            } = featuredImage.localFile.childImageSharp.fluid
-
-            const minHeight = aspectRatio < 1 ? 500 / aspectRatio : 200
-            console.log('feat', aspectRatio, minHeight)
 
             return (
-              <BgImage
-                img={featuredImage}
-                className="bgImage"
-                key={i}
-                sx={{
-                  minHeight,
-                  display: 'grid',
-                  backgroundSize: 'fit !important',
-                  transition: 0.4,
-                }}
-              ></BgImage>
+              <>
+                {featuredImage && (
+                  <MasonryItem
+                    key={i}
+                    height={height}
+                    bgc={bgc}
+                    img={featuredImage.localFile.publicURL}
+                  />
+                )}
+              </>
             )
           })}
       </Masonry>

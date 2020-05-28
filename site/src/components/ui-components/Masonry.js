@@ -33,9 +33,9 @@ export const Masonry = ({ children, gap, minWidth = 500, ...rest }) => {
 const style = {
   display: 'grid',
   gridAutoFlow: 'column',
-  gridGap: 0,
+  gridGap: 1,
   '.col': {
     display: 'grid',
-    gridGap: 0,
+    gridGap: 1,
   },
 }
