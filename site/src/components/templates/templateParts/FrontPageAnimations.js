@@ -5,7 +5,7 @@ import React from 'react'
 import Loader from 'react-spinners/BeatLoader'
 
 import loadable from '@loadable/component'
-
+import brandAnimation from '../../../../static/brandAnimation.html'
 const LoadedParallax = loadable(() => import('../../Parallax'))
 LoadedParallax.preload()
 
@@ -26,6 +26,7 @@ export const FrontPageAnimations = ({ page, ...props }) => {
           </Flex>
         }
       />
+      <div id="brand">{brandAnimation}</div>
       {/* <BrandAnimation /> */}
     </Box>
   )
