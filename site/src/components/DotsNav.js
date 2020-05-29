@@ -1,36 +1,40 @@
 /** @jsx jsx */
-import { jsx, Flex, Box } from 'theme-ui'
+import { jsx, Flex } from 'theme-ui'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { graphql, useStaticQuery } from 'gatsby'
 
 const DotsNav = (props) => {
+  const data = useStaticQuery(graphql`
+    query {
+      allWpMenu(filter: { name: { eq: "dotNav" } }) {
+        nodes {
+          menuItems {
+            nodes {
+              url
+              label
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const menuItems = data.allWpMenu.nodes[0].menuItems.nodes
+  console.log('menuItems', menuItems)
   return (
     <nav className="dotNav" sx={{ ...styles }} {...props}>
       <ul>
-        <li>
-          <AnchorLink href="#top">
-            <Flex className="content">
-              <span>Top</span>
-              <div className="circle"></div>
-            </Flex>
-          </AnchorLink>
-        </li>
-
-        <li>
-          <AnchorLink href="#brand">
-            <Flex className="content">
-              <span>Brand</span>
-              <div className="circle"></div>
-            </Flex>
-          </AnchorLink>
-        </li>
-        <li>
-          <AnchorLink href="#clients">
-            <Flex className="content">
-              <span>Clients</span>
-              <div className="circle"></div>
-            </Flex>
-          </AnchorLink>
-        </li>
+        {menuItems &&
+          menuItems.map((item, i) => (
+            <li key={i}>
+              <AnchorLink href={item.url}>
+                <Flex className="content">
+                  <span>{item.label}</span>
+                  <div className="circle"></div>
+                </Flex>
+              </AnchorLink>
+            </li>
+          ))}
       </ul>
     </nav>
   )
