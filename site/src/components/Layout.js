@@ -3,6 +3,7 @@ import { jsx, Box, useThemeUI } from 'theme-ui'
 import { Fragment } from 'react'
 import Header from './header/Header'
 import Footer from './footer/Footer'
+import DotNav from './DotsNav'
 import { Global } from '@emotion/core'
 import { globalStyles } from '../styles/GlobalStyles'
 import { Grommet } from 'grommet'
@@ -25,6 +26,7 @@ const Layout = ({ children, page, type = 'page' }) => {
       <Global styles={globalStyles(theme)} />
       <Box
         sx={{
+          position: 'relative',
           '&.fullWidth': {
             '.mainContainer': {
               maxWidth: `100%`,
@@ -34,6 +36,7 @@ const Layout = ({ children, page, type = 'page' }) => {
         }}
         className={`${layoutClass}-${type} ${fullWidthClass}`}
       >
+        <DotNav />
         <Header />
         {page && page.slug && page.slug.includes('contact') && (
           <div

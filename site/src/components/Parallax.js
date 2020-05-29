@@ -23,7 +23,7 @@ const Parallax = (props) => {
     var parallaxScene = new ScrollMagic.Scene({
       triggerElement: '.slideOne',
       triggerHook: 0,
-      duration: '70%',
+      duration: '100%',
     })
       .setPin('.slideOne')
       .setTween(parallaxTl)
@@ -48,7 +48,7 @@ const Parallax = (props) => {
   const { heroImage } = data.wp.themeOptions.homeImage
 
   return (
-    <Box className="slideOne" sx={{ ...styles }} {...props}>
+    <Box id="top" className="slideOne" sx={{ ...styles }} {...props}>
       <BgImage
         img={heroImage}
         className="bgImage"
