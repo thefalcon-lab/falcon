@@ -24,7 +24,7 @@ export const Instagram = () => {
   const { nodes } = data.allInstaNode
 
   return (
-    <Grid columns={[1, 2, 2, 4]} gap={2}>
+    <Grid id="instagram" columns={[1, 2, 2, 4]} gap={2}>
       {nodes &&
         nodes.map((node, i) => (
           <Box key={i} className="itemContainer">
