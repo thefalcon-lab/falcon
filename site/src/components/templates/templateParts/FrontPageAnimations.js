@@ -28,7 +28,7 @@ export const FrontPageAnimations = ({ page, ...props }) => {
           </Flex>
         }
       />
-      <div id="brandAnimation">
+      <div id="brand">
         <ParsedContent content={brandAnimation} />
       </div>
 
