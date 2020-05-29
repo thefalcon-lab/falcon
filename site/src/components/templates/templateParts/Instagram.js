@@ -35,7 +35,6 @@ export const Instagram = () => {
             ></BgImage>
           </Box>
         ))}
-      <h3>Insta</h3>
     </Grid>
   )
 }
