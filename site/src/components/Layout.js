@@ -36,7 +36,7 @@ const Layout = ({ children, page, type = 'page' }) => {
         }}
         className={`${layoutClass}-${type} ${fullWidthClass}`}
       >
-        <DotNav />
+        {page.isFrontPage && <DotNav />}
         <Header />
         {page && page.slug && page.slug.includes('contact') && (
           <div
