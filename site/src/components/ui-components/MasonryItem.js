@@ -15,6 +15,7 @@ export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
         position: 'relative',
         overflow: 'hidden',
         variant: 'transitions.m',
+        p: 30,
         '&:hover': {
           '.overlay': {
             opacity: 1,
@@ -29,7 +30,7 @@ export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 1.2 }}
         src={img}
-        sx={{ m: 0 }}
+        sx={{ m: 0, minWidth: '100%' }}
       />
       {children}
     </div>
