@@ -39,6 +39,7 @@ export const ImageBlock = ({
       '.container': {
         maxWidth: 'm',
       },
+      img: { minWidth: '100%' },
     },
     '&.servicesImage': {
       bg: 'black',
