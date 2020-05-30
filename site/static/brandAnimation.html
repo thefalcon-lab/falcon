@@ -11,6 +11,13 @@
       width: 100%;
       transition: all 0.1s ease;
     }
+    #main_parts svg {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
     #main_parts.fixed {
       position: fixed;
     }
@@ -311,14 +318,6 @@
         'stroke-dashoffset': path_lenght[6],
       })
 
-      /*$("#line_design").setAttribute("stroke-dasharray", path_lenght[0]);
-      $("#line_print").setAttribute("stroke-dasharray", path_lenght[1]);
-      $("#line_apparel").setAttribute("stroke-dasharray", path_lenght[2]);
-      $("#line_promo").setAttribute("stroke-dasharray", path_lenght[3]);
-      $("#line_web").setAttribute("stroke-dasharray", path_lenght[4]);
-      $("#line_marketing").setAttribute("stroke-dasharray", path_lenght[5]);
-      $("#line_experiential").setAttribute("stroke-dasharray", path_lenght[6]);*/
-
       $('#your_brand_block').setAttribute(
         'style',
         'height:' + (sections + 1) * inthgt + 'px'
@@ -377,7 +376,7 @@
         svg_pos = window.pageYOffset - $('#your_brand_block').offsetTop
         if (svg_pos <= 0) {
           $('#main_parts').setAttribute('class', '')
-          point_percent[0] = 0
+          point_percent = [0, 0, 0, 0, 0, 0, 0]
           svg_scroll_pos = 0
           $('#arr_design').setAttribute('class', '')
         }
