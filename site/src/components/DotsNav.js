@@ -44,7 +44,7 @@ export default DotsNav
 
 const styles = {
   position: 'fixed',
-  top: '50%',
+  top: '40%',
   right: 30,
   zIndex: 10,
   bg: 'rgba(0,0,0,.3)',

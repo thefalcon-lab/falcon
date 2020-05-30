@@ -3,7 +3,7 @@ import { jsx, Box, useThemeUI } from 'theme-ui'
 import { Fragment } from 'react'
 import Header from './header/Header'
 import Footer from './footer/Footer'
-import DotNav from './DotsNav'
+import DotsNav from './DotsNav'
 import { Global } from '@emotion/core'
 import { globalStyles } from '../styles/GlobalStyles'
 import { Grommet } from 'grommet'
@@ -36,7 +36,7 @@ const Layout = ({ children, page, type = 'page' }) => {
         }}
         className={`${layoutClass}-${type} ${fullWidthClass}`}
       >
-        {page && page.isFrontPage && <DotNav />}
+        {page && page.isFrontPage && <DotsNav />}
         <Header />
         {page && page.slug && page.slug.includes('contact') && (
           <div
