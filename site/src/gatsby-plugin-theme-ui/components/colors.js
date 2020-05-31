@@ -5,6 +5,7 @@ const darkGrey = '#242424'
 const lightGrey = '#efefef'
 
 export const colors = {
+  useCustomProperties: false,
   primary,
   darkGrey,
   lightGrey,

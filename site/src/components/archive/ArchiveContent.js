@@ -59,11 +59,6 @@ const ArchiveContent = ({ posts, ctx }) => {
         }}
       >
         <Box className="posts-list">
-          {/* <Grid columns={[1, 2]} gap={25}>
-            {filteredPosts.map((post) => (
-              <ArchiveItem key={post.id} post={post} sx={{}} />
-            ))}
-          </Grid> */}
           <Flex sx={{ flexWrap: 'wrap' }}>
             {filteredPosts.map((post) => (
               <ArchiveItem
