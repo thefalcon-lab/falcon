@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box, Grid, Button } from 'theme-ui'
+import { jsx, Container, Flex, Box, Grid } from 'theme-ui'
 import { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import ArchiveItem from './ArchiveItem'
@@ -59,11 +59,26 @@ const ArchiveContent = ({ posts, ctx }) => {
         }}
       >
         <Box className="posts-list">
-          <Grid columns={[1, 2]} gap={25}>
+          {/* <Grid columns={[1, 2]} gap={25}>
             {filteredPosts.map((post) => (
               <ArchiveItem key={post.id} post={post} sx={{}} />
             ))}
-          </Grid>
+          </Grid> */}
+          <Flex sx={{ flexWrap: 'wrap' }}>
+            {filteredPosts.map((post) => (
+              <ArchiveItem
+                key={post.id}
+                post={post}
+                sx={{
+                  width: ['100%', '100%', '50%'],
+                  px: [0, 0, 12.5],
+                  pb: 25,
+                  '&:nth-child(even)': { pr: 0 },
+                  '&:nth-child(odd)': { pl: 0 },
+                }}
+              />
+            ))}
+          </Flex>
         </Box>
         <Sidebar
           filter={filter}

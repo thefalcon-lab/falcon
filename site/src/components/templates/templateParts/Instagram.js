@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Grid, Box } from 'theme-ui'
+import { jsx, Grid, Box, Flex } from 'theme-ui'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from '../../images/BgImage'
 
@@ -24,10 +24,14 @@ export const Instagram = () => {
   const { nodes } = data.allInstaNode
 
   return (
-    <Grid id="instagram" columns={[1, 2, 2, 4]} gap={2}>
+    <Flex id="instagram" sx={{ flexWrap: 'wrap' }}>
       {nodes &&
         nodes.map((node, i) => (
-          <Box key={i} className="itemContainer">
+          <Box
+            key={i}
+            className="itemContainer"
+            sx={{ width: ['100%', '50%', '25%'], p: 1 }}
+          >
             <BgImage
               img={node}
               className="item"
@@ -35,6 +39,6 @@ export const Instagram = () => {
             ></BgImage>
           </Box>
         ))}
-    </Grid>
+    </Flex>
   )
 }

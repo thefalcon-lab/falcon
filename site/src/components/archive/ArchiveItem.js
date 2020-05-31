@@ -7,10 +7,10 @@ import Image from '../images/Image'
 import Img from 'gatsby-image'
 import PostEntryContent from '../post/PostEntryContent'
 
-const ArchiveItem = ({ post }) => {
+const ArchiveItem = ({ post, ...props }) => {
   const { featuredImage, date } = post
   return (
-    <Box sx={{ ...styles }}>
+    <Box sx={{ ...styles }} {...props}>
       <PostEntryTitle post={post} />
       <Date date={date} />
       <Box className="entry-media">
