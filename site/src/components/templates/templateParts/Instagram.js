@@ -25,7 +25,7 @@ export const Instagram = () => {
 
   return (
     <Flex id="instagram" sx={{ flexWrap: 'wrap' }}>
-      {/* {nodes &&
+      {nodes &&
         nodes.map((node, i) => (
           <Box
             key={i}
@@ -38,7 +38,7 @@ export const Instagram = () => {
               sx={{ minHeight: 385 }}
             ></BgImage>
           </Box>
-        ))} */}
+        ))}
     </Flex>
   )
 }
