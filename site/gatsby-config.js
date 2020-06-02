@@ -88,7 +88,7 @@ module.exports = {
         start_url: '/',
         background_color: '#000',
         theme_color: '#D63F18',
-        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button).
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
         icon: 'src/images/logo.svg', // This path is relative to the root of the site.
