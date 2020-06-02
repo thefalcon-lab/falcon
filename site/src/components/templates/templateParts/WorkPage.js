@@ -27,7 +27,7 @@ const PROJECTS_QUERY = graphql`
         }
       }
     }
-    allWpProjectCategory {
+    allWpProjectCategory(sort: { fields: description }) {
       nodes {
         name
         slug
