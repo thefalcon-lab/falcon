@@ -3,32 +3,32 @@ import { jsx, Flex, Box } from 'theme-ui'
 import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from './images/BgImage'
-import * as ScrollMagic from 'scrollmagic-with-ssr'
-import { TweenMax, TimelineMax } from 'gsap'
-import { ScrollMagicPluginGsap } from 'scrollmagic-plugin-gsap'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FormDown } from 'grommet-icons'
 
-ScrollMagicPluginGsap(ScrollMagic, TweenMax, TimelineMax)
+if (typeof window !== `undefined`) {
+  gsap.registerPlugin(ScrollTrigger)
+  gsap.core.globals('ScrollTrigger', ScrollTrigger)
+}
 
 const Parallax = (props) => {
+  let tl = gsap.timeline({
+    paused: true,
+    scrollTrigger: {
+      trigger: '.slideOne',
+      scrub: true,
+      pin: true,
+      // markers: true,
+      start: 'top top',
+      end: 'bottom top',
+    },
+  })
   useEffect(() => {
-    const controller = new ScrollMagic.Controller()
-    var parallaxTl = new TimelineMax()
-    parallaxTl
-      .to('.overlay', 2, { backgroundColor: 'rgba(0,0,0,.85)' })
-      .to('.textOne', 1, { y: -300, autoAlpha: 0 }, 0)
-      .to('.textTwo', 1, { y: -300, autoAlpha: 1 }, 0.5)
-
-    var parallaxScene = new ScrollMagic.Scene({
-      triggerElement: '.slideOne',
-      triggerHook: 0,
-      duration: '100%',
-    })
-      .setPin('.slideOne')
-      .setTween(parallaxTl)
-      .addIndicators()
-      .addTo(controller)
+    tl.to('.overlay', 2, { backgroundColor: 'rgba(0,0,0,.85)' })
+    tl.to('.textOne', 1, { y: -300, autoAlpha: 0 }, 0)
+    tl.to('.textTwo', 1, { y: -300, autoAlpha: 1 }, 0.5)
   }, [])
 
   const data = useStaticQuery(graphql`
