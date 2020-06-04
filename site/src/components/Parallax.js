@@ -8,24 +8,23 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import { FormDown } from 'grommet-icons'
 
-if (typeof window !== `undefined`) {
-  gsap.registerPlugin(ScrollTrigger)
-  gsap.core.globals('ScrollTrigger', ScrollTrigger)
-}
-
 const Parallax = (props) => {
-  let tl = gsap.timeline({
-    paused: true,
-    scrollTrigger: {
-      trigger: '.slideOne',
-      scrub: true,
-      pin: true,
-      // markers: true,
-      start: 'top top',
-      end: 'bottom top',
-    },
-  })
   useEffect(() => {
+    if (typeof window !== `undefined`) {
+      gsap.registerPlugin(ScrollTrigger)
+      gsap.core.globals('ScrollTrigger', ScrollTrigger)
+    }
+    let tl = gsap.timeline({
+      paused: true,
+      scrollTrigger: {
+        trigger: '.slideOne',
+        scrub: true,
+        pin: true,
+        // markers: true,
+        start: 'top top',
+        end: 'bottom top',
+      },
+    })
     tl.to('.overlay', 2, { backgroundColor: 'rgba(0,0,0,.85)' })
     tl.to('.textOne', 1, { y: -300, autoAlpha: 0 }, 0)
     tl.to('.textTwo', 1, { y: -300, autoAlpha: 1 }, 0.5)
