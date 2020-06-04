@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui'
 import Layout from '../Layout'
 import ParsedContent from '../../utils/ParsedContent'
 import SEO from '../seo/Seo'
+import Brand from '../Brand'
 
 import articleStyles from '../../styles/articleStyles'
 import gutenberg from '../../styles/theme-gutenberg'
@@ -53,6 +54,7 @@ const Page = ({ page }) => {
       />
       {page.slug.includes('contact') && <ContactPage page={page} />}
       {page.slug.includes('work') && <WorkPage page={page} />}
+      {page.slug.includes('services') && <Brand />}
       {isFrontPage && (
         <FrontPageAnimations
           page={page}
