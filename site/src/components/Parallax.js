@@ -6,6 +6,7 @@ import BgImage from './images/BgImage'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Letters from '../images/letters.inline.svg'
 import { FormDown } from 'grommet-icons'
 
 const Parallax = (props) => {
@@ -56,7 +57,7 @@ const Parallax = (props) => {
       >
         <Flex className="overlay">
           <h1 className="textOne">
-            this is your <span>Design Lab</span>
+            this is your <Letters />
           </h1>
           <h2 className="textTwo">
             At The Falcon Lab, We strive to intimately understand your brand so
