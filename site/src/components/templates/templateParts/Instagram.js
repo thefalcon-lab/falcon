@@ -4,28 +4,31 @@ import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from '../../images/BgImage'
 
 export const Instagram = () => {
-  // const data = useStaticQuery(graphql`
-  //   query MyQuery {
-  //     allInstaNode(limit: 8) {
-  //       nodes {
-  //         localFile {
-  //           publicURL
-  //           childImageSharp {
-  //             fluid(maxWidth: 600, quality: 80) {
-  //               ...GatsbyImageSharpFluid_noBase64
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    query MyQuery {
+      allInstaNode(limit: 8) {
+        nodes {
+          localFile {
+            publicURL
+            childImageSharp {
+              fluid(maxWidth: 600, quality: 80) {
+                aspectRatio
+                src
+                srcSet
+                sizes
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
 
-  // const { nodes } = data.allInstaNode
+  const { nodes } = data.allInstaNode
 
   return (
     <Flex id="instagram" sx={{ flexWrap: 'wrap' }}>
-      {/* {nodes &&
+      {nodes &&
         nodes.map((node, i) => (
           <Box
             key={i}
@@ -38,7 +41,7 @@ export const Instagram = () => {
               sx={{ minHeight: 385 }}
             ></BgImage>
           </Box>
-        ))} */}
+        ))}
     </Flex>
   )
 }
