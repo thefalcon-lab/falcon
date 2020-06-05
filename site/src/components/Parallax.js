@@ -57,7 +57,12 @@ const Parallax = (props) => {
       >
         <Flex className="overlay">
           <h1 className="textOne">
-            this is your <Letters />
+            this is your{' '}
+            <div
+              sx={{ display: 'inline-block', position: 'relative', top: 50 }}
+            >
+              <Letters />
+            </div>
           </h1>
           <h2 className="textTwo">
             At The Falcon Lab, We strive to intimately understand your brand so

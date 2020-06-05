@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="697.79" height="178.44" version="1.1" viewBox="0 0 697.79 178.44" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+	<style>@font-face {	font-family: Have Heart One;src: url('fonts/heart.otf');src: url('fonts/heart.ttf') format('truetype');}.cls-1{isolation:isolate;}.cls-2{fill:#fff;}.cls-3{fill:#d64226;}.anata-path {stroke-dasharray: 800;stroke-dashoffset: 800;stroke-width: 15;stroke: #d64226;}</style>
+	<clipPath id="apparel-a"><text x="-0.2255" y="117.0308" font-family="Have Heart One" font-size="160">A</text></clipPath>
+	<clipPath id="apparel-p1"><text x="89.665" y="117.0308" font-family="Have Heart One" font-size="160">p</text></clipPath>
+	<clipPath id="apparel-p2"><text x="132.19" y="117.0308" font-family="Have Heart One" font-size="160">p</text></clipPath>
+	<clipPath id="apparel-a2"><text x="174.727" y="117.0308" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="apparel-r"><text x="227.4844" y="117.0308" font-family="Have Heart One" font-size="160">r</text></clipPath>
+	<clipPath id="apparel-e"><text x="266.2511" y="117.0308" font-family="Have Heart One" font-size="160">e</text></clipPath>
+	<clipPath id="apparel-l1"><text x="305" y="117.0308" font-family="Have Heart One" font-size="160">l</text></clipPath>
+	<clipPath id="apparel-l2"><text x="363.7" y="117.0308" font-family="Have Heart One" font-size="160">L</text></clipPath>
+	<clipPath id="apparel-a3"><text x="414.72" y="117.0308" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="apparel-b"><text x="467.5" y="117.0308" font-family="Have Heart One" font-size="160">b</text></clipPath>
+	<clipPath id="design-d"><text x="20.709" y="116.841" font-family="Have Heart One" font-size="160">D</text></clipPath>
+	<clipPath id="design-e"><text x="113.491" y="116.841" font-family="Have Heart One" font-size="160">e</text></clipPath>
+	<clipPath id="design-s"><text x="150.44" y="116.841" font-family="Have Heart One" font-size="160">s</text></clipPath>
+	<clipPath id="design-i"><text x="189.040" y="116.841" font-family="Have Heart One" font-size="160">i</text></clipPath>
+	<clipPath id="design-g"><text x="213.597" y="116.841" font-family="Have Heart One" font-size="160">g</text></clipPath>
+	<clipPath id="design-n"><text x="258.940" y="116.841" font-family="Have Heart One" font-size="160">n</text></clipPath>
+	<clipPath id="design-l"><text x="340.05" y="116.841" font-family="Have Heart One" font-size="160">L</text></clipPath>
+	<clipPath id="design-a"><text x="390.66" y="116.841" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="design-b"><text x="443.49" y="116.841" font-family="Have Heart One" font-size="160">b</text></clipPath>
+	<clipPath id="exp-letter-1"><text x="20.7762" y="112.8835" font-family="Have Heart One" font-size="160">E</text></clipPath>
+	<clipPath id="exp-letter-2"><text x="96.829" y="112.8835" font-family="Have Heart One" font-size="160">x</text></clipPath>
+	<clipPath id="exp-letter-3"><text x="145.56" y="112.8835" font-family="Have Heart One" font-size="160">p</text></clipPath>
+	<clipPath id="exp-letter-4"><text x="187.891" y="112.8835" font-family="Have Heart One" font-size="160">e</text></clipPath>
+	<clipPath id="exp-letter-5"><text x="226.544" y="112.8835" font-family="Have Heart One" font-size="160">r</text></clipPath>
+	<clipPath id="exp-letter-6"><text x="265.482" y="112.8835" font-family="Have Heart One" font-size="160">i</text></clipPath>
+	<clipPath id="exp-letter-7"><text x="291.691" y="112.8835" font-family="Have Heart One" font-size="160">e</text></clipPath>
+	<clipPath id="exp-letter-8"><text x="330.4377" y="112.8835" font-family="Have Heart One" font-size="160">n</text></clipPath>
+	<clipPath id="exp-letter-9"><text x="375.11493" y="112.8835" font-family="Have Heart One" font-size="160">t</text></clipPath>
+	<clipPath id="exp-letter-10"><text x="405.11447" y="112.8835" font-family="Have Heart One" font-size="160">i</text></clipPath>
+	<clipPath id="exp-letter-11"><text x="431.38" y="112.8835" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="exp-letter-12"><text x="484.19" y="112.8835" font-family="Have Heart One" font-size="160">l</text></clipPath>
+	<clipPath id="exp-letter-13"><text x="542.87" y="112.8835" font-family="Have Heart One" font-size="160">L</text></clipPath>
+	<clipPath id="exp-letter-14"><text x="593.89001" y="112.8835" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="exp-letter-15"><text x="646.71997" y="112.8835" font-family="Have Heart One" font-size="160">b</text></clipPath>
+	<clipPath id="market-letter-1"><text x="15.022" y="113.945" font-family="Have Heart One" font-size="160">M</text></clipPath>
+	<clipPath id="market-letter-2"><text x="108.840" y="113.945" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="market-letter-3"><text x="161.622" y="113.945" font-family="Have Heart One" font-size="160">r</text></clipPath>
+	<clipPath id="market-letter-4"><text x="200.2742" y="113.945" font-family="Have Heart One" font-size="160">k</text></clipPath>
+	<clipPath id="market-letter-5"><text x="242.796" y="113.945" font-family="Have Heart One" font-size="160">e</text></clipPath>
+	<clipPath id="market-letter-6"><text x="281.5759" y="113.945" font-family="Have Heart One" font-size="160">t</text></clipPath>
+	<clipPath id="market-letter-7"><text x="311.4074" y="113.945" font-family="Have Heart One" font-size="160">i</text></clipPath>
+	<clipPath id="market-letter-8"><text x="337.6967" y="113.945" font-family="Have Heart One" font-size="160">n</text></clipPath>
+	<clipPath id="market-letter-9"><text x="382.4798" y="113.945" font-family="Have Heart One" font-size="160">g</text></clipPath>
+	<clipPath id="market-letter-10"><text x="464.006" y="113.945" font-family="Have Heart One" font-size="160">L</text></clipPath>
+	<clipPath id="market-letter-11"><text x="514.987" y="113.945" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="market-letter-12"><text x="567.833" y="113.945" font-family="Have Heart One" font-size="160">b</text></clipPath>
+	<clipPath id="print-letter-1"><text x="20.6931" y="116.8146" font-family="Have Heart One" font-size="160">P</text></clipPath>
+	<clipPath id="print-letter-2"><text x="115.713" y="116.8146" font-family="Have Heart One" font-size="160">r</text></clipPath>
+	<clipPath id="print-letter-3"><text x="154.4394" y="116.8146" font-family="Have Heart One" font-size="160">i</text></clipPath>
+	<clipPath id="print-letter-4"><text x="180.6897" y="116.8146" font-family="Have Heart One" font-size="160">n</text></clipPath>
+	<clipPath id="print-letter-5"><text x="225.3499" y="116.8146" font-family="Have Heart One" font-size="160">t</text></clipPath>
+	<clipPath id="print-letter-6"><text x="291.601" y="116.8146" font-family="Have Heart One" font-size="160">L</text></clipPath>
+	<clipPath id="print-letter-7"><text x="342.566" y="116.8146" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="print-letter-8"><text x="395.364" y="116.8146" font-family="Have Heart One" font-size="160">b</text></clipPath>
+	<clipPath id="promo-letter-1"><text x="14.8771" y="116.898" font-family="Have Heart One" font-size="160">P</text></clipPath>
+	<clipPath id="promo-letter-2"><text x="109.9784" y="116.898" font-family="Have Heart One" font-size="160">r</text></clipPath>
+	<clipPath id="promo-letter-3"><text x="148.7371" y="116.898" font-family="Have Heart One" font-size="160">o</text></clipPath>
+	<clipPath id="promo-letter-4"><text x="194.9839" y="116.898" font-family="Have Heart One" font-size="160">m</text></clipPath>
+	<clipPath id="promo-letter-5"><text x="263.423" y="116.898" font-family="Have Heart One" font-size="160">o</text></clipPath>
+	<clipPath id="promo-letter-6"><text x="345.9079" y="116.898" font-family="Have Heart One" font-size="160">L</text></clipPath>
+	<clipPath id="promo-letter-7"><text x="396.859" y="116.898" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="promo-letter-8"><text x="449.7229" y="116.898" font-family="Have Heart One" font-size="160">b</text></clipPath>
+	<clipPath id="web-letter-1"><text x="15.06438" y="112.92735" font-family="Have Heart One" font-size="160">W</text></clipPath>
+	<clipPath id="web-letter-2"><text x="119.983" y="112.92735" font-family="Have Heart One" font-size="160">e</text></clipPath>
+	<clipPath id="web-letter-3"><text x="158.7619" y="112.92735" font-family="Have Heart One" font-size="160">b</text></clipPath>
+	<clipPath id="web-letter-4"><text x="242.5192" y="112.92735" font-family="Have Heart One" font-size="160">&amp;</text></clipPath>
+	<clipPath id="web-letter-5"><text x="323.4119" y="112.92735" font-family="Have Heart One" font-size="160">D</text></clipPath>
+	<clipPath id="web-letter-6"><text x="416.25912" y="112.92735" font-family="Have Heart One" font-size="160">e</text></clipPath>
+	<clipPath id="web-letter-7"><text x="454.9995" y="112.92735" font-family="Have Heart One" font-size="160">v</text></clipPath>
+	<clipPath id="web-letter-8"><text x="525.377" y="112.92735" font-family="Have Heart One" font-size="160">L</text></clipPath>
+	<clipPath id="web-letter-9"><text x="576.2659" y="112.92735" font-family="Have Heart One" font-size="160">a</text></clipPath>
+	<clipPath id="web-letter-10"><text x="629.1420" y="112.92735" font-family="Have Heart One" font-size="160">b</text></clipPath>
+ </defs>
+
+<g id="design-group" fill="freeze" stroke-width="40">
+	<g clip-path="url(#design-d)">
+	 <path id="d-letter-path" class="anata-path" d="m 65.500259,46.39577 c -2.6295,11.094882 -20.171297,50.950918 -21.34789,56.17509 -1.176593,5.22417 -3.073927,15.86146 -2.916843,17.80674 0.157084,1.94528 9.184757,4.55049 9.184757,4.55049 L 55.962097,111.46551 23.846225,74.965358 c 0,0 0.08373,-1.517735 1.78436,-3.112282 1.700633,-1.594548 21.899819,-25.280456 37.946724,-34.464124 16.046904,-9.183668 47.206971,-21.731932 50.178931,5.356435 2.97197,27.088367 -9.95953,49.430573 -24.581697,66.308753 -14.622171,16.87818 -37.109094,30.20213 -47.532133,31.53022 -10.423039,1.3281 -14.654104,-0.40211 -17.789003,-4.11604 -3.134899,-3.71393 -10.480079,-5.2258 13.318094,-32.23835" fill="none" stroke="#d64226" stroke-miterlimit="10"/>
+		<animate xlink:href="#d-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.8s" begin="0;last_letter_animation.begin + 0.2s" fill="freeze" id="design_first_animation"/>
+		<animate xlink:href="#d-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-e)">
+	 <path id="e-letter-path" class="anata-path anata-path--e" d="m 121.59843,93.170587 c 5.00732,1.574489 17.7559,-13.980209 22.08971,-20.370832 4.33382,-6.390623 6.95652,-10.580067 5.05293,-12.467203 -1.90359,-1.887136 -4.13064,-2.843007 -11.0515,2.695978 -6.92086,5.538984 -31.79206,32.583162 -20.45179,45.41491 11.34028,12.83175 37.18256,-17.511596 37.18256,-17.511596 l 16.89077,-19.31691" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#e-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="design_first_animation.begin + 0.4s" fill="freeze" />
+		<animate xlink:href="#e-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-s)">
+	 <path id="s-letter-path" class="anata-path anata-path--s" d="m 182.71203,45.767494 c -7.88572,9.17073 -8.1885,16.505574 -3.75621,34.003458 4.43228,17.497885 4.8159,26.621078 -3.69891,34.764268 -8.51482,8.14319 -22.43471,0.23609 -21.44277,-9.0661 0.99194,-9.302188 15.54442,-37.962227 15.54442,-37.962227" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#s-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="design_first_animation.begin + 0.6s" fill="freeze" />
+		<animate xlink:href="#s-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-i)">
+	 <path id="i-letter-path" class="anata-path anata-path--i" d="m 206.13079,55.154319 c -6.21043,10.976861 -12.95934,39.244223 -13.37041,43.784246 -0.41106,4.540025 -1.76751,11.418595 4.38809,14.438105 6.1556,3.01951 12.07595,-6.50504 19.05002,-18.578866 6.97406,-12.073832 14.19008,-25.263102 14.19008,-25.263102 0,0 -5.85643,-61.3738617 -11.78145,-57.64892 -5.92502,3.724941 -6.59051,4.09754 -6.59051,6.888247 0,2.790707 -6.1043,26.307951 -6.1043,26.307951" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#i-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="design_first_animation.begin + 0.8s" fill="freeze" />
+		<animate xlink:href="#i-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-g)">
+	 <path id="g-letter-path" class="anata-path anata-path--g" d="m 252.46156,62.896642 c -6.7139,-7.127676 -9.24327,-6.42479 -19.61428,1.927937 -10.37101,8.352728 -19.64629,33.610826 -18.72015,38.799061 0.92614,5.18824 3.94069,10.57731 11.28021,5.15635 7.33952,-5.42096 21.1067,-27.163817 21.1067,-27.163817 l 11.87124,-30.111805 c 0,0 -15.10096,53.347682 -16.83988,62.010862 -1.73892,8.66317 -15.76053,45.15284 -20.10418,52.8668 -4.34365,7.71396 -7.64765,8.99539 -10.01798,8.21897 -2.37034,-0.77641 -5.40454,-5.06553 -2.89123,-18.72781 2.51331,-13.66228 18.28191,-39.22774 23.34565,-43.7776 5.06373,-4.54986 51.65678,-43.144146 51.65678,-43.144146" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#g-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="design_first_animation.begin + 1s" fill="freeze" />
+		<animate xlink:href="#g-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-n)">
+	 <path id="n-letter-path" class="anata-path anata-path--n" d="m 266.82213,58.51475 c 0.5641,9.601929 -10.38402,54.48045 -10.38402,54.48045 0,0 4.37799,-27.855173 17.96589,-43.360273 13.58791,-15.505099 16.60653,-16.653285 19.76334,-14.450157 3.1568,2.203128 -0.74586,14.555296 -3.38042,21.52623 -2.63455,6.970934 -12.15623,34.26225 -4.45296,39.95384 7.70327,5.6916 37.79324,-46.98521 37.79324,-46.98521" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#n-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="design_first_animation.begin + 1.2s" fill="freeze" />
+		<animate xlink:href="#n-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-l)">
+	 <path id="l-letter-path" class="anata-path anata-path--l" d="m 360.37316,47.732611 c 6.58241,-9.508945 25.80031,-24.349228 25.80031,-24.349228 0,0 -13.99377,38.695111 -18.21367,48.883768 -4.21989,10.188657 -21.18654,49.027169 -23.84343,59.004879 -2.6569,9.97771 -7.17603,31.99372 -7.17603,31.99372 0,0 11.67176,-22.74073 20.20781,-31.83321 8.53605,-9.09248 19.9672,-19.21146 21.85473,-20.88318 1.88754,-1.67171 18.96183,-17.070223 31.52914,-21.931172" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#l-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="1s" begin="design_first_animation.begin + 1.4s" fill="freeze" />
+		<animate xlink:href="#l-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-a)">
+	 <path id="a-letter-path" class="anata-path anata-path--a" d="m 420.22582,72.175427 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193092 -10.84758,44.955062 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.86572 24.42663,-49.269547 24.42663,-49.269547 0,0 -20.36787,46.933427 -8.30983,51.038687 12.05804,4.10526 29.36994,-37.589181 29.36994,-37.589181" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#a-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="design_first_animation.begin + 1.7s" fill="freeze" />
+		<animate xlink:href="#a-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" />
+	</g>
+	<g clip-path="url(#design-b)">
+	 <path id="b-letter-path" class="anata-path anata-path--b" d="m 466.02464,28.360059 c -0.3751,7.211655 -25.11366,91.520811 -25.11366,91.520811 0,0 10.99182,-38.603161 21.82511,-47.831826 10.83328,-9.228665 15.23244,-13.695779 21.0876,-11.195412 5.85517,2.500367 7.41269,7.600871 0.45369,23.585206 -6.959,15.984342 -19.57335,26.768872 -19.57335,26.768872 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.80705 -5.86349,-12.80705" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#b-letter-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="design_first_animation.begin + 1.9s" fill="freeze" />
+		<animate xlink:href="#b-letter-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="design_first_animation.begin + 2.8s" fill="freeze" id="design_last_animation"/>
+	</g>
+</g>
+
+<g id="print-group" fill="freeze" stroke-width="40">
+	<g clip-path="url(#print-letter-1)">
+	 <path id="print-letter-1-path" class="anata-path" d="M 75.00531,38.745948 C 73.102676,42.574055 50.176454,124.48769 50.029152,129.22836 49.88185,133.96903 49.492347,143.4737 49.492347,143.4737 L 8.6167856,137.35404 c 0,0 -26.8070366,-65.316223 -2.3527596,-81.182387 24.454277,-15.866165 38.213018,-21.741886 38.213018,-21.741886 0,0 22.909618,-10.308416 42.066742,-14.089681 19.157124,-3.781265 56.075144,-4.856311 59.595874,7.179804 3.52072,12.036115 -18.49833,27.096464 -35.50961,37.247581 C 93.618761,74.918588 72.800904,85.21081 72.800904,85.21081 c 0,0 -51.127007,23.42136 -56.989522,10.987836 C 9.948867,83.76512 55.749828,64.011767 64.660991,60.754064" fill="none" stroke="#d64226" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-1-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.8s" begin="design_last_animation.begin + 0.1s" fill="freeze" id="print_first_animation"/>
+		<animate xlink:href="#print-letter-1-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" />
+	</g>
+	<g clip-path="url(#print-letter-2)">
+	 <path id="print-letter-2-path" class="anata-path" d="m 137.02889,48.268589 c -5.53858,6.855292 -9.12162,17.332517 -6.32425,20.707428 2.79737,3.374912 14.78881,-4.216576 14.78881,-4.216576 0,0 -20.03747,43.139079 -8.48307,51.217099 11.55441,8.07801 24.21067,-21.942509 24.21067,-21.942509 v 0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-2-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="print_first_animation.begin + 0.6s" fill="freeze" />
+		<animate xlink:href="#print-letter-2-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" />
+	</g>
+	<g clip-path="url(#print-letter-3)">
+	 <path id="print-letter-3-path" class="anata-path" d="m 173.22569,54.914581 c -6.21043,10.976861 -12.95934,39.244223 -13.37041,43.784246 -0.41106,4.540023 -1.76751,11.418603 4.38809,14.438113 6.1556,3.01951 12.07595,-6.50504 19.05002,-18.578874 6.97406,-12.073832 14.19008,-25.263102 14.19008,-25.263102 0,0 -5.85643,-61.3738622 -11.78145,-57.648921 -5.92502,3.724942 -6.59051,4.097541 -6.59051,6.888248 0,2.790707 -6.1043,26.307951 -6.1043,26.307951" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-3-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="print_first_animation.begin + 0.7s" fill="freeze" />
+		<animate xlink:href="#print-letter-3-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" />
+	</g>
+	<g clip-path="url(#print-letter-4)">
+	 <path id="print-letter-4-path" class="anata-path" d="m 189.15976,58.581773 c 0.5641,9.601929 -10.38402,54.480447 -10.38402,54.480447 0,0 4.37799,-27.85517 17.96589,-43.36027 13.58791,-15.505099 16.60653,-16.653285 19.76334,-14.450157 3.1568,2.203128 -0.74586,14.555296 -3.38042,21.52623 -2.63455,6.970934 -12.15623,34.262247 -4.45296,39.953837 7.70327,5.6916 37.79324,-46.985207 37.79324,-46.985207" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-4-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="print_first_animation.begin + 0.8s" fill="freeze" />
+		<animate xlink:href="#print-letter-4-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" />
+	</g>
+	<g clip-path="url(#print-letter-5)">
+	 <path id="print-letter-5-path" class="anata-path " d="m 251.95393,26.446409 c -8.96949,16.06766 -19.41995,67.155565 -19.944,79.888921 -0.52405,12.73336 2.92401,15.80938 10.04848,7.96552 7.12448,-7.84386 28.00853,-44.040909 28.00853,-44.040909 0,0 -83.74688,-18.702336 -84.88741,-22.233291 -1.14052,-3.530954 0.12707,-8.773339 6.6423,-7.88412 6.51524,0.88922 16.06026,2.799169 35.70639,0.884783 19.64614,-1.914386 49.92554,-3.150527 57.54274,-3.150478 7.6172,4.9e-5 56.57024,0.59222 56.57024,0.59222" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-5-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="print_first_animation.begin + 0.9s" fill="freeze" />
+		<animate xlink:href="#print-letter-5-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" />
+	</g>
+	<g clip-path="url(#print-letter-6)">
+	 <path id="print-letter-6-path" class="anata-path" d="m 312.95839,48.050565 c 6.58241,-9.508945 25.80031,-24.349228 25.80031,-24.349228 0,0 -13.99377,38.695111 -18.21367,48.883768 -4.21989,10.188657 -21.18654,49.027165 -23.84343,59.004875 -2.6569,9.97771 -7.17603,31.99372 -7.17603,31.99372 0,0 11.67176,-22.74073 20.20781,-31.83321 8.53605,-9.09248 19.9672,-19.21146 21.85473,-20.88318 1.88754,-1.67171 18.96183,-17.070219 31.52914,-21.931168" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-6-path" attributeName="stroke-dashoffset" from="800" to="0" dur="1s" begin="print_first_animation.begin + 1.1s" fill="freeze" />
+		<animate xlink:href="#print-letter-6-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" />
+	</g>
+	<g clip-path="url(#print-letter-7)">
+	 <path id="print-letter-7-path" class="anata-path" d="m 372.51171,72.07315 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193089 -10.84758,44.955059 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.86572 24.42663,-49.269544 24.42663,-49.269544 0,0 -20.36787,46.933424 -8.30983,51.038684 12.05804,4.10526 29.36994,-37.589178 29.36994,-37.589178" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-7-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="print_first_animation.begin + 1.4s" fill="freeze" />
+		<animate xlink:href="#print-letter-7-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" />
+	</g>
+	<g clip-path="url(#print-letter-8)">
+	 <path id="print-letter-8-path" class="anata-path" d="m 418.15923,28.551136 c -0.3751,7.211655 -25.11366,91.520804 -25.11366,91.520804 0,0 10.99182,-38.603154 21.82511,-47.831819 10.83328,-9.228665 15.23244,-13.695779 21.0876,-11.195412 5.85517,2.500367 7.41269,7.600871 0.45369,23.585206 -6.959,15.984345 -19.57335,26.768865 -19.57335,26.768865 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.80704 -5.86349,-12.80704" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#print-letter-8-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="print_first_animation.begin + 1.6s" fill="freeze" />
+		<animate xlink:href="#print-letter-8-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="print_first_animation.begin + 2.6s" fill="freeze" id="print_last_animation"/>
+	</g>
+</g>
+
+<g id="marketing-group" fill="freeze" stroke-width="40">
+	<g clip-path="url(#market-letter-1)">
+	 <path id="market-letter-1-path" class="anata-path" d="m 21.702078,69.349008 c 2.623334,-5.598698 12.836515,-25.63711 16.297198,-25.21391 3.460683,0.423199 4.8697,3.816104 4.239463,9.187568 -0.630237,5.371464 -3.835996,22.097741 -5.752692,29.933436 -1.916696,7.835696 -7.407822,25.500818 -7.757798,30.374498 -0.349976,4.87367 -0.439742,17.33627 -0.439742,17.33627 L 30.313516,123.75822 50.110173,71.210185 68.37864,29.189936 c 0,0 5.438728,-12.196934 3.429852,3.509101 -2.008876,15.706036 -4.320111,31.718788 -4.243105,36.083821 0.07701,4.365034 0.05807,8.797295 0.577957,11.92295 0.519889,3.125654 1.400413,10.456182 6.151863,-3.039464 4.75145,-13.495646 23.336209,-50.659034 26.006793,-54.465037 2.67059,-3.806003 7.35744,-14.3389562 11.64564,-12.777993 4.28819,1.560963 3.46733,5.752983 1.28394,14.460057 -2.1834,8.707074 -16.927078,51.447858 -16.927078,51.447858 0,0 -12.725941,38.931861 -13.956948,44.240271 -1.231007,5.30842 -7.785793,27.2707 1.964705,30.41372 9.750497,3.14302 18.225911,-16.17188 19.872121,-19.05379 1.64621,-2.8819 10.28757,-19.09838 10.28757,-19.09838" fill="none" stroke="#d64226" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-1-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.8s" begin="print_last_animation.begin + 0.2s" fill="freeze" id="marketing_first_animation"/>
+		<animate xlink:href="#market-letter-1-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-2)">
+	 <path id="market-letter-2-path" class="anata-path" d="m 138.43213,69.049326 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193083 -10.84758,44.955053 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.865711 24.42663,-49.269538 24.42663,-49.269538 0,0 -20.36787,46.933418 -8.30983,51.038678 12.05804,4.10526 29.36994,-37.589172 29.36994,-37.589172" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-2-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 0.6s" fill="freeze" />
+		<animate xlink:href="#market-letter-2-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-3)">
+	 <path id="market-letter-3-path" class="anata-path" d="m 182.79556,44.723286 c -5.53858,6.855292 -9.12162,17.332517 -6.32425,20.707428 2.79737,3.374912 14.78881,-4.216576 14.78881,-4.216576 0,0 -20.03747,43.139082 -8.48307,51.217102 11.55441,8.07801 24.21067,-21.942512 24.21067,-21.942512 v 0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-3-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 0.8s" fill="freeze" />
+		<animate xlink:href="#market-letter-3-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-4)">
+	 <path id="market-letter-4-path" class="anata-path" d="m 224.23193,23.733305 c -4.2091,9.929996 -11.48797,36.099945 -12.89164,42.808987 -1.40367,6.709042 -9.73651,44.521778 -9.44315,51.606948 0.29335,7.08517 0.79962,12.09063 0.79962,12.09063 l 6.52741,-46.549635 7.4835,-37.949642 26.35696,-9.565766 c 0,0 11.59242,7.568824 4.66865,10.462697 -6.92378,2.893873 -29.35344,27.691954 -32.53309,32.724405 -3.17966,5.032451 -9.52125,21.999371 -9.52125,21.999371 l 1.38069,8.78087 c 0,0 -3.61241,0.76708 3.30522,0.41446 6.91764,-0.35262 20.86875,-11.176646 22.52052,-12.874773 1.65176,-1.698126 17.06231,-13.024664 17.06231,-13.024664" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-4-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 0.9s" fill="freeze" />
+		<animate xlink:href="#market-letter-4-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-5)">
+	 <path id="market-letter-5-path" class="anata-path " d="m 251.00259,90.005976 c 5.00732,1.574489 17.7559,-13.980209 22.08971,-20.370832 4.33382,-6.390623 6.95652,-10.580067 5.05293,-12.467203 -1.90359,-1.887136 -4.13064,-2.843007 -11.0515,2.695978 -6.92086,5.538984 -31.79206,32.583162 -20.45179,45.414911 11.34028,12.83175 37.18256,-17.511597 37.18256,-17.511597 l 16.89077,-19.31691" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-5-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 1.1s" fill="freeze" />
+		<animate xlink:href="#market-letter-5-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-6)">
+	 <path id="market-letter-6-path" class="anata-path" d="m 307.90769,23.675559 c -8.96949,16.06766 -19.41995,67.155565 -19.944,79.888921 -0.52405,12.73336 2.92401,15.80938 10.04848,7.96552 7.12448,-7.84386 28.00853,-44.040909 28.00853,-44.040909 0,0 -83.74688,-18.702336 -84.88741,-22.233291 -1.14052,-3.530954 0.12707,-8.773339 6.6423,-7.88412 6.51524,0.88922 16.06026,2.799169 35.70639,0.884783 19.64614,-1.914386 49.92554,-3.150527 57.54274,-3.150478 7.6172,4.9e-5 56.57024,0.59222 56.57024,0.59222" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-6-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 1.2s" fill="freeze" />
+		<animate xlink:href="#market-letter-6-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-7)">
+	 <path id="market-letter-7-path" class="anata-path" d="m 330.27634,52.00866 c -6.21043,10.976861 -12.95934,39.244223 -13.37041,43.784246 -0.41106,4.540024 -1.76751,11.418604 4.38809,14.438114 6.1556,3.01951 12.07595,-6.50504 19.05002,-18.578875 6.97406,-12.073832 14.19008,-25.263102 14.19008,-25.263102 0,0 -5.85643,-61.373862 -11.78145,-57.6489203 -5.92502,3.7249413 -6.59051,4.0975403 -6.59051,6.8882473 0,2.790707 -6.1043,26.307951 -6.1043,26.307951" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-7-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 1.5s" fill="freeze" />
+		<animate xlink:href="#market-letter-7-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-8)">
+	 <path id="market-letter-8-path" class="anata-path" d="m 346.14213,56.231708 c 0.5641,9.601929 -10.38402,54.480452 -10.38402,54.480452 0,0 4.37799,-27.855175 17.96589,-43.360275 13.58791,-15.505099 16.60653,-16.653285 19.76334,-14.450157 3.1568,2.203128 -0.74586,14.555296 -3.38042,21.52623 -2.63455,6.970934 -12.15623,34.262252 -4.45296,39.953842 7.70327,5.6916 37.79324,-46.985212 37.79324,-46.985212" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-8-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 1.6s" fill="freeze" />
+		<animate xlink:href="#market-letter-8-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-9)">
+	 <path id="market-letter-9-path" class="anata-path" d="m 421.1964,60.096446 c -6.7139,-7.127676 -9.24327,-6.42479 -19.61428,1.927937 -10.37101,8.352728 -19.64629,33.610826 -18.72015,38.799067 0.92614,5.18824 3.94069,10.57731 11.28021,5.15635 7.33952,-5.42096 21.1067,-27.163823 21.1067,-27.163823 l 11.87124,-30.111805 c 0,0 -15.10096,53.347688 -16.83988,62.010868 -1.73892,8.66317 -15.76053,45.15284 -20.10418,52.8668 -4.34365,7.71396 -7.64765,8.99539 -10.01798,8.21897 -2.37034,-0.77641 -5.40454,-5.06553 -2.89123,-18.72781 2.51331,-13.66228 18.28191,-39.22774 23.34565,-43.7776 5.06373,-4.54986 48.23958,-44.818177 48.23958,-44.818177" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-9-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 1.7s" fill="freeze" />
+		<animate xlink:href="#market-letter-9-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-10)">
+	 <path id="market-letter-10-path" class="anata-path" d="m 485.43626,45.092996 c 6.58241,-9.508945 25.80031,-24.349228 25.80031,-24.349228 0,0 -13.99377,38.695111 -18.21367,48.883768 -4.21989,10.188657 -21.18654,49.027164 -23.84343,59.004874 -2.6569,9.97771 -7.17603,31.99372 -7.17603,31.99372 0,0 11.67176,-22.74073 20.20781,-31.83321 8.53605,-9.09248 19.9672,-19.21146 21.85473,-20.88318 1.88754,-1.67171 18.96183,-17.070218 31.52914,-21.931167" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-10-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 2s" fill="freeze" />
+		<animate xlink:href="#market-letter-10-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-11)">
+	 <path id="market-letter-11-path" class="anata-path" d="m 544.98958,69.115581 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193088 -10.84758,44.955058 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.865716 24.42663,-49.269543 24.42663,-49.269543 0,0 -20.36787,46.933423 -8.30983,51.038683 12.05804,4.10526 29.36994,-37.589177 29.36994,-37.589177" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-11-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 2.2s" fill="freeze" />
+		<animate xlink:href="#market-letter-11-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" />
+	</g>
+	<g clip-path="url(#market-letter-12)">
+		<path id="market-letter-12-path" class="anata-path" d="m 590.6371,25.593567 c -0.3751,7.211655 -25.11366,91.520803 -25.11366,91.520803 0,0 10.99182,-38.603153 21.82511,-47.831818 10.83328,-9.228665 15.23244,-13.695779 21.0876,-11.195412 5.85517,2.500367 7.41269,7.600871 0.45369,23.585206 -6.959,15.984342 -19.57335,26.768864 -19.57335,26.768864 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.80704 -5.86349,-12.80704" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#market-letter-12-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="marketing_first_animation.begin + 2.4s" fill="freeze" />
+		<animate xlink:href="#market-letter-12-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="marketing_first_animation.begin + 3.4s" fill="freeze" id="marketing_last_animation"/>
+	</g>
+</g>
+
+<g id="promo-group" fill="freeze" stroke-width="40">
+	<g clip-path="url(#promo-letter-1)">
+		<path id="promo-letter-1-path" class="anata-path" d="M 68.764373,39.079253 C 66.861739,42.90736 43.935517,124.82099 43.788215,129.56166 43.640913,134.30233 43.25141,143.807 43.25141,143.807 L 2.3758486,137.68734 c 0,0 -26.8070366,-65.316218 -2.35275963,-81.182382 C 24.477366,40.638793 38.236107,34.763072 38.236107,34.763072 c 0,0 22.909618,-10.308416 42.066742,-14.089681 19.157124,-3.781265 56.075141,-4.856311 59.595871,7.179804 3.52072,12.036115 -18.49833,27.096464 -35.50961,37.247581 -17.011286,10.151117 -37.829143,20.443339 -37.829143,20.443339 0,0 -51.127007,23.421355 -56.989522,10.987836 C 3.70793,84.098425 49.508891,64.345072 58.420054,61.087369" fill="none" stroke="#d64226" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-1-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.8s" begin="marketing_last_animation.begin + 0.2s" fill="freeze" id="promo_first_animation"/>
+		<animate xlink:href="#promo-letter-1-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#promo-letter-2)">
+	 <path id="promo-letter-2-path" class="anata-path" d="m 131.42367,48.142907 c -5.53858,6.855292 -9.12162,17.332517 -6.32425,20.707428 2.79737,3.374912 14.78881,-4.216576 14.78881,-4.216576 0,0 -20.03747,43.139071 -8.48307,51.217091 11.55441,8.07801 24.21067,-21.942501 24.21067,-21.942501 v 0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-2-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="promo_first_animation.begin + 0.6s" fill="freeze" />
+		<animate xlink:href="#promo-letter-2-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#promo-letter-3)">
+	 <path id="promo-letter-3-path" class="anata-path" d="m 155.82867,76.087879 c 3.79231,6.930596 -2.28363,20.407109 -1.91909,24.784941 0.36453,4.37783 0.68481,13.65343 6.44025,15.33068 5.75544,1.67726 12.19063,-3.73903 15.98214,-9.04952 3.7915,-5.31048 12.25626,-24.212072 14.15277,-34.899582 1.8965,-10.687509 0.42277,-15.958799 -3.29098,-18.147758 -3.71376,-2.188958 -12.87156,3.764243 -17.0069,9.411365 -4.13533,5.647122 -11.26451,14.972283 -10.55514,22.597952 0.70936,7.625668 2.53845,11.770682 5.87388,12.954526 3.33543,1.183847 7.22502,1.057517 14.61004,-2.057297 7.38501,-3.114814 33.7549,-36.70192 33.7549,-36.70192" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-3-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="promo_first_animation.begin + 0.7s" fill="freeze" />
+		<animate xlink:href="#promo-letter-3-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#promo-letter-4)">
+	 <path id="promo-letter-4-path" class="anata-path" d="m 211.70981,55.968603 c -0.43872,6.65475 -11.35074,43.126208 -11.75015,47.843437 -0.39941,4.71722 -0.2974,13.9667 -0.2974,13.9667 0,0 2.3479,-3.07426 3.11482,-6.22826 0.76693,-3.154 1.24286,-21.876342 14.89349,-36.215621 13.65064,-14.33928 13.93891,-16.151082 13.93891,-16.151082 0,0 -8.87513,35.833578 -9.15832,38.724757 -0.2832,2.891176 -0.99883,13.515356 -0.99883,13.515356 l 11.2969,-22.593297 c 0,0 13.84572,-23.847497 15.20828,-25.977028 1.36256,-2.129532 4.26787,-7.426114 6.68193,-6.064477 2.41407,1.361638 1.24748,6.308482 0.78311,8.597148 -0.46437,2.288665 -7.92138,28.122598 -8.98902,32.691248 -1.06765,4.568656 -6.21306,23.440416 -2.19904,25.896146 4.01401,2.45573 10.41481,-6.27729 12.45097,-9.73399 2.03617,-3.4567 16.26404,-26.009469 16.26404,-26.009469" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-4-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="promo_first_animation.begin + 0.8s" fill="freeze" />
+		<animate xlink:href="#promo-letter-4-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#promo-letter-5)">
+	 <path id="promo-letter-5-path" class="anata-path " d="m 270.75772,76.179135 c 3.79231,6.93059 -2.28363,20.40711 -1.91909,24.784935 0.36453,4.37783 0.68481,13.65343 6.44025,15.33068 5.75544,1.67726 12.19063,-3.73903 15.98214,-9.04952 3.7915,-5.31048 12.25626,-24.212065 14.15277,-34.899578 1.8965,-10.687509 0.42277,-15.958799 -3.29098,-18.147758 -3.71376,-2.188958 -12.87156,3.764243 -17.0069,9.411365 -4.13533,5.647122 -11.26451,14.972286 -10.55514,22.597956 0.70936,7.62566 2.53845,11.77068 5.87388,12.95452 3.33543,1.183845 7.22502,1.057515 14.61004,-2.0573 7.38501,-3.11481 34.94847,-39.824756 34.94847,-39.824756" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-5-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="promo_first_animation.begin + 1s" fill="freeze" />
+		<animate xlink:href="#promo-letter-5-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#promo-letter-6)">
+	 <path id="promo-letter-6-path" class="anata-path" d="m 367.12443,47.637913 c 6.58241,-9.508945 25.80031,-24.349228 25.80031,-24.349228 0,0 -13.99377,38.695111 -18.21367,48.883768 -4.21989,10.188657 -21.18654,49.027167 -23.84343,59.004877 -2.6569,9.97771 -7.17603,31.99372 -7.17603,31.99372 0,0 11.67176,-22.74073 20.20781,-31.83321 8.53605,-9.09248 19.9672,-19.21146 21.85473,-20.88318 1.88754,-1.67171 18.96183,-17.070221 31.52914,-21.93117" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-6-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="promo_first_animation.begin + 1.2s" fill="freeze" />
+		<animate xlink:href="#promo-letter-6-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#promo-letter-7)">
+	 <path id="promo-letter-7-path" class="anata-path" d="m 426.67775,71.660498 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193091 -10.84758,44.955061 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.86572 24.42663,-49.269546 24.42663,-49.269546 0,0 -20.36787,46.933426 -8.30983,51.038686 12.05804,4.10526 29.36994,-37.58918 29.36994,-37.58918" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-7-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="promo_first_animation.begin + 1.5s" fill="freeze" />
+		<animate xlink:href="#promo-letter-7-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#promo-letter-8)">
+	 <path id="promo-letter-8-path" class="anata-path" d="m 472.32527,28.138484 c -0.3751,7.211655 -25.11366,91.520806 -25.11366,91.520806 0,0 10.99182,-38.603156 21.82511,-47.831821 10.83328,-9.228665 15.23244,-13.695779 21.0876,-11.195412 5.85517,2.500367 7.41269,7.600871 0.45369,23.585206 -6.959,15.984347 -19.57335,26.768867 -19.57335,26.768867 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.80704 -5.86349,-12.80704" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#promo-letter-8-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="promo_first_animation.begin + 1.7s" fill="freeze" />
+		<animate xlink:href="#promo-letter-8-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="promo_first_animation.begin + 2.7s" fill="freeze" id="promo_last_animation"/>
+	</g>
+</g>
+
+<g id="web-group" fill="freeze" stroke-width="40">
+	<g clip-path="url(#web-letter-1)">
+	 <path id="web-letter-1-path" class="anata-path" d="M 19.49401,68.945005 C 27.574027,57.656603 34.127122,42.763493 38.716925,39.225867 43.306728,35.688241 49.232006,32.94238 49.232006,32.94238 c 0,0 -4.035843,7.95223 -6.105749,13.614804 C 41.056352,52.219759 16.145238,113.8179 27.822789,120.04042 39.500341,126.26295 54.600713,74.935507 67.97729,57.440785 81.353867,39.946064 87.151307,31.766564 87.151307,31.766564 c 0,0 -8.943219,18.07136 -13.949689,30.969373 -5.00647,12.898014 -10.535805,59.157363 2.456272,65.720793 12.992077,6.56343 25.48948,-20.37342 29.92376,-32.879987 4.43427,-12.506565 8.11,-22.525745 10.51169,-38.036709 2.40168,-15.510963 -1.58535,-57.93918299 -1.58535,-57.93918299" fill="none" stroke="#d64226" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-1-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.6s" begin="promo_last_animation.begin + 0.2s" fill="freeze" id="web_first_animation"/>
+		<animate xlink:href="#web-letter-1-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-2)">
+	 <path id="web-letter-2-path" class="anata-path" d="m 128.42823,89.11713 c 5.00732,1.57449 17.7559,-13.98021 22.08971,-20.370829 4.33382,-6.390623 6.95652,-10.580067 5.05293,-12.467203 -1.90359,-1.887136 -4.13064,-2.843007 -11.0515,2.695978 -6.92086,5.538984 -31.79206,32.583164 -20.45179,45.414904 11.34028,12.83175 37.18256,-17.51159 37.18256,-17.51159 l 16.89077,-19.31691" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-2-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="web_first_animation.begin + 0.4s" fill="freeze" />
+		<animate xlink:href="#web-letter-2-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-3)">
+	 <path id="web-letter-3-path" class="anata-path" d="m 181.24944,24.49687 c -0.3751,7.211655 -25.11366,91.52081 -25.11366,91.52081 0,0 10.99182,-38.603163 21.82511,-47.831823 10.83328,-9.22867 15.23244,-13.69578 21.0876,-11.19541 5.85517,2.50036 7.41269,7.60087 0.45369,23.5852 -6.959,15.98435 -19.57335,26.768873 -19.57335,26.768873 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.807043 -5.86349,-12.807043" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-3-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="web_first_animation.begin + 0.6s" fill="freeze" />
+		<animate xlink:href="#web-letter-3-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-4)">
+	 <path id="web-letter-4-path" class="anata-path" d="M 290.1162,122.06845 C 275.68801,101.2586 263.42285,63.15734 261.42986,49.483421 c -1.99299,-13.673918 3.94615,-39.9346294 16.50492,-35.726613 12.55876,4.208017 -2.75122,28.574444 -4.3063,31.204325 -1.55508,2.629881 -29.79082,37.08022 -34.27325,46.255539 -4.48243,9.175318 -14.23487,31.304158 -5.66943,37.957708 8.56545,6.65355 19.89882,-4.98699 31.45472,-21.62139 11.55591,-16.634394 40.7877,-56.4572 40.7877,-56.4572" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-4-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="web_first_animation.begin + 0.8s" fill="freeze" />
+		<animate xlink:href="#web-letter-4-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-5)">
+	 <path id="web-letter-5-path" class="anata-path " d="m 367.92951,42.542949 c -2.6295,11.094882 -20.1713,50.950918 -21.34789,56.175088 -1.1766,5.224173 -3.07393,15.861463 -2.91685,17.806743 0.15709,1.94528 9.18476,4.55049 9.18476,4.55049 l 5.54182,-13.46258 -32.11588,-36.500153 c 0,0 0.0837,-1.517735 1.78436,-3.112282 1.70064,-1.594548 21.89982,-25.280456 37.94673,-34.464124 16.0469,-9.183668 47.20697,-21.731932 50.17893,5.356435 2.97197,27.088367 -9.95953,49.430573 -24.5817,66.308754 -14.62217,16.87818 -37.10909,30.20213 -47.53213,31.53022 -10.42304,1.3281 -14.65411,-0.40211 -17.789,-4.11604 -3.1349,-3.71393 -10.48008,-5.2258 13.31809,-32.23835" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-5-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.6s" begin="web_first_animation.begin + 1.1s" fill="freeze" />
+		<animate xlink:href="#web-letter-5-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-6)">
+	 <path id="web-letter-6-path" class="anata-path" d="m 424.71863,89.18825 c 5.00732,1.574489 17.7559,-13.980209 22.08971,-20.370832 4.33382,-6.390623 6.95652,-10.580067 5.05293,-12.467203 -1.90359,-1.887136 -4.13064,-2.843007 -11.0515,2.695978 -6.92086,5.538984 -31.79206,32.583162 -20.45179,45.414907 11.34028,12.83175 37.18256,-17.511593 37.18256,-17.511593 l 16.89077,-19.31691" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-6-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="web_first_animation.begin + 1.5s" fill="freeze" />
+		<animate xlink:href="#web-letter-6-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-7)">
+	 <path id="web-letter-7-path" class="anata-path" d="m 465.63113,43.399876 c 1.86811,18.087365 -2.82145,34.586776 -2.55505,41.555467 0.26639,6.968692 1.48345,30.797827 1.48345,30.797827 0,0 5.40846,-17.781188 9.44857,-26.961848 4.04011,-9.18066 18.5654,-31.693398 24.63584,-38.997958 6.07043,-7.304561 15.61796,-15.970662 15.61796,-15.970662" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-7-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="web_first_animation.begin + 1.6s" fill="freeze" />
+		<animate xlink:href="#web-letter-7-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-8)">
+	 <path id="web-letter-8-path" class="anata-path" d="m 546.85364,43.87912 c 6.58241,-9.508945 25.80031,-24.349228 25.80031,-24.349228 0,0 -13.99377,38.695111 -18.21367,48.883768 -4.21989,10.188657 -21.18654,49.02717 -23.84343,59.00488 -2.6569,9.97771 -7.17603,31.99372 -7.17603,31.99372 0,0 11.67176,-22.74073 20.20781,-31.83321 8.53605,-9.09248 19.9672,-19.21146 21.85473,-20.88318 1.88754,-1.67171 18.96183,-17.070224 31.52914,-21.931173" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-8-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.6s" begin="web_first_animation.begin + 1.8s" fill="freeze" />
+		<animate xlink:href="#web-letter-8-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-9)">
+	 <path id="web-letter-9-path" class="anata-path" d="m 606.40696,67.901705 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193094 -10.84758,44.955064 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.865723 24.42663,-49.269549 24.42663,-49.269549 0,0 -20.36787,46.933429 -8.30983,51.038689 12.05804,4.10526 29.36994,-37.589183 29.36994,-37.589183" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-9-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="web_first_animation.begin + 2.1s" fill="freeze" />
+		<animate xlink:href="#web-letter-9-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" />
+	</g>
+	<g clip-path="url(#web-letter-10)">
+	 <path id="web-letter-10-path" class="anata-path" d="m 652.05448,24.379691 c -0.3751,7.211655 -25.11366,91.520809 -25.11366,91.520809 0,0 10.99182,-38.603159 21.82511,-47.831824 10.83328,-9.228665 15.23244,-13.695779 21.0876,-11.195412 5.85517,2.500367 7.41269,7.600871 0.45369,23.585206 -6.959,15.984347 -19.57335,26.76887 -19.57335,26.76887 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.807043 -5.86349,-12.807043" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#web-letter-10-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="web_first_animation.begin + 2.3s" fill="freeze" />
+		<animate xlink:href="#web-letter-10-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="web_first_animation.begin + 3.3s" fill="freeze" id="web_last_animation"/>
+	</g>
+</g>
+
+<g id="apparel-group" fill="freeze" stroke-width="40">
+	<g clip-path="url(#apparel-a)">
+	 <path id="app-letter-1-path" class="anata-path" d="M 77.126258,36.422779 C 59.909736,29.352656 52.01106,34.484107 38.411696,49.027659 24.812332,63.571212 12.421646,87.114502 9.3747265,103.80491 c -3.046919,16.6904 -4.0456432,33.0817 7.7615315,37.37169 11.807175,4.28999 24.922858,-11.22559 31.801519,-22.7166 6.878662,-11.49101 24.585513,-46.531743 28.062531,-55.373838 3.477018,-8.842096 8.354369,-33.868891 8.354369,-33.868891 0,0 -16.109789,63.446888 -13.733685,94.248859 2.376104,30.80198 11.002539,25.12629 11.002539,25.12629 v 0" fill="none" stroke="#d64226" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-1-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.8s" begin="web_last_animation.begin + 0.2s" fill="freeze" id = "apparel_first_letter_ani"/>
+		<animate xlink:href="#app-letter-1-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-p1)">
+	 <path id="app-letter-2-path" class="anata-path anata-path--e" d="m 94.773758,56.912048 c 10.364732,7.912904 7.835382,10.49626 7.835382,10.49626 L 79.520658,156.75051 c 0,0 13.578611,-73.097235 31.904172,-92.133213 18.32556,-19.035978 25.92535,-7.302466 22.53797,5.821491 -3.38738,13.123957 -23.2911,34.280042 -27.65386,37.613622 -4.36276,3.33358 -11.372431,5.6534 -11.372431,5.6534" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-2-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 0.4s" fill="freeze" />
+		<animate xlink:href="#app-letter-2-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-p2)">
+	 <path id="app-letter-3-path" class="anata-path anata-path--s" d="m 137.77369,56.912048 c 10.36473,7.912904 7.83538,10.49626 7.83538,10.49626 l -23.08848,89.342202 c 0,0 13.57861,-73.097235 31.90417,-92.133213 18.32556,-19.035978 25.92535,-7.302466 22.53797,5.821491 -3.38738,13.123957 -23.2911,34.280042 -27.65386,37.613622 -4.36276,3.33358 -11.37243,5.6534 -11.37243,5.6534" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-3-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 0.6s" fill="freeze" />
+		<animate xlink:href="#app-letter-3-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-a2)">
+	 <path id="app-letter-4-path" class="anata-path anata-path--i" d="m 204.93457,71.858078 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193091 -10.84758,44.955061 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.86572 24.42663,-49.269546 24.42663,-49.269546 0,0 -20.36787,46.933426 -8.30983,51.038686 12.05804,4.10526 29.36994,-37.58918 29.36994,-37.58918" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-4-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 0.8s" fill="freeze" />
+		<animate xlink:href="#app-letter-4-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-r)">
+	 <path id="app-letter-5-path" class="anata-path anata-path--g" d="m 248.87581,47.513841 c -5.53858,6.855292 -9.12162,17.332517 -6.32425,20.707428 2.79737,3.374912 14.78881,-4.216576 14.78881,-4.216576 0,0 -20.03747,43.139087 -8.48307,51.217107 11.55441,8.07801 24.21067,-21.942517 24.21067,-21.942517 v 0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+
+		<animate xlink:href="#app-letter-5-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 1s" fill="freeze" />
+		<animate xlink:href="#app-letter-5-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-e)">
+	 <path id="app-letter-6-path" class="anata-path anata-path--n" d="m 274.34518,93.199643 c 5.00732,1.574489 17.7559,-13.980209 22.08971,-20.370832 4.33382,-6.390623 6.95652,-10.580067 5.05293,-12.467203 -1.90359,-1.887136 -4.13064,-2.843007 -11.0515,2.695978 -6.92086,5.538984 -31.79206,32.583162 -20.45179,45.414914 11.34028,12.83175 37.18256,-17.5116 37.18256,-17.5116 l 16.89077,-19.31691" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-6-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 1.1s" fill="freeze" />
+		<animate xlink:href="#app-letter-6-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-l1)">
+	 <path id="app-letter-7-path" class="anata-path anata-path--l" d="m 330.95535,29.342124 c -5.61614,8.336923 -17.92882,56.800036 -19.76603,63.850951 -1.83721,7.050915 -7.20925,23.788835 -1.85289,26.407555 5.35637,2.61871 11.60239,-6.71039 13.41826,-9.25273 1.81587,-2.54234 15.72599,-29.849604 15.72599,-29.849604 v 0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-7-path" attributeName="stroke-dashoffset" from="800" to="0" dur="1s" begin="apparel_first_letter_ani.begin + 1.2s" fill="freeze" />
+		<animate xlink:href="#app-letter-7-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-l2)">
+	 <path id="app-letter-8-path" class="anata-path anata-path--a" d="m 385.05394,47.784406 c 6.58241,-9.508945 25.80031,-24.349228 25.80031,-24.349228 0,0 -13.99377,38.695111 -18.21367,48.883768 -4.21989,10.188657 -21.18654,49.027164 -23.84343,59.004874 -2.6569,9.97771 -7.17603,31.99372 -7.17603,31.99372 0,0 11.67176,-22.74073 20.20781,-31.83321 8.53605,-9.09248 19.9672,-19.21146 21.85473,-20.88318 1.88754,-1.67171 18.96183,-17.070218 31.52914,-21.931167" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-8-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 1.5s" fill="freeze" />
+		<animate xlink:href="#app-letter-8-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-a3)">
+	 <path id="app-letter-9-path" class="anata-path anata-path--b" d="m 445.08727,71.858078 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193091 -10.84758,44.955061 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.86572 24.42663,-49.269546 24.42663,-49.269546 0,0 -20.36787,46.933426 -8.30983,51.038686 12.05804,4.10526 29.36994,-37.58918 29.36994,-37.58918" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-9-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 1.8s" fill="freeze" />
+		<animate xlink:href="#app-letter-9-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" />
+	</g>
+	<g clip-path="url(#apparel-b)">
+	 <path id="app-letter-10-path" class="anata-path anata-path--b" d="m 490.3413,28.255461 c -0.3751,7.211655 -25.11366,91.520809 -25.11366,91.520809 0,0 10.99182,-38.603159 21.82511,-47.831824 10.83328,-9.228665 15.23244,-13.695779 21.0876,-11.195412 5.85517,2.500367 7.41269,7.600871 0.45369,23.585206 -6.959,15.98434 -19.57335,26.76887 -19.57335,26.76887 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.80705 -5.86349,-12.80705" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#app-letter-10-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="apparel_first_letter_ani.begin + 2s" fill="freeze" />
+		<animate xlink:href="#app-letter-10-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="apparel_first_letter_ani.begin + 2.7s" fill="freeze" id="apparel_last_animation"/>
+	</g>
+</g>
+
+<g id="experiential-group" fill="freeze" stroke-width="40">
+	<g clip-path="url(#exp-letter-1)">
+	 <path id="exp-letter-1-path" class="anata-path" d="M 28.831521,27.935829 C 64.851279,30.592799 105.6662,16.792662 136.20129,22.199567 166.73638,27.606472 78.095319,32.897006 73.887609,35.691293 69.6799,38.485579 56.235086,58.375344 52.831792,63.340225 49.428498,68.305105 17.043473,135.43038 17.043473,135.43038 l -1.173183,2.27213 2.993887,1.2896 c 0,0 17.601147,-7.05546 24.570473,-9.23311 6.969326,-2.17765 43.028556,-13.31972 62.09693,-14.10011 C 124.59996,114.87851 -11.658914,99.847398 18.5343,86.234162 48.727513,72.620926 63.699569,68.559932 98.854173,62.963072" fill="none" stroke="#d64226" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-1-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.8s" begin="apparel_last_animation.begin + 0.2s" fill="freeze" id="exp_first_animation"/>
+		<animate xlink:href="#exp-letter-1-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-2)">
+	 <path id="exp-letter-2-path" class="anata-path anata-path--e" d="m 100.92233,50.845973 c 9.97123,6.844177 17.0545,23.529277 19.55099,35.137609 2.4965,11.608332 5.61859,15.505358 9.14432,15.963588 3.52572,0.45823 7.72641,-4.030903 9.92262,-6.794805 2.19621,-2.763902 24.61422,-33.452242 24.61422,-33.452242 0,0 -14.29523,-27.143771 -24.63354,-13.239897 -10.33831,13.903873 -58.88849,78.831714 -58.88849,78.831714" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-2-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 0.4s" fill="freeze" />
+		<animate xlink:href="#exp-letter-2-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-3)">
+	 <path id="exp-letter-3-path" class="anata-path anata-path--s" d="m 150.60486,52.270157 c 10.36473,7.912904 7.83538,10.49626 7.83538,10.49626 l -23.08848,89.342203 c 0,0 13.57861,-73.097236 31.90417,-92.133214 18.32556,-19.035978 25.92535,-7.302466 22.53797,5.821491 -3.38738,13.123957 -23.2911,34.280043 -27.65386,37.613623 -4.36276,3.33358 -11.37243,5.6534 -11.37243,5.6534" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-3-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 0.6s" fill="freeze" />
+		<animate xlink:href="#exp-letter-3-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-4)">
+	 <path id="exp-letter-4-path" class="anata-path anata-path--i" d="m 196.09346,89.062204 c 5.00732,1.574489 17.7559,-13.980209 22.08971,-20.370832 4.33382,-6.390623 6.95652,-10.580067 5.05293,-12.467203 -1.90359,-1.887136 -4.13064,-2.843007 -11.0515,2.695978 -6.92086,5.538984 -31.79206,32.583162 -20.45179,45.414913 11.34028,12.83175 37.18256,-17.511599 37.18256,-17.511599 l 16.89077,-19.31691" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-4-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 0.8s" fill="freeze" />
+		<animate xlink:href="#exp-letter-4-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-5)">
+	 <path id="exp-letter-5-path" class="anata-path anata-path--g" d="m 247.79706,44.114224 c -5.53858,6.855292 -9.12162,17.332517 -6.32425,20.707428 2.79737,3.374912 14.78881,-4.216576 14.78881,-4.216576 0,0 -20.03747,43.139084 -8.48307,51.217104 11.55441,8.07801 24.21067,-21.942514 24.21067,-21.942514 v 0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-5-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 1s" fill="freeze" />
+		<animate xlink:href="#exp-letter-5-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-6)">
+	 <path id="exp-letter-6-path" class="anata-path anata-path--n" d="m 284.22553,50.913593 c -6.21043,10.976861 -12.95934,39.244223 -13.37041,43.784246 -0.41106,4.540025 -1.76751,11.418601 4.38809,14.438111 6.1556,3.01951 12.07595,-6.50504 19.05002,-18.578872 6.97406,-12.073832 14.19008,-25.263102 14.19008,-25.263102 0,0 -5.85643,-61.3738623 -11.78145,-57.6489206 -5.92502,3.7249416 -6.59051,4.0975406 -6.59051,6.8882476 0,2.790707 -6.1043,26.307951 -6.1043,26.307951" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-6-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 1.1s" fill="freeze" />
+		<animate xlink:href="#exp-letter-6-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-7)">
+	 <path id="exp-letter-7-path" class="anata-path anata-path--l" d="m 299.88816,88.966498 c 5.00732,1.574489 17.7559,-13.980209 22.08971,-20.370832 4.33382,-6.390623 6.95652,-10.580067 5.05293,-12.467203 -1.90359,-1.887136 -4.13064,-2.843007 -11.0515,2.695978 -6.92086,5.538984 -31.79206,32.583162 -20.45179,45.414909 11.34028,12.83175 37.18256,-17.511595 37.18256,-17.511595 l 16.89077,-19.31691" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-7-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 1.2s" fill="freeze" />
+		<animate xlink:href="#exp-letter-7-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-8)">
+	 <path id="exp-letter-8-path" class="anata-path anata-path--a" d="m 338.8821,54.956216 c 0.5641,9.601929 -10.38402,54.480454 -10.38402,54.480454 0,0 4.37799,-27.855177 17.96589,-43.360277 13.58791,-15.505099 16.60653,-16.653285 19.76334,-14.450157 3.1568,2.203128 -0.74586,14.555296 -3.38042,21.52623 -2.63455,6.970934 -12.15623,34.262254 -4.45296,39.953844 7.70327,5.6916 37.79324,-46.985214 37.79324,-46.985214" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-8-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 1.4s" fill="freeze" />
+		<animate xlink:href="#exp-letter-8-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-9)">
+	 <path id="exp-letter-9-path" class="anata-path anata-path--b" d="m 401.64329,22.173414 c -8.96949,16.06766 -19.41995,67.155565 -19.944,79.888926 -0.52405,12.73336 2.92401,15.80938 10.04848,7.96552 7.12448,-7.84386 28.00853,-44.040914 28.00853,-44.040914 0,0 -83.74688,-18.702336 -84.88741,-22.233291 -1.14052,-3.530954 0.12707,-8.773339 6.6423,-7.88412 6.51524,0.88922 16.06026,2.799169 35.70639,0.884783 19.64614,-1.914386 49.92554,-3.150527 57.54274,-3.150478 7.6172,4.9e-5 56.57024,0.59222 56.57024,0.59222" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-9-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 1.6s" fill="freeze" />
+		<animate xlink:href="#exp-letter-9-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-10)">
+	 <path id="exp-letter-10-path" class="anata-path anata-path--b" d="m 424.04183,50.749867 c -6.21043,10.976861 -12.95934,39.244223 -13.37041,43.784246 -0.41106,4.540025 -1.76751,11.418597 4.38809,14.438107 6.1556,3.01951 12.07595,-6.50504 19.05002,-18.578868 6.97406,-12.073832 14.19008,-25.263102 14.19008,-25.263102 0,0 -5.85643,-61.3738621 -11.78145,-57.6489204 -5.92502,3.7249414 -6.59051,4.0975404 -6.59051,6.8882474 0,2.790707 -6.1043,26.307951 -6.1043,26.307951" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-10-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 1.8s" fill="freeze" />
+		<animate xlink:href="#exp-letter-10-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-11)">
+	 <path id="exp-letter-11-path" class="anata-path anata-path--b" d="m 461.40868,67.958759 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.19309 -10.84758,44.95506 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.865718 24.42663,-49.269545 24.42663,-49.269545 0,0 -20.36787,46.933425 -8.30983,51.038685 12.05804,4.10526 29.36994,-37.589179 29.36994,-37.589179" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-11-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 2s" fill="freeze" />
+		<animate xlink:href="#exp-letter-11-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-12)">
+	 <path id="exp-letter-12-path" class="anata-path anata-path--b" d="m 510.33334,25.546669 c -5.61614,8.336923 -17.92882,56.800036 -19.76603,63.850951 -1.83721,7.050915 -7.20925,23.78884 -1.85289,26.40756 5.35637,2.61871 11.60239,-6.71039 13.41826,-9.25273 1.81587,-2.54234 15.72599,-29.849609 15.72599,-29.849609 v 0" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-12-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 2.2s" fill="freeze" />
+		<animate xlink:href="#exp-letter-12-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-13)">
+	 <path id="exp-letter-13-path" class="anata-path anata-path--b" d="m 564.05111,43.885327 c 6.58241,-9.508945 25.80031,-24.349228 25.80031,-24.349228 0,0 -13.99377,38.695111 -18.21367,48.883768 -4.21989,10.188657 -21.18654,49.027163 -23.84343,59.004873 -2.6569,9.97771 -7.17603,31.99372 -7.17603,31.99372 0,0 11.67176,-22.74073 20.20781,-31.83321 8.53605,-9.09248 19.9672,-19.21146 21.85473,-20.88318 1.88754,-1.67171 18.96183,-17.070217 31.52914,-21.931166" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-13-path" attributeName="stroke-dashoffset" from="800" to="0" dur="1s" begin="exp_first_animation.begin + 2.4s" fill="freeze" />
+		<animate xlink:href="#exp-letter-13-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-14)">
+	 <path id="exp-letter-14-path" class="anata-path anata-path--b" d="m 623.81684,67.959572 c 5.05146,-9.128401 6.27326,-26.644182 -12.68891,-1.245209 -18.96217,25.398973 -14.84314,42.193087 -10.84758,44.955057 3.99555,2.76198 10.26028,-1.12343 15.44142,-7.98915 5.18113,-6.865715 24.42663,-49.269542 24.42663,-49.269542 0,0 -20.36787,46.933422 -8.30983,51.038682 12.05804,4.10526 29.36994,-37.589176 29.36994,-37.589176" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-14-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 2.7s" fill="freeze" />
+		<animate xlink:href="#exp-letter-14-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" />
+	</g>
+	<g clip-path="url(#exp-letter-15)">
+	 <path id="exp-letter-15-path" class="anata-path anata-path--b" d="m 669.49834,24.41645 c -0.3751,7.211655 -25.11366,91.52081 -25.11366,91.52081 0,0 10.99182,-38.60316 21.82511,-47.831825 10.83328,-9.228665 15.23244,-13.695779 21.0876,-11.195412 5.85517,2.500367 7.41269,7.600871 0.45369,23.585206 -6.959,15.984342 -19.57335,26.768871 -19.57335,26.768871 0,0 -6.04618,6.45885 -10.01524,4.6498 -3.96906,-1.80906 -5.86349,-12.807049 -5.86349,-12.807049" fill="none" stroke="#fff" stroke-miterlimit="10"/>
+		<animate xlink:href="#exp-letter-15-path" attributeName="stroke-dashoffset" from="800" to="0" dur="0.5s" begin="exp_first_animation.begin + 2.9s" fill="freeze" />
+		<animate xlink:href="#exp-letter-15-path" attributeName="stroke-dashoffset" from="0" to="800" dur="0.1s" begin="exp_first_animation.begin + 3.9s" fill="freeze" id="last_letter_animation"/>
+	</g>
+</g>
+
+
+
+
+</svg>
