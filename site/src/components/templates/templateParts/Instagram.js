@@ -21,11 +21,11 @@ export const Instagram = () => {
     }
   `)
 
-  const posts = data?.allInstaNode?.nodes
+  const posts = data.allInstaNode && data.allInstaNode.nodes
 
   return (
     <Flex id="instagram" sx={{ flexWrap: 'wrap' }}>
-      {posts?.length &&
+      {posts &&
         posts.map((post, i) => (
           <Box
             key={i}
