@@ -16,7 +16,7 @@ const Parallax = (props) => {
       gsap.core.globals('ScrollTrigger', ScrollTrigger)
     }
     let tl = gsap.timeline({
-      paused: true,
+      // paused: true,
       scrollTrigger: {
         trigger: '.slideOne',
         scrub: true,

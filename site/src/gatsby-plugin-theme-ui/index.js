@@ -18,6 +18,7 @@ import {
 } from './components/typo'
 
 export default {
+  useCustomProperties: false,
   colors,
   fonts,
   fontSizes,
