@@ -124,7 +124,7 @@ export default {
       },
     },
     '.widget-post-title': {
-      fontFamily: 'gobold_boldregular, sans-serif'
+      fontFamily: 'gobold_boldregular, sans-serif',
       fontWeight: 'heading',
       fontSize: 's',
     },
