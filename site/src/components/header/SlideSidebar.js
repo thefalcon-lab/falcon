@@ -105,7 +105,7 @@ const styles = {
     a: {
       textDecoration: 'none',
       color: 'white',
-      fontFamily: 'heading',
+      fontFamily: 'gobold_boldregular, sans-serif',
       textTransform: 'uppercase',
       '&:hover': {
         color: 'red',

@@ -42,7 +42,7 @@ const Pagination = ({ ctx, ...props }) => {
         sx={{
           // bg: 'black',
           // color: 'white',
-          fontFamily: 'heading',
+          fontFamily: 'gobold_boldregular, sans-serif',
           fontWeight: 'bold',
           fontSize: 'm',
           maxWidth: 25,

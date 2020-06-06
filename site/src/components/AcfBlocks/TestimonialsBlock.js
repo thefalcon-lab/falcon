@@ -106,7 +106,7 @@ const styles = {
     pt: [30, 30, 0],
   },
   '.text': {
-    fontFamily: 'heading',
+    fontFamily: 'gobold_boldregular, sans-serif',
     fontSize: [18, 25],
     lineHeight: 1.25,
     mb: 50,

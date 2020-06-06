@@ -24,7 +24,7 @@ const styles = {
   h1: {
     fontSize: ['m', 'l'],
     textTransform: 'uppercase',
-    fontFamily: 'heading',
+    fontFamily: 'gobold_boldregular, sans-serif',
     fontWeight: 500,
     letterSpacing: [4, 9],
     lineHeight: 1.5,

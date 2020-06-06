@@ -19,7 +19,7 @@ export const text = {
   branding: {
     fontSize: ['m', 'l'],
     textTransform: 'uppercase',
-    fontFamily: 'heading',
+    fontFamily: 'gobold_boldregular, sans-serif',
     fontWeight: 500,
     letterSpacing: 6,
     lineHeight: 1.5,
