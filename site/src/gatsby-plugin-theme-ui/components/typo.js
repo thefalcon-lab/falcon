@@ -32,7 +32,7 @@ export const lineHeights = {
 }
 
 const heading = {
-  fontFamily: 'gobold_boldregular, sans-serif',
+  fontFamily: 'heading',
   lineHeight: 'heading',
   fontWeight: 'heading',
   color: 'text',
