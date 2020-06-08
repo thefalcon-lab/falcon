@@ -5,6 +5,8 @@ import { useStaticQuery, Link, graphql } from 'gatsby'
 import { ProjectHeader } from '../../project'
 import { Masonry, MasonryItem } from '../../ui-components'
 import overlayStyles from '../../../styles/overlayStyles'
+import { detect } from 'detect-browser'
+const browser = detect()
 
 const PROJECTS_QUERY = graphql`
   query {
@@ -85,49 +87,99 @@ export const WorkPage = ({ page, ...props }) => {
             ))}
         </Flex>
       </Container>
-      <Masonry minWidth={500}>
-        {projects &&
-          projects.map((project, i) => {
-            const {
-              featuredImage,
-              projectFields: { projectType, height, bgc },
-              title,
-              uri,
-            } = project
-            console.log('uri', uri)
+      {browser.name !== 'internet explorer' ? (
+        <Masonry minWidth={500}>
+          {projects &&
+            projects.map((project, i) => {
+              const {
+                featuredImage,
+                projectFields: { projectType, height, bgc },
+                title,
+                uri,
+              } = project
 
-            return (
-              <>
-                {featuredImage && (
-                  <MasonryItem
-                    key={i}
-                    height={height}
-                    bgc={bgc}
-                    img={featuredImage.localFile.publicURL}
-                  >
-                    {/* <Link to={uri}> */}
-                    <Box
-                      className="overlay"
-                      sx={{
-                        ...overlayStyles,
-                      }}
+              return (
+                <>
+                  {featuredImage && (
+                    <MasonryItem
+                      key={i}
+                      height={height}
+                      bgc={bgc}
+                      img={featuredImage.localFile.publicURL}
                     >
-                      <Box className="content">
-                        <h3 dangerouslySetInnerHTML={{ __html: title }} />
-                        {projectType && (
-                          <h4
-                            dangerouslySetInnerHTML={{ __html: projectType }}
-                          />
-                        )}
+                      {/* <Link to={uri}> */}
+                      <Box
+                        className="overlay"
+                        sx={{
+                          ...overlayStyles,
+                        }}
+                      >
+                        <Box className="content">
+                          <h3 dangerouslySetInnerHTML={{ __html: title }} />
+                          {projectType && (
+                            <h4
+                              dangerouslySetInnerHTML={{ __html: projectType }}
+                            />
+                          )}
+                        </Box>
                       </Box>
-                    </Box>
-                    {/* </Link> */}
-                  </MasonryItem>
-                )}
-              </>
-            )
-          })}
-      </Masonry>
+                      {/* </Link> */}
+                    </MasonryItem>
+                  )}
+                </>
+              )
+            })}
+        </Masonry>
+      ) : (
+        <Flex
+          sx={{
+            flexWrap: 'wrap',
+            '>div': { minWidth: ['100%', '50%', '33%', '25%'] },
+          }}
+        >
+          {projects &&
+            projects.map((project, i) => {
+              const {
+                featuredImage,
+                projectFields: { projectType, height, bgc },
+                title,
+                uri,
+              } = project
+
+              return (
+                <Flex>
+                  {featuredImage && (
+                    <MasonryItem
+                      key={i}
+                      height={300}
+                      bgc={bgc}
+                      img={featuredImage.localFile.publicURL}
+                      sx={{ minWidth: '100%' }}
+                    >
+                      {/* <Link to={uri}> */}
+                      <Box
+                        className="overlay"
+                        sx={{
+                          ...overlayStyles,
+                        }}
+                      >
+                        <Box className="content">
+                          <h3 dangerouslySetInnerHTML={{ __html: title }} />
+                          {projectType && (
+                            <h4
+                              dangerouslySetInnerHTML={{ __html: projectType }}
+                            />
+                          )}
+                        </Box>
+                      </Box>
+                      {/* </Link> */}
+                    </MasonryItem>
+                  )}
+                </Flex>
+              )
+            })}
+        </Flex>
+      )}
     </>
   )
 }

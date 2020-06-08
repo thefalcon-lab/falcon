@@ -1,16 +1,13 @@
 /** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { jsx, Box, Flex } from 'theme-ui'
 import React, { useEffect, useRef, useState } from 'react'
 import { useEventListener } from '../../hooks'
-import { detect } from 'detect-browser'
-const browser = detect()
 
 const fillCols = (children, cols) => {
   children.forEach((child, i) => cols[i % cols.length].push(child))
 }
 
 export const Masonry = ({ children, gap, minWidth = 500, ...rest }) => {
-  console.log(browser)
   const ref = useRef()
   const [numCols, setNumCols] = useState(3)
   const cols = [...Array(numCols)].map(() => [])
@@ -22,16 +19,13 @@ export const Masonry = ({ children, gap, minWidth = 500, ...rest }) => {
   useEventListener(`resize`, resizeHandler)
 
   return (
-    <>
-      <h1>{browser.name}</h1>
-      <Box sx={{ ...style }} ref={ref} {...rest}>
-        {[...Array(numCols)].map((_, index) => (
-          <Box className="col" key={index}>
-            {cols[index]}
-          </Box>
-        ))}
-      </Box>
-    </>
+    <Box sx={{ ...style }} ref={ref} {...rest}>
+      {[...Array(numCols)].map((_, index) => (
+        <Box className="col" key={index}>
+          {cols[index]}
+        </Box>
+      ))}
+    </Box>
   )
 }
 
