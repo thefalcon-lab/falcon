@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import GatsbyImg from '../images/Image'
 
 import sectionsStyles from '../../styles/acfBlocksStyles/sectionsStyles'
-const { detect } = require('detect-browser')
+import { detect } from 'detect-browser'
 const browser = detect()
 
 export const fragment = graphql`
