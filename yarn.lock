@@ -7711,13 +7711,12 @@ gatsby-source-filesystem@^2.3.1:
     valid-url "^1.0.9"
     xstate "^4.9.1"
 
-gatsby-source-instagram@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-instagram/-/gatsby-source-instagram-0.7.0.tgz#a9d31989422afa63b6bd4c48dbf05550fbd54bc4"
-  integrity sha512-nDOULuh0EzkRbZD/o4O0RK+clKuY5hvVCg8n0NhEGGIz168vsCrVME0o35SC1+4Q8X+OwiwdEwORD15SjoX7Aw==
+gatsby-source-instagram@^0.7.2:
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/gatsby-source-instagram/-/gatsby-source-instagram-0.7.2.tgz#302960ecf1c3c931b2395c180fe0272f092adc2c"
+  integrity sha512-fYTkLw2sT6wvgSSgr7wL1+Cvfn+b3gCcZCKD23sQJm7EXvWIR1UkbXkwWO3staDkkgRbvhccIhEyIid3pzREOw==
   dependencies:
     axios "^0.19.0"
-    cheerio "^1.0.0-rc.3"
 
 gatsby-source-wordpress-experimental@^0.1.11:
   version "0.1.11"
@@ -8407,10 +8406,10 @@ grommet@^2.13.0:
     react-desc "^4.1.2"
     recompose "^0.30.0"
 
-gsap@^3.3.0:
-  version "3.3.0"
-  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.3.0.tgz#1d3c94ad0e4c46742f5f751250afbdd238364ec5"
-  integrity sha512-MIcLOH8HCGvjyuLpzNBMKK+GdoL9wmJU+8nwauSZkqTyDlI1ugD0Sbhu7HO3805u7NqSv811murbu6eipVhJqw==
+gsap@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/gsap/-/gsap-3.3.1.tgz#f11b926c2c1891501209d78a00df48452a2681c8"
+  integrity sha512-jTR6bZKCkB9toO/8Mq2FWIMKjoOgOWjGAeO9SJHTGk0UnGn3C7ViN9QeNzY7Za1QmQ6NWG+ud6MB4e4L23qWMg==
 
 gud@^1.0.0:
   version "1.0.0"

@@ -153,15 +153,12 @@ const styles = {
     },
     '.textOne': {
       fontSize: [30, 50, 80],
-      // position: 'absolute',
-      // top: '50%',
-      // transform: 'translateY(-50%)',
     },
     '.textTwo': {
       maxWidth: 550,
-      px: [30, 0],
+      px: [50, 0],
       lineHeight: 1.3,
-      fontSize: [30, 45],
+      fontSize: [25, 30, 45],
       position: 'relative',
       top: 200,
       opacity: 0,
