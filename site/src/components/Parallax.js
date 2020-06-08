@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Flex, Box } from 'theme-ui'
+import { jsx, Flex, Box, Container } from 'theme-ui'
 import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from './images/BgImage'
@@ -15,6 +15,12 @@ const Parallax = (props) => {
       gsap.registerPlugin(ScrollTrigger)
       gsap.core.globals('ScrollTrigger', ScrollTrigger)
     }
+
+    gsap.fromTo(
+      '.textWrap',
+      { autoAlpha: 0, y: 50 },
+      { duration: 1.5, autoAlpha: 1, y: 0, delay: 1 }
+    )
     let tl = gsap.timeline({
       // paused: true,
       scrollTrigger: {
@@ -27,7 +33,8 @@ const Parallax = (props) => {
       },
     })
     tl.to('.overlay', 2, { backgroundColor: 'rgba(0,0,0,.85)' })
-    tl.to('.textOne', 1, { y: -300, autoAlpha: 0 }, 0)
+    tl.to(['.textOne, .letters'], 1, { y: -300, autoAlpha: 0 }, 0)
+
     tl.to('.textTwo', 1, { y: -300, autoAlpha: 1 }, 0.5)
   }, [])
 
@@ -56,14 +63,35 @@ const Parallax = (props) => {
         sx={{ minHeight: '100vh', bg: 'black' }}
       >
         <Flex className="overlay">
-          <h1 className="textOne">
-            this is your{' '}
+          <Container
+            className="textWrap"
+            sx={{
+              position: 'relative',
+            }}
+          >
+            <h1
+              className="textOne"
+              sx={{
+                float: ['none', 'none', 'none', 'left'],
+                textAlign: 'center',
+                mr: 25,
+                mb: 0,
+              }}
+            >
+              this is your{' '}
+            </h1>
             <div
-              sx={{ display: 'inline-block', position: 'relative', top: 50 }}
+              className="letters"
+              sx={{
+                position: 'relative',
+                top: [-50, 0, 0, -50],
+                ml: 25,
+                svg: { float: 'left', maxWidth: ['100%'] },
+              }}
             >
               <Letters />
             </div>
-          </h1>
+          </Container>
           <h2 className="textTwo">
             At The Falcon Lab, We strive to intimately understand your brand so
             we are able to fluidly execute your vision.
@@ -116,11 +144,18 @@ const styles = {
         color: 'primary',
       },
     },
-    '.textOne': {
-      fontSize: [30, 50, 80],
+    '.textWrap': {
       position: 'absolute',
       top: '50%',
+      left: '50%',
       transform: 'translateY(-50%)',
+      transform: 'translateX(-50%)',
+    },
+    '.textOne': {
+      fontSize: [30, 50, 80],
+      // position: 'absolute',
+      // top: '50%',
+      // transform: 'translateY(-50%)',
     },
     '.textTwo': {
       maxWidth: 550,
