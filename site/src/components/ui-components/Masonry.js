@@ -22,13 +22,16 @@ export const Masonry = ({ children, gap, minWidth = 500, ...rest }) => {
   useEventListener(`resize`, resizeHandler)
 
   return (
-    <Box sx={{ ...style }} ref={ref} {...rest}>
-      {[...Array(numCols)].map((_, index) => (
-        <Box className="col" key={index}>
-          {cols[index]}
-        </Box>
-      ))}
-    </Box>
+    <>
+      <h1>{browser.name}</h1>
+      <Box sx={{ ...style }} ref={ref} {...rest}>
+        {[...Array(numCols)].map((_, index) => (
+          <Box className="col" key={index}>
+            {cols[index]}
+          </Box>
+        ))}
+      </Box>
+    </>
   )
 }
 
