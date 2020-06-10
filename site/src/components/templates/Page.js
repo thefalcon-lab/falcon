@@ -1,12 +1,8 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
 import Layout from '../Layout'
-import ParsedContent from '../../utils/ParsedContent'
 import SEO from '../seo/Seo'
 import Brand from '../Brand'
-
-import articleStyles from '../../styles/articleStyles'
-import gutenberg from '../../styles/theme-gutenberg'
 import {
   ButtonBlock,
   ContentBlock,
