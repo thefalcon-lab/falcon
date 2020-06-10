@@ -18,7 +18,7 @@ const Project = ({ data }) => {
     <Layout>
       <ProjectHeader title={title} subtitle={terms && terms[0].name} />
       {projectImages && (
-        <Masonry minWidth={width}>
+        <Masonry minWidth={500}>
           {projectImages.map((item, i) => {
             const { height, image } = item
             console.log('img', image)
