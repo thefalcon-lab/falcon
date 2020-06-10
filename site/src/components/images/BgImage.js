@@ -6,7 +6,11 @@ import BackgroundImage from 'gatsby-background-image'
 const BgImage = ({ img, children, ...props }) =>
   img && (
     <BackgroundImage
-      fluid={img && img.localFile.childImageSharp.fluid}
+      fluid={
+        img &&
+        img.localFile.childImageSharp &&
+        img.localFile.childImageSharp.fluid
+      }
       alt={img.altText}
       tag="div"
       // backgroundColor="black"
