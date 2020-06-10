@@ -14,7 +14,7 @@ const Service = ({ data }) => {
     content,
     slug,
     serviceFields: { serviceIntro, servicesTags },
-    footerGallery,
+    footerGallery: { gallery },
   } = data.wpService
 
   return (
@@ -62,7 +62,7 @@ const Service = ({ data }) => {
       </Container>
 
       <ProjectTags items={servicesTags} />
-      {<FooterGallery gallery={footerGallery.gallery} />}
+      {gallery?.length && <FooterGallery gallery={gallery} />}
     </Layout>
   )
 }
