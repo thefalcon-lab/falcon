@@ -20,11 +20,12 @@ export const Masonry = ({ children, gap, minWidth = 500, ...rest }) => {
 
   return (
     <Box sx={{ ...style }} ref={ref} {...rest}>
-      {[...Array(numCols)].map((_, index) => (
-        <Box className="col" key={index}>
-          {cols[index]}
-        </Box>
-      ))}
+      {numCols > 0 &&
+        [...Array(numCols)].map((_, index) => (
+          <Box className="col" key={index}>
+            {cols[index]}
+          </Box>
+        ))}
     </Box>
   )
 }
