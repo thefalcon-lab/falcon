@@ -9,6 +9,7 @@ import print from '../images/print.svg'
 import promo from '../images/promo.svg'
 import web from '../images/web.svg'
 import yourBrand from '../images/yourBrand.svg'
+import { gsap } from 'gsap'
 
 export const Brand = (props) => (
   <Box sx={{ bg: 'black', height: '100%', p: [0, 25, 50] }}>
@@ -104,60 +105,72 @@ export const Brand = (props) => (
           height="210"
         />
       </Link>
-      <image
-        id="printImg"
-        className="img"
-        href={print}
-        x="1327.201"
-        y="79.649"
-        width="387"
-        height="270"
-      />
-      <image
-        id="apparelImg"
-        className="img"
-        href={apparel}
-        x="1419.14"
-        y="398.25"
-        width="401"
-        height="210"
-      />
-      <image
-        id="promoImg"
-        className="img"
-        href={promo}
-        x="1442.91"
-        y="723.88"
-        width="382"
-        height="197"
-      />
-      <image
-        id="webImg"
-        className="img"
-        href={web}
-        x="831.066"
-        y="746.86"
-        width="483"
-        height="205"
-      />
-      <image
-        id="marketingImg"
-        className="img"
-        href={marketing}
-        x="106.455"
-        y="639.031"
-        width="511"
-        height="325"
-      />
-      <image
-        id="experientialImg"
-        className="img"
-        href={experiential}
-        x="85.84"
-        y="153.94"
-        width="437"
-        height="305"
-      />
+      <Link to="service/print">
+        <image
+          id="printImg"
+          className="img"
+          href={print}
+          x="1327.201"
+          y="79.649"
+          width="387"
+          height="270"
+        />
+      </Link>
+      <Link to="service/apparel">
+        <image
+          id="apparelImg"
+          className="img"
+          href={apparel}
+          x="1419.14"
+          y="398.25"
+          width="401"
+          height="210"
+        />
+      </Link>
+      <Link to="service/promo">
+        <image
+          id="promoImg"
+          className="img"
+          href={promo}
+          x="1442.91"
+          y="723.88"
+          width="382"
+          height="197"
+        />
+      </Link>
+      <Link to="service/web-dev">
+        <image
+          id="webImg"
+          className="img"
+          href={web}
+          x="831.066"
+          y="746.86"
+          width="483"
+          height="205"
+        />
+      </Link>
+      <Link to="service/marketing">
+        <image
+          id="marketingImg"
+          className="img"
+          href={marketing}
+          x="106.455"
+          y="639.031"
+          width="511"
+          height="325"
+        />
+      </Link>
+      <Link to="service/design">
+        <image
+          id="experientialImg"
+          className="img"
+          href={experiential}
+          x="85.84"
+          y="153.94"
+          width="437"
+          height="305"
+        />
+      </Link>
     </svg>
   </Box>
 )
