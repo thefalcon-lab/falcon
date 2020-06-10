@@ -35,6 +35,7 @@ const Page = ({ page }) => {
     template: { templateName },
     flexLayouts: { flexibleLayouts },
     isFrontPage,
+    footerGallery,
   } = page
   const pageTemplate = templateName.toLowerCase()
 
@@ -88,7 +89,9 @@ const Page = ({ page }) => {
           }
         })}
       {isFrontPage && <Instagram />}
-      {page.slug.includes('about') && <FooterGallery />}
+      {page.slug.includes('about') && (
+        <FooterGallery gallery={footerGallery.gallery} />
+      )}
     </Layout>
   )
 }

@@ -5,6 +5,7 @@ import { ProjectHeader, ProjectTags } from '../components/project'
 import Layout from '../components/Layout'
 import ParsedContent from '../utils/ParsedContent'
 import ServiceProjects from '../components/ServiceProjects'
+import { FooterGallery } from '../components/templates/templateParts'
 
 const Service = ({ data }) => {
   const {
@@ -13,6 +14,7 @@ const Service = ({ data }) => {
     content,
     slug,
     serviceFields: { serviceIntro, servicesTags },
+    footerGallery,
   } = data.wpService
 
   return (
@@ -44,26 +46,23 @@ const Service = ({ data }) => {
           />
         </Flex>
       </Container>
-      <ProjectHeader
-        title={title}
-        subtitle={serviceIntro}
-        sx={{ pb: 100, pt: 50 }}
-      />
+      <ProjectHeader title={title} subtitle={serviceIntro} sx={{ pt: 50 }} />
 
-      <ServiceProjects slug={slug} />
-
-      <ProjectTags items={servicesTags} />
-      <Container sx={{ maxWidth: 'm', py: 100 }}>
+      {/* <ServiceProjects slug={slug} /> */}
+      <Container sx={{ maxWidth: 'l', pb: 100, pt: 50 }}>
         <ParsedContent content={content} />
         <Link
           to="/services"
-          sx={{ display: 'flex', justifyContent: 'center', pt: 60 }}
+          sx={{ display: 'flex', justifyContent: 'flex-start', pt: 20 }}
         >
           <Link to="services" sx={{ variant: `buttons.primary` }}>
             More Services
           </Link>
         </Link>
       </Container>
+
+      <ProjectTags items={servicesTags} />
+      {<FooterGallery gallery={footerGallery.gallery} />}
     </Layout>
   )
 }
@@ -80,6 +79,11 @@ export const pageQuery = graphql`
         serviceIntro
         servicesTags {
           item
+        }
+      }
+      footerGallery {
+        gallery {
+          ...galleryImageFragment
         }
       }
     }

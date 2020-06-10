@@ -3,22 +3,7 @@ import { jsx, Container, Flex, Box } from 'theme-ui'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from '../../images/BgImage'
 
-export const FooterGallery = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      wp {
-        themeOptions {
-          footerGallery {
-            gallery {
-              ...galleryImageFragment
-            }
-          }
-        }
-      }
-    }
-  `)
-
-  const { gallery } = data.wp.themeOptions.footerGallery
+export const FooterGallery = ({ gallery }) => {
   return (
     <Flex
       className="footerGallery"

@@ -31,6 +31,11 @@ export const pageQuery = graphql`
       template {
         ...PageTemplates_starter
       }
+      footerGallery {
+        gallery {
+          ...galleryImageFragment
+        }
+      }
     }
   }
 `
