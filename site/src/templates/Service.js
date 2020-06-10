@@ -13,7 +13,7 @@ const Service = ({ data }) => {
     uri,
     content,
     slug,
-    serviceFields: { serviceIntro, servicesTags },
+    serviceFields: { serviceIntro, servicesTags, serviceCta },
     footerGallery: { gallery },
   } = data.wpService
 
@@ -55,8 +55,11 @@ const Service = ({ data }) => {
           to="/services"
           sx={{ display: 'flex', justifyContent: 'flex-start', pt: 20 }}
         >
-          <Link to="services" sx={{ variant: `buttons.primary` }}>
-            More Services
+          <Link
+            to={serviceCta ? serviceCta.url : 'contact'}
+            sx={{ variant: `buttons.primary` }}
+          >
+            {serviceCta ? serviceCta.title : 'contact us'}
           </Link>
         </Link>
       </Container>
@@ -77,6 +80,10 @@ export const pageQuery = graphql`
       slug
       serviceFields {
         serviceIntro
+        serviceCta {
+          title
+          url
+        }
         servicesTags {
           item
         }

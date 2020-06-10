@@ -35,7 +35,14 @@ const styles = {
     width: ['50%', '25%'],
     p: 15,
   },
-  '.number-1,.number-2,.number-3,.number-4,.number-9,.number-10,.number-11,.number-12': {
-    bg: ['darkGrey'],
+  '@media (min-width: 600px)': {
+    '.number-1,.number-2,.number-3,.number-4,.number-9,.number-10,.number-11,.number-12': {
+      bg: ['darkGrey'],
+    },
+  },
+  '@media (max-width: 599px)': {
+    '.number-1,.number-2,.number-5,.number-6,.number-9,.number-10,.number-13,.number-14': {
+      bg: ['darkGrey'],
+    },
   },
 }
