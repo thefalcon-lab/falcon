@@ -85,11 +85,16 @@ const styles = {
     },
     'label[for="inputFile"]': {
       variant: 'buttons.primary',
-      py: [15, 15, 15, 12],
-      top: [10, 10, 10, 'initial'],
-      position: ['relative', 'relative', 'relative', 'absolute'],
-      // bottom: ['initial', -20],
-      left: ['initial', 'initial', 'initial', '20%'],
+      py: 15,
+      top: 10,
+      position: 'relative',
+
+      // '&:hover': {
+      //   transform: 'translateY(-5px)',
+      // },
+      // position: ['relative', 'relative', 'relative', 'absolute'],
+      // // bottom: ['initial', -20],
+      // left: ['initial', 'initial', 'initial', '20%'],
     },
     '.buttons': {
       display: 'flex',
