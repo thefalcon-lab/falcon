@@ -9,7 +9,7 @@ import Date from './Date'
 const PostEntry = ({ post, location }) => {
   const subtitle = post.postSubtitle.postSubtitle
   return (
-    <article className="entry">
+    <article className="entry" sx={{ mb: 100 }}>
       <div className={`content `}>
         <Date date={post.date} sx={{ fontSize: 15, mb: 20 }} />
         <PostEntryTitle

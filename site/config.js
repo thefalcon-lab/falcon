@@ -8,7 +8,7 @@ const config = {
   postsPerPage: 4,
   // disqus: 'webstantly',
   menuName: 'main',
-  // addWordPressComments: 1,
+  addWordPressComments: false,
   // gaTrackingId: 0,
   // googleTagManagerId: 0,
   // addSiteMap: false,

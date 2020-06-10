@@ -28,7 +28,7 @@ const ArchiveContent = ({ posts, ctx }) => {
   `)
   const allPosts = data.allWpPost.nodes
   const getMonth = (date) => moment(date).format(`MMMM YYYY`)
-  const months = uniq(allPosts.map((post) => getMonth(post.date))).slice(0, 4)
+  const months = uniq(allPosts.map((post) => getMonth(post.date))).slice(0, 8)
 
   const [filter, setFilter] = useState(null)
 
