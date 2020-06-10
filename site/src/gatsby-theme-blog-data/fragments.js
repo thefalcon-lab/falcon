@@ -45,7 +45,7 @@ export const fragments = graphql`
     localFile {
       publicURL
       childImageSharp {
-        fluid(maxWidth: 500, quality: 80) {
+        fluid(maxWidth: 700, quality: 80) {
           aspectRatio
           ...GatsbyImageSharpFluid_tracedSVG
         }

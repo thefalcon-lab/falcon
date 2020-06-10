@@ -3,13 +3,14 @@ import { jsx, Container, Box } from 'theme-ui'
 import { graphql } from 'gatsby'
 import { ProjectHeader, ProjectSections } from '../components/project'
 import { Masonry, MasonryItem } from '../components/ui-components'
+import BgImage from '../components/images/BgImage'
 import Layout from '../components/Layout'
 
 const Project = ({ data }) => {
   const {
     title,
     featuredImage,
-    projectFields: { projectImages, projectType, projectSections },
+    projectFields: { projectImages, projectType, projectSections, width },
     terms,
   } = data.wpProject
 
@@ -17,16 +18,22 @@ const Project = ({ data }) => {
     <Layout>
       <ProjectHeader title={title} subtitle={terms && terms[0].name} />
       {projectImages && (
-        <Masonry minWidth={500}>
+        <Masonry minWidth={width}>
           {projectImages.map((item, i) => {
-            const { height, bgc, image } = item
+            const { height, image } = item
+            console.log('img', image)
             return (
-              <MasonryItem
+              <BgImage
+                img={image}
+                className="bgImage"
                 key={i}
-                height={height}
-                bgc={bgc}
-                img={image.localFile.publicURL}
-              ></MasonryItem>
+                sx={{
+                  minHeight: height,
+                  display: 'grid',
+                  backgroundSize: 'fit !important',
+                  transition: 0.4,
+                }}
+              ></BgImage>
             )
           })}
         </Masonry>
@@ -45,13 +52,11 @@ export const pageQuery = graphql`
       title
       projectFields {
         projectType
+        width
         projectImages {
-          bgc
           height
           image {
-            localFile {
-              publicURL
-            }
+            ...galleryImageFragment
           }
         }
         projectSections {
