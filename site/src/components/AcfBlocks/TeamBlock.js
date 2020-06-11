@@ -75,6 +75,18 @@ export const TeamBlock = ({
               </Box>
             )
           })}
+          {team.length % 4 !== 0 && (
+            <div className="apply">
+              <Flex className="content" sx={{}}>
+                <div>
+                  <h3>Become part of our team! </h3>
+                  <a href="mailto:email@thefalconlab.com">
+                    Email us your resume
+                  </a>
+                </div>
+              </Flex>
+            </div>
+          )}
         </Box>
       )}
     </Box>
@@ -104,5 +116,19 @@ const styles = {
     height: 500,
     position: 'relative',
     overflow: 'hidden',
+  },
+  '.apply': {
+    px: 2,
+    py: 2,
+    width: ['100%', '50%', '66%', '75%'],
+    '.content': {
+      alignItems: 'flex-end',
+      p: 20,
+      bg: 'black',
+      height: '100%',
+      h3: {
+        color: 'white',
+      },
+    },
   },
 }
