@@ -34,7 +34,7 @@ export const FrontPageAnimations = ({ page, ...props }) => {
 }
 
 const style = {
-  '.brand': {
+  '#brand': {
     display: ['none', 'block'],
   },
   '.mobileImage': {
