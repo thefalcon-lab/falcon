@@ -43,7 +43,8 @@ export const TestimonialsBlock = ({
     infinite: true,
     autoplay: true,
     fade: true,
-    speed: 2000,
+    autoplaySpeed: 10000,
+    speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -97,8 +98,7 @@ const styles = {
   bg: 'lightGrey',
   pt: 70,
   pb: 50,
-  textAlign: 'center',
-  textTransform: 'uppercase',
+
   position: 'relative',
   '.container': { maxWidth: 'm' },
   '.testimonial': {
@@ -106,7 +106,7 @@ const styles = {
     pt: [30, 30, 0],
   },
   '.text': {
-    fontFamily: 'heading',
+    fontFamily: 'bold',
     fontSize: [18, 25],
     lineHeight: 1.25,
     mb: 50,
@@ -116,6 +116,8 @@ const styles = {
   },
   '.author': {
     fontSize: 14,
+    textAlign: 'center',
+    textTransform: 'uppercase',
   },
   '.quote': {
     position: 'absolute',
