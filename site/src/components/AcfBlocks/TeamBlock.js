@@ -77,10 +77,10 @@ export const TeamBlock = ({
           })}
           {team.length % 4 !== 0 && (
             <div className="apply">
-              <Flex className="content" sx={{}}>
+              <Flex className="content">
                 <div>
                   <h3>Become part of our team! </h3>
-                  <a href="mailto:email@thefalconlab.com">
+                  <a href="mailto:orders@thefalconlab.com">
                     Email us your resume
                   </a>
                 </div>
