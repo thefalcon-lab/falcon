@@ -61,7 +61,7 @@ const styles = {
     justifyContent: 'space-between',
     maxWidth: 1100,
     '>div': {
-      display: 'flex',
+      display: ['block', 'flex', 'flex'],
       flexDirection: 'column',
       alignItems: 'center',
       minWidth: ['100%', '33%', '33%'],
