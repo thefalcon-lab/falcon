@@ -41,7 +41,7 @@ export default (props) => {
 
 const styles = {
   '.contactItem': {
-    mb: 20,
+    mb: 30,
     svg: {
       mr: 15,
     },

@@ -11,25 +11,32 @@ const Footer = () => {
     <footer sx={{ ...styles }}>
       <Container className="footerContainer">
         <Box>
-          <h3>Contact</h3>
-          <ContactInfo />
-          <Box className="social" sx={{ fontWeight: 'bold' }}>
-            follow us on
-            <Box className="socialItems" sx={{ ...socialStyles }}>
-              <SocialFollow />
+          <div>
+            <h3>Contact</h3>
+            <ContactInfo />
+
+            <Box className="social" sx={{ fontWeight: 'bold' }}>
+              Follow us on
+              <Box className="socialItems" sx={{ ...socialStyles }}>
+                <SocialFollow />
+              </Box>
             </Box>
-          </Box>
+          </div>
         </Box>
         <Box>
-          <h3>News</h3>
-          <FeaturedPosts
-            location="footer"
-            sx={{ a: { display: 'inline-block', mb: 10.8 } }}
-          />
+          <div>
+            <h3>News</h3>
+            <FeaturedPosts
+              location="footer"
+              sx={{ a: { display: 'inline-block', mb: 10.8 } }}
+            />
+          </div>
         </Box>
         <Box>
-          <h3>Services</h3>
-          <Menu menuName="footer" sx={{ ...footerMenuStyles }} />
+          <div>
+            <h3>Services</h3>
+            <Menu menuName="footer" sx={{ ...footerMenuStyles }} />
+          </div>
         </Box>
       </Container>
     </footer>
@@ -38,8 +45,8 @@ const Footer = () => {
 
 const styles = {
   bg: 'footerBg',
-  pt: 50,
-  pb: 70,
+  pt: 20,
+  pb: 40,
   color: 'footerColor',
   fontSize: 16,
   a: {
@@ -49,22 +56,29 @@ const styles = {
     },
   },
   '.footerContainer': {
+    width: '100%',
     display: ['block', 'flex', 'flex'],
     justifyContent: 'space-between',
-    maxWidth: 'l',
+    maxWidth: 1100,
+    '>div': {
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      minWidth: ['100%', '33%', '33%'],
+    },
   },
   h3: {
     color: 'white',
     textTransform: 'uppercase',
     mb: 25,
-    fontSize: 18,
+    fontSize: 20,
   },
 }
 
 const socialStyles = {
   mb: [50, 0],
   bg: 'primary',
-  mt: 30,
+  mt: 10,
   height: 40,
   position: 'relative',
   ml: [0, '-50vw'],
