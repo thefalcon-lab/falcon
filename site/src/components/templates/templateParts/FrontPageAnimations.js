@@ -1,12 +1,9 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box } from 'theme-ui'
-import React from 'react'
-// import BrandAnimation from '../../BrandAnimation'
+import { jsx, Box } from 'theme-ui'
 import { useStaticQuery, graphql } from 'gatsby'
 import Parallax from '../../Parallax'
-import ParsedContent from '../../../utils/ParsedContent'
 import Img from 'gatsby-image'
-import brandAnimation from '../../../../static/brandAnimation.html'
+import BrandAnimation from '../../BrandAnimation'
 
 export const FrontPageAnimations = ({ page, ...props }) => {
   const data = useStaticQuery(graphql`
@@ -24,7 +21,7 @@ export const FrontPageAnimations = ({ page, ...props }) => {
     <Box {...props} sx={{ ...style }}>
       <Parallax />
       <div id="brand">
-        <ParsedContent content={brandAnimation} />
+        <BrandAnimation />
       </div>
       <div className="mobileImage">
         <Img fluid={data.fileName.childImageSharp.fluid} />

@@ -3,6 +3,7 @@ import { jsx } from 'theme-ui'
 import Layout from '../Layout'
 import SEO from '../seo/Seo'
 import Brand from '../Brand'
+import Services from './templateParts/Services'
 import {
   ButtonBlock,
   ContentBlock,
