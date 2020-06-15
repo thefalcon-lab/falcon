@@ -15,7 +15,7 @@ export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
         position: 'relative',
         overflow: 'hidden',
         variant: 'transitions.m',
-        p: 30,
+        // p: 30,
         '&:hover': {
           '.overlay': {
             opacity: 1,
