@@ -6,7 +6,7 @@ import BgImage from './images/BgImage'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Letters from '../images/letters.inline.svg'
+import Letters from '../images/letters2.inline.svg'
 import { FormDown } from 'grommet-icons'
 
 const Parallax = (props) => {
