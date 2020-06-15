@@ -87,27 +87,32 @@ export const WorkPage = ({ page, ...props }) => {
             ))}
         </Flex>
       </Container>
-      {browser.name !== 'internet explorer' ? (
-        <Masonry minWidth={500}>
-          {projects &&
-            projects.map((project, i) => {
-              const {
-                featuredImage,
-                projectFields: { projectType, height, bgc },
-                title,
-                uri,
-              } = project
+      <Flex
+        sx={{
+          flexWrap: 'wrap',
+          '>div': { minWidth: ['100%', '50%', '33%', '25%'] },
+        }}
+      >
+        {projects &&
+          projects.map((project, i) => {
+            const {
+              featuredImage,
+              projectFields: { projectType, height, bgc },
+              title,
+              uri,
+            } = project
 
-              return (
-                <>
-                  {featuredImage && (
-                    <MasonryItem
-                      key={i}
-                      height={height}
-                      bgc={bgc}
-                      img={featuredImage.localFile.publicURL}
-                    >
-                      {/* <Link to={uri}> */}
+            return (
+              <Flex>
+                {featuredImage && (
+                  <MasonryItem
+                    key={i}
+                    height={300}
+                    bgc={bgc}
+                    img={featuredImage.localFile.publicURL}
+                    sx={{ minWidth: '100%' }}
+                  >
+                    <Link to={uri}>
                       <Box
                         className="overlay"
                         sx={{
@@ -123,63 +128,13 @@ export const WorkPage = ({ page, ...props }) => {
                           )}
                         </Box>
                       </Box>
-                      {/* </Link> */}
-                    </MasonryItem>
-                  )}
-                </>
-              )
-            })}
-        </Masonry>
-      ) : (
-        <Flex
-          sx={{
-            flexWrap: 'wrap',
-            '>div': { minWidth: ['100%', '50%', '33%', '25%'] },
-          }}
-        >
-          {projects &&
-            projects.map((project, i) => {
-              const {
-                featuredImage,
-                projectFields: { projectType, height, bgc },
-                title,
-                uri,
-              } = project
-
-              return (
-                <Flex>
-                  {featuredImage && (
-                    <MasonryItem
-                      key={i}
-                      height={300}
-                      bgc={bgc}
-                      img={featuredImage.localFile.publicURL}
-                      sx={{ minWidth: '100%' }}
-                    >
-                      {/* <Link to={uri}> */}
-                      <Box
-                        className="overlay"
-                        sx={{
-                          ...overlayStyles,
-                        }}
-                      >
-                        <Box className="content">
-                          <h3 dangerouslySetInnerHTML={{ __html: title }} />
-                          {projectType && (
-                            <h4
-                              dangerouslySetInnerHTML={{ __html: projectType }}
-                            />
-                          )}
-                        </Box>
-                      </Box>
-                      {/* </Link> */}
-                    </MasonryItem>
-                  )}
-                </Flex>
-              )
-            })}
-        </Flex>
-      )}
+                    </Link>
+                  </MasonryItem>
+                )}
+              </Flex>
+            )
+          })}
+      </Flex>
     </>
   )
 }
