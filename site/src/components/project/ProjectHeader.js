@@ -12,8 +12,7 @@ export const ProjectHeader = ({ title, subtitle, ...props }) => (
         variant: 'text.subtitle',
         maxWidth: 640,
       }}
-    >
-      {subtitle}
-    </Box>
+      dangerouslySetInnerHTML={{ __html: subtitle }}
+    />
   </Container>
 )
