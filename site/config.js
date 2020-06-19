@@ -1,5 +1,5 @@
 const config = {
-  wordPressUrl: 'http://falcon.alexaspalato.com/',
+  wordPressUrl: 'https://falcon.alexaspalato.com/',
   // wordPressUrl: 'http://falcon.wst/',
 
   // uploadsPath: 'wp-content/uploads',
