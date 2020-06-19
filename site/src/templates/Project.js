@@ -20,7 +20,7 @@ const Project = ({ data }) => {
       {topImage && (
         <Flex
           className="hero"
-          sx={{ bg: 'lightGrey', justifyContent: 'center', py: 50 }}
+          sx={{ bg: 'lightGrey', justifyContent: 'center', py: 50, mt: 25 }}
         >
           <Img
             fluid={topImage.localFile.childImageSharp.fluid}
@@ -57,8 +57,8 @@ export const pageQuery = graphql`
           images {
             localFile {
               childImageSharp {
-                fixed(width: 600) {
-                  ...GatsbyImageSharpFixed_tracedSVG
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
             }
