@@ -1,6 +1,6 @@
 const config = {
-  wordPressUrl: 'https://falcon.gatsby-wp.com/',
-  // wordPressUrl: "http://gatsbystarter.wst/",
+  wordPressUrl: 'http://falcon2.gatsby-wp.com/',
+  // wordPressUrl: 'http://falcon.wst/',
 
   // uploadsPath: 'wp-content/uploads',
   postsPath: '/blog',
