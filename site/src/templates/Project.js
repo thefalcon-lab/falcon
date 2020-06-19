@@ -1,42 +1,32 @@
 /** @jsx jsx */
-import { jsx, Container, Box } from 'theme-ui'
+import { jsx, Flex } from 'theme-ui'
 import { graphql } from 'gatsby'
 import { ProjectHeader, ProjectSections } from '../components/project'
-import { Masonry, MasonryItem } from '../components/ui-components'
-import BgImage from '../components/images/BgImage'
+
 import Layout from '../components/Layout'
+import Img from 'gatsby-image'
 
 const Project = ({ data }) => {
   const {
     title,
     featuredImage,
-    projectFields: { projectImages, projectType, projectSections, width },
+    projectFields: { projectType, projectSections, topImage },
     terms,
   } = data.wpProject
 
   return (
     <Layout>
       <ProjectHeader title={title} subtitle={terms && terms[0].name} />
-      {projectImages && (
-        <Masonry minWidth={500}>
-          {projectImages.map((item, i) => {
-            const { height, image } = item
-            console.log('img', image)
-            return (
-              <BgImage
-                img={image}
-                className="bgImage"
-                key={i}
-                sx={{
-                  minHeight: height,
-                  display: 'grid',
-                  backgroundSize: 'fit !important',
-                  transition: 0.4,
-                }}
-              ></BgImage>
-            )
-          })}
-        </Masonry>
+      {topImage && (
+        <Flex
+          className="hero"
+          sx={{ bg: 'lightGrey', justifyContent: 'center', py: 50 }}
+        >
+          <Img
+            fluid={topImage.localFile.childImageSharp.fluid}
+            sx={{ maxWidth: 900 }}
+          />
+        </Flex>
       )}
 
       <ProjectSections items={projectSections} />
@@ -52,16 +42,27 @@ export const pageQuery = graphql`
       title
       projectFields {
         projectType
-        width
-        projectImages {
-          height
-          image {
-            ...galleryImageFragment
+        topImage {
+          localFile {
+            childImageSharp {
+              fluid(maxWidth: 900) {
+                ...GatsbyImageSharpFluid_tracedSVG
+              }
+            }
           }
         }
         projectSections {
           title
           content
+          images {
+            localFile {
+              childImageSharp {
+                fixed(width: 600) {
+                  ...GatsbyImageSharpFixed_tracedSVG
+                }
+              }
+            }
+          }
         }
       }
       terms {
