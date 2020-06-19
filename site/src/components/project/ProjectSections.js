@@ -24,6 +24,7 @@ export const ProjectSections = ({ items, ...props }) => (
               <Container>
                 <Flex
                   sx={{ flexWrap: 'wrap', justifyContent: 'center', mt: 50 }}
+                  className="gsReveal"
                 >
                   {images?.length > 0 &&
                     images.map((img, i) => (

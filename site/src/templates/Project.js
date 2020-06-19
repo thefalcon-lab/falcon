@@ -2,6 +2,7 @@
 import { jsx, Flex } from 'theme-ui'
 import { graphql } from 'gatsby'
 import { ProjectHeader, ProjectSections } from '../components/project'
+import { useGsapReveal } from '../hooks'
 
 import Layout from '../components/Layout'
 import Img from 'gatsby-image'
@@ -14,12 +15,18 @@ const Project = ({ data }) => {
     terms,
   } = data.wpProject
 
+  useGsapReveal(75, 2, ['.gsReveal', '.title', '.content'])
+
   return (
     <Layout>
-      <ProjectHeader title={title} subtitle={terms && terms[0].name} />
+      <ProjectHeader
+        title={title}
+        subtitle={terms && terms[0].name}
+        className="gsReveal"
+      />
       {topImage && (
         <Flex
-          className="hero"
+          className="hero gsReveal"
           sx={{ bg: 'lightGrey', justifyContent: 'center', py: 50, mt: 25 }}
         >
           <Img
