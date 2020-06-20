@@ -6,9 +6,9 @@ import ContactInfo from '../../ContactInfo'
 import ParsedContent from '../../../utils/ParsedContent'
 
 export const ContactPage = ({ page, ...props }) => {
-  const fileInputRef = useRef()
+  // const fileNameRef = useRef()
   const [fileName, setFileName] = useState()
-  console.log('fileName', fileName)
+
   return (
     <div>
       <Container
@@ -43,6 +43,7 @@ export const ContactPage = ({ page, ...props }) => {
                 className="contact-form"
                 name="contact"
                 method="POST"
+                action="/success"
                 data-netlify="true"
               >
                 <div className="row">
@@ -64,13 +65,14 @@ export const ContactPage = ({ page, ...props }) => {
                 <textarea name="" id="" cols="30" rows="10"></textarea>
 
                 <div className="buttons">
-                  <label for="inputFile">File Transfer</label>
-                  <span id="transfered-file"></span>
+                  <label for="inputFile">
+                    {fileName ? fileName.split('\\').pop() : 'file Transfer'}
+                  </label>
+                  {/* <span ref={fileNameRef} id="transfered-file"></span> */}
                   <input
                     type="file"
                     id="inputFile"
                     name="inputFile"
-                    ref={fileInputRef}
                     value={fileName}
                     onChange={(e) => setFileName(e.target.value)}
                   />
@@ -134,7 +136,7 @@ const styles = {
     'label[for="inputFile"]': {
       variant: 'buttons.primary',
       py: 15,
-      top: 10,
+      // top: 10,
       position: 'relative',
 
       // '&:hover': {
@@ -147,6 +149,7 @@ const styles = {
     '.buttons': {
       display: 'flex',
       justifyContent: 'space-between',
+      mt: 20,
       // flexDirection: 'row-reverse',
     },
   },
