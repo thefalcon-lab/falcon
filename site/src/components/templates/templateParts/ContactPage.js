@@ -1,10 +1,14 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Box } from 'theme-ui'
+import { useRef, useState } from 'react'
 import { ProjectHeader } from '../../project'
 import ContactInfo from '../../ContactInfo'
 import ParsedContent from '../../../utils/ParsedContent'
 
 export const ContactPage = ({ page, ...props }) => {
+  const fileInputRef = useRef()
+  const [fileName, setFileName] = useState()
+  console.log('fileName', fileName)
   return (
     <div>
       <Container
@@ -33,7 +37,51 @@ export const ContactPage = ({ page, ...props }) => {
             className="formContainer"
             sx={{ width: ['100%', '100%', '60%'] }}
           >
-            <ParsedContent content={page.content} />
+            {/* <ParsedContent content={page.content} /> */}
+            <div className="formContainer">
+              <form
+                className="contact-form"
+                name="contact"
+                method="POST"
+                data-netlify="true"
+              >
+                <div className="row">
+                  <div>
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Company Name" />
+                  </div>
+                </div>
+                <div className="row">
+                  <div>
+                    <input type="email" placeholder="Email" />
+                  </div>
+                  <div>
+                    <input type="text" placeholder="Phone Number" />
+                  </div>
+                </div>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+
+                <div className="buttons">
+                  <label for="inputFile">File Transfer</label>
+                  <span id="transfered-file"></span>
+                  <input
+                    type="file"
+                    id="inputFile"
+                    name="inputFile"
+                    ref={fileInputRef}
+                    value={fileName}
+                    onChange={(e) => setFileName(e.target.value)}
+                  />
+                  <input
+                    type="submit"
+                    value="submit"
+                    sx={{ variant: 'buttons.primary' }}
+                  />
+                </div>
+              </form>
+            </div>
           </Box>
         </Box>
       </Container>
@@ -99,7 +147,7 @@ const styles = {
     '.buttons': {
       display: 'flex',
       justifyContent: 'space-between',
-      flexDirection: 'row-reverse',
+      // flexDirection: 'row-reverse',
     },
   },
 }
