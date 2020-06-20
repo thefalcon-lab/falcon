@@ -150,6 +150,7 @@ const styles = {
       display: 'flex',
       justifyContent: 'space-between',
       mt: 20,
+      mb: 100,
       // flexDirection: 'row-reverse',
     },
   },
