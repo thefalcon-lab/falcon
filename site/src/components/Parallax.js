@@ -23,8 +23,8 @@ const Parallax = (props) => {
 
     gsap.fromTo(
       '.textWrap',
-      { autoAlpha: 0, y: 50 },
-      { duration: 1.5, autoAlpha: 1, y: 0, delay: 1 }
+      { opacity: 0, y: 50 },
+      { duration: 0.5, opacity: 1, y: 0, delay: 1 }
     )
     let tl = gsap.timeline({
       // paused: true,
@@ -88,16 +88,17 @@ const Parallax = (props) => {
             <div
               className="letters"
               sx={{
-                position: 'relative',
-                top: [-50, 0, 0, -25],
-                ml: 25,
+                // position: 'relative',
+                // top: [-50, 0, 0, -25],
+                // ml: 25,
                 '.print-lab,.design-lab': {
-                  maxWidth: '50%',
+                  maxWidth: '55%',
                   fill: '#DB3C2D',
                   cursor: 'pointer',
                   position: 'absolute',
-                  top: '0px',
-                  left: '0px',
+                  top: [-50, 0, 0, -50],
+                  left: 420,
+                  opacity: 1,
                 },
                 '.design-lab .mask': {
                   fill: 'none',
