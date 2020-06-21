@@ -94,7 +94,7 @@ const Parallax = (props) => {
                 // top: [-50, 0, 0, -25],
                 // ml: 25,
                 '.print-lab,.design-lab': {
-                  visibility: 'hidden',
+                  // visibility: 'hidden',
                   opacity: 0,
                   maxWidth: '55%',
                   fill: '#DB3C2D',
