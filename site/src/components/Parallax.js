@@ -3,10 +3,12 @@ import { jsx, Flex, Box, Container } from 'theme-ui'
 import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from './images/BgImage'
-import { gsap } from 'gsap'
+import { gsap, Power4 } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Letters from '../images/allinone.inline.svg'
+
+import Letters from './Letters'
+
 import { FormDown } from 'grommet-icons'
 
 const Parallax = (props) => {
@@ -18,8 +20,8 @@ const Parallax = (props) => {
 
     gsap.fromTo(
       '.textWrap',
-      { autoAlpha: 0, y: 50 },
-      { duration: 1.5, autoAlpha: 1, y: 0, delay: 1 }
+      { opacity: 0, y: 50 },
+      { duration: 0.5, opacity: 1, y: 0, delay: 1 }
     )
     let tl = gsap.timeline({
       // paused: true,
@@ -84,9 +86,27 @@ const Parallax = (props) => {
               className="letters"
               sx={{
                 position: 'relative',
-                top: [-50, 0, 0, -50],
+                // top: [-50, 0, 0, -30],
                 ml: 25,
                 svg: { float: 'left', maxWidth: ['100%'] },
+
+                // position: 'relative',
+                // top: [-50, 0, 0, -25],
+                // ml: 25,
+                '.print-lab,.design-lab': {
+                  maxWidth: '55%',
+                  fill: '#DB3C2D',
+                  cursor: 'pointer',
+                  position: 'absolute',
+                  top: [-50, 0, 0, -50],
+                  left: 420,
+                  opacity: 1,
+                },
+                '.design-lab .mask': {
+                  fill: 'none',
+                  stroke: '#fff',
+                  strokeMiterlimit: 10,
+                },
               }}
             >
               <Letters />
@@ -163,6 +183,9 @@ const styles = {
       top: 200,
       opacity: 0,
       visibility: 'hidden',
+    },
+    '.letters': {
+      position: 'relative',
     },
   },
 }
