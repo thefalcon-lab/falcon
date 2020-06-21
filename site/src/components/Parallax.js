@@ -21,11 +21,11 @@ const Parallax = (props) => {
       )
     }
 
-    gsap.fromTo(
-      '.textWrap',
-      { autoAlpha: 0, y: 50 },
-      { duration: 1.5, autoAlpha: 1, y: 0, delay: 1 }
-    )
+    // gsap.fromTo(
+    //   '.textWrap',
+    //   { autoAlpha: 0, y: 50 },
+    //   { duration: 1.5, autoAlpha: 1, y: 0, delay: 1 }
+    // )
     let tl = gsap.timeline({
       // paused: true,
       scrollTrigger: {
