@@ -5,15 +5,20 @@ import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from './images/BgImage'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import Letters from '../images/allinone.inline.svg'
+import Letters from '../images/lettersAnim.inline.svg'
 import { FormDown } from 'grommet-icons'
 
 const Parallax = (props) => {
   useEffect(() => {
     if (typeof window !== `undefined`) {
-      gsap.registerPlugin(ScrollTrigger)
-      gsap.core.globals('ScrollTrigger', ScrollTrigger)
+      gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin)
+      gsap.core.globals(
+        'ScrollTrigger,DrawSVGPlugin',
+        ScrollTrigger,
+        DrawSVGPlugin
+      )
     }
 
     gsap.fromTo(
@@ -36,6 +41,77 @@ const Parallax = (props) => {
     tl.to(['.textOne, .letters'], 1, { y: -300, autoAlpha: 0 }, 0)
 
     tl.to('.textTwo', 1, { y: -300, autoAlpha: 1 }, 0.5)
+
+    //letters
+
+    gsap.set('.design-lab', { visibility: 'visible' })
+
+    function designAnimation() {
+      console.log('dfdf')
+      let tl2 = gsap.timeline({
+        defaults: { duration: 0.3, ease: Linear.easeNone },
+      })
+      tl2
+        .fromTo(
+          '#mask-d',
+          {
+            drawSVG: '0% 0%',
+          },
+          { drawSVG: true }
+        )
+        .fromTo(
+          '#mask-e',
+          {
+            drawSVG: '0% 0%',
+          },
+          { drawSVG: true }
+        )
+        .fromTo(
+          '#mask-s',
+          {
+            drawSVG: '0% 0%',
+          },
+          { drawSVG: true }
+        )
+        .fromTo(
+          '#mask-i',
+          {
+            drawSVG: '0% 0%',
+          },
+          { drawSVG: true, duration: 0.2 }
+        )
+        .fromTo(
+          '#mask-i-dot',
+          {
+            drawSVG: '0% 0%',
+          },
+          { drawSVG: true, duration: 0.2 }
+        )
+        .fromTo(
+          '#mask-g',
+          {
+            drawSVG: '0% 0%',
+          },
+          { drawSVG: true }
+        )
+        .fromTo(
+          '#mask-n',
+          {
+            drawSVG: '0% 0%',
+          },
+          { drawSVG: true }
+        )
+      return tl2
+    }
+
+    let tl2 = gsap.timeline({
+      defaults: { duration: 0.3, ease: Linear.easeNone },
+    })
+    tl2
+      .fromTo('#mask-l', { drawSVG: '0% 0%' }, { drawSVG: true })
+      .fromTo('#mask-a', { drawSVG: '0% 0%' }, { drawSVG: true })
+      .fromTo('#mask-b', { drawSVG: '0% 0%' }, { drawSVG: true })
+    return tl2
   }, [])
 
   const data = useStaticQuery(graphql`
@@ -86,7 +162,17 @@ const Parallax = (props) => {
                 position: 'relative',
                 top: [-50, 0, 0, -50],
                 ml: 25,
-                svg: { float: 'left', maxWidth: ['100%'] },
+                svg: {
+                  float: 'left',
+                  maxWidth: ['100%'],
+                  visibility: 'hidden',
+                  fill: '#DB3C2D',
+                  '.mask': {
+                    fill: 'none',
+                    stroke: '#fff',
+                    strokeMiterlimit: 10,
+                  },
+                },
               }}
             >
               <Letters />
