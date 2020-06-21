@@ -95,6 +95,9 @@ const Parallax = (props) => {
                   maxWidth: '50%',
                   fill: '#DB3C2D',
                   cursor: 'pointer',
+                  position: 'absolute',
+                  top: '0px',
+                  left: '0px',
                 },
                 '.design-lab .mask': {
                   fill: 'none',
@@ -177,6 +180,9 @@ const styles = {
       top: 200,
       opacity: 0,
       visibility: 'hidden',
+    },
+    '.letters': {
+      position: 'relative',
     },
   },
 }
