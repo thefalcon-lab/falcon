@@ -166,7 +166,11 @@ const Letters = (props) => {
       return tl
     }
 
-    let master = gsap.timeline()
+    let master = gsap.timeline({
+      onComplete: function () {
+        this.restart()
+      },
+    })
     master.add(designAnimation()).add(printAnimation())
     master.play()
     // master.restart()
