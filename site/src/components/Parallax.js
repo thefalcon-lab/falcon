@@ -91,16 +91,15 @@ const Parallax = (props) => {
                 position: 'relative',
                 top: [-50, 0, 0, -25],
                 ml: 25,
-                svg: {
-                  // float: 'left',
-                  maxWidth: ['50%'],
-                  // visibility: 'hidden',
+                '.print-lab,.design-lab': {
+                  maxWidth: '50%',
                   fill: '#DB3C2D',
-                  '.mask': {
-                    fill: 'none',
-                    stroke: '#fff',
-                    strokeMiterlimit: 10,
-                  },
+                  cursor: 'pointer',
+                },
+                '.design-lab .mask': {
+                  fill: 'none',
+                  stroke: '#fff',
+                  strokeMiterlimit: 10,
                 },
               }}
             >

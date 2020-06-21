@@ -173,7 +173,6 @@ const Letters = (props) => {
     })
     master.add(designAnimation()).add(printAnimation())
     master.play()
-    // master.restart()
   }, [])
 
   return (
