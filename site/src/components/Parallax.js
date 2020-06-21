@@ -3,7 +3,7 @@ import { jsx, Flex, Box, Container } from 'theme-ui'
 import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from './images/BgImage'
-import { gsap, Power4 } from 'gsap'
+import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
@@ -94,13 +94,15 @@ const Parallax = (props) => {
                 // top: [-50, 0, 0, -25],
                 // ml: 25,
                 '.print-lab,.design-lab': {
+                  visibility: 'hidden',
+                  opacity: 0,
                   maxWidth: '55%',
                   fill: '#DB3C2D',
                   cursor: 'pointer',
                   position: 'absolute',
                   top: [-50, 0, 0, -50],
                   left: 420,
-                  opacity: 1,
+                  // opacity: 1,
                 },
                 '.design-lab .mask': {
                   fill: 'none',
@@ -169,7 +171,6 @@ const styles = {
       top: '50%',
       left: '50%',
       transform: 'translateY(-50%)',
-      transform: 'translateX(-50%)',
     },
     '.textOne': {
       fontSize: [30, 50, 80],
