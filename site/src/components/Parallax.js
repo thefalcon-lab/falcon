@@ -17,11 +17,12 @@ const Parallax = (props) => {
       gsap.registerPlugin(ScrollTrigger)
       gsap.core.globals('ScrollTrigger', ScrollTrigger)
     }
+    gsap.to('.textOne', { duration: 0.01, autoAlpha: 1 })
 
     gsap.fromTo(
       '.textWrap',
-      { opacity: 0, y: 50 },
-      { duration: 0.5, opacity: 1, y: 0, delay: 1 }
+      { autoAlpha: 0, y: 50 },
+      { duration: 0.5, autoAlpha: 1, y: 0, delay: 1 }
     )
     let tl = gsap.timeline({
       // paused: true,
@@ -69,6 +70,7 @@ const Parallax = (props) => {
             className="textWrap"
             sx={{
               position: 'relative',
+              px: '30px !important',
             }}
           >
             <h1
@@ -78,6 +80,8 @@ const Parallax = (props) => {
                 textAlign: 'center',
                 mr: 25,
                 mb: 0,
+                opacity: 0,
+                visibility: 'hidden',
               }}
             >
               this is your{' '}
@@ -140,10 +144,11 @@ const styles = {
     },
     '.textWrap': {
       position: 'absolute',
-      top: '50%',
+      top: '45%',
+      // transform: 'translateY(-50%)',
     },
     '.textOne': {
-      fontSize: [30, 50, 80],
+      fontSize: [30, 50, 70],
     },
     '.textTwo': {
       maxWidth: 550,
@@ -157,7 +162,7 @@ const styles = {
     },
     '.letters': {
       position: 'relative',
-      top: [-50, 0, 0, -50],
+      top: [-50, 0, 0, -30],
       ml: 25,
       svg: { float: 'left', maxWidth: ['100%'] },
 
@@ -169,8 +174,8 @@ const styles = {
         top: 0,
         visibility: 'hidden',
         opacity: 0,
-        left: 420,
-        height: 180,
+        left: 370,
+        height: 160,
       },
       '.design-lab .mask, .print-lab .mask, .marketing-lab .mask, .promo-lab .mask, .web-dev-lab .mask, .apparel-lab .mask, .experiential-lab .mask': {
         fill: 'none',
