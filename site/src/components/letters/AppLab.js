@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ApparelLab = (props) => {
+export const AppLab = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

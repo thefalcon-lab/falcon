@@ -10,7 +10,8 @@ import {
   MarketingLab,
   WebDevLab,
   PromoLab,
-  ApparelLab,
+  AppLab,
+  ExpLab,
 } from './letters'
 
 const Letters = (props) => {
@@ -187,6 +188,11 @@ const Letters = (props) => {
     <>
       <DesignLab />
       <PrintLab />
+      <MarketingLab />
+      <PromoLab />
+      <WebDevLab />
+      <AppLab />
+      <ExpLab />
     </>
   )
 }
