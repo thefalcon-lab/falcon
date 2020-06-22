@@ -169,8 +169,6 @@ const styles = {
     '.textWrap': {
       position: 'absolute',
       top: '50%',
-      left: '50%',
-      transform: 'translateY(-50%)',
     },
     '.textOne': {
       fontSize: [30, 50, 80],
