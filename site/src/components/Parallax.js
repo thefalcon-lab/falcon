@@ -82,35 +82,7 @@ const Parallax = (props) => {
             >
               this is your{' '}
             </h1>
-            <div
-              className="letters"
-              sx={{
-                position: 'relative',
-                // top: [-50, 0, 0, -30],
-                ml: 25,
-                svg: { float: 'left', maxWidth: ['100%'] },
-
-                // position: 'relative',
-                // top: [-50, 0, 0, -25],
-                // ml: 25,
-                '.print-lab,.design-lab': {
-                  // visibility: 'hidden',
-                  opacity: 0,
-                  maxWidth: '55%',
-                  fill: '#DB3C2D',
-                  cursor: 'pointer',
-                  position: 'absolute',
-                  top: [-50, 0, 0, -50],
-                  left: 420,
-                  // opacity: 1,
-                },
-                '.design-lab .mask': {
-                  fill: 'none',
-                  stroke: '#fff',
-                  strokeMiterlimit: 10,
-                },
-              }}
-            >
+            <div className="letters">
               <Letters />
             </div>
           </Container>
@@ -185,6 +157,31 @@ const styles = {
     },
     '.letters': {
       position: 'relative',
+      top: [-50, 0, 0, -50],
+      ml: 25,
+      svg: { float: 'left', maxWidth: ['100%'] },
+
+      '.design-lab,.print-lab,.marketing-lab,.promo-lab,.web-dev-lab,.apparel-lab,.experiential-lab': {
+        cursor: 'pointer',
+        fill: '#d83e00',
+        position: 'absolute',
+        left: 0,
+        top: 0,
+        visibility: 'hidden',
+        opacity: 0,
+        left: 420,
+        height: 180,
+      },
+      '.design-lab .mask, .print-lab .mask, .marketing-lab .mask, .promo-lab .mask, .web-dev-lab .mask, .apparel-lab .mask, .experiential-lab .mask': {
+        fill: 'none',
+        stroke: '#fff',
+        strokeMiterlimit: 10,
+      },
+
+      '.print-lab': {
+        height: 160,
+        top: 15,
+      },
     },
   },
 }
