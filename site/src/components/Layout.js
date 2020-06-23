@@ -8,11 +8,14 @@ import { Global } from '@emotion/core'
 import { globalStyles } from '../styles/GlobalStyles'
 import { Grommet } from 'grommet'
 import grommetTheme from '../styles/grommet'
+import { useGsapReveal } from '../hooks'
 
 import '../styles/scss/styles.scss'
 
 const Layout = ({ children, page, type = 'page' }) => {
   const layoutClass = page !== undefined ? (page.slug ? page.slug : page) : ''
+
+  useGsapReveal(75, 2, ['.gsReveal'])
 
   const { theme } = useThemeUI()
 

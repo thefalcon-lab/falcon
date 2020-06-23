@@ -11,7 +11,7 @@ export const fragment = graphql`
 
 export const SpacerBlock = ({ cssclass, ...props }) => (
   <div className={` ${cssclass || ''}`} sx={{ ...styles }} {...props}>
-    <Container className="container">
+    <Container className="container gsReveal">
       <Spacer className="spacer" />
     </Container>
   </div>

@@ -5,7 +5,7 @@ import React from 'react'
 export const ProjectTags = ({ items, ...props }) => (
   <>
     {items && (
-      <Box className="projectTags" sx={{ ...styles }} {...props}>
+      <Box className="projectTags gsReveal" sx={{ ...styles }} {...props}>
         <Container className="container" sx={{ maxWidth: 'm' }}>
           {items.map((tag, i) => {
             return (

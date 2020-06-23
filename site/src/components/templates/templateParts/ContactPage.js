@@ -1,15 +1,12 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Box } from 'theme-ui'
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { ProjectHeader } from '../../project'
 import ContactInfo from '../../ContactInfo'
 import ParsedContent from '../../../utils/ParsedContent'
 import { window, document, exists } from 'browser-monads'
 
 export const ContactPage = ({ page, ...props }) => {
-  // const fileNameRef = useRef()
-  const [fileName, setFileName] = useState()
-
   useEffect(() => {
     document.getElementById('inputFile').addEventListener('change', (e) => {
       document.querySelector('label').textContent = e.target.value
@@ -43,7 +40,7 @@ export const ContactPage = ({ page, ...props }) => {
             <ContactInfo sx={{ color: 'text', a: { color: 'text' } }} />
           </Box>
           <Box
-            className="formContainer"
+            className="formContainer gsReveal"
             sx={{ width: ['100%', '100%', '60%'] }}
           >
             <ParsedContent content={page.content} />

@@ -17,7 +17,7 @@ const PostEntry = ({ post, location }) => {
           post={post}
           className="entry-title"
         />
-        <Spacer />
+        <Spacer className="gsReveal" />
         {subtitle && (
           <div
             className="subtitle"

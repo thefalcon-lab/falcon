@@ -13,11 +13,11 @@ export const ProjectSections = ({ items, ...props }) => (
             <Box key={i} className={`projectSection ${cssclass}`}>
               <Container sx={{ maxWidth: 'm' }}>
                 <h2
-                  className="title"
+                  className="title gsReveal"
                   dangerouslySetInnerHTML={{ __html: title }}
                 />
                 <p
-                  className="content"
+                  className="content gsReveal"
                   dangerouslySetInnerHTML={{ __html: content }}
                 />
               </Container>

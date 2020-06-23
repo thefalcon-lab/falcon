@@ -44,12 +44,12 @@ export const TeamBlock = ({
     >
       {title && <h2 dangerouslySetInnerHTML={{ __html: title }} />}
       {content && (
-        <Box className="content">
+        <Box className="content gsReveal">
           <ParsedContent content={content} />
         </Box>
       )}
       {team.length > 0 && (
-        <Box className="team">
+        <Box className="team gsReveal">
           {team.map((item, i) => {
             const { image, name, role, linkedin } = item
             return (

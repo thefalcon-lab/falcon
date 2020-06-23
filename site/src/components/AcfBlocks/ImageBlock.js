@@ -66,7 +66,7 @@ export const ImageBlock = ({
       }}
     >
       <Container
-        className="container"
+        className="container gsReveal"
         sx={{ display: 'flex', justifyContent: 'center' }}
       >
         {image.localFile.childImageSharp ? (

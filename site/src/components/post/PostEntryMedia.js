@@ -20,7 +20,7 @@ const PostEntryMedia = ({ post, location }) => {
     <Fragment>
       {img && (
         <WithLink location={location} post={post}>
-          <div className="entry-media">
+          <div className="entry-media gsReveal">
             <Image img={img} />
           </div>
         </WithLink>

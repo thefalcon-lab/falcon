@@ -4,10 +4,10 @@ import { Spacer } from '../ui-components'
 
 export const ProjectHeader = ({ title, subtitle, ...props }) => (
   <Container sx={{ maxWidth: 'l' }} {...props}>
-    <h1 dangerouslySetInnerHTML={{ __html: title }} />
-    <Spacer />
+    <h1 className="gsReveal" dangerouslySetInnerHTML={{ __html: title }} />
+    <Spacer className="gsReveal" />
     <Box
-      className="subtitle"
+      className="subtitle gsReveal"
       sx={{
         variant: 'text.subtitle',
         maxWidth: 640,

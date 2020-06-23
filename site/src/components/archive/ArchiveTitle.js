@@ -3,7 +3,10 @@ import { jsx, Flex } from 'theme-ui'
 
 const ArchiveTitle = ({ name, text }) => {
   return (
-    <Flex className="archive-title" sx={{ justifyContent: `flex-start` }}>
+    <Flex
+      className="archive-title gsReveal"
+      sx={{ justifyContent: `flex-start` }}
+    >
       <h1
         sx={{
           variant: `text.special.archiveTitle`,

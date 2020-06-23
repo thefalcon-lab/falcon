@@ -5,7 +5,7 @@ import ParsedContent from '../../utils/ParsedContent'
 const PostEntryContent = ({ post, location }) => {
   const content = location === 'single' ? post.content : post.excerpt
   return (
-    <Box className="entry-content">
+    <Box className="entry-content gsReveal">
       <ParsedContent content={content} />
     </Box>
   )

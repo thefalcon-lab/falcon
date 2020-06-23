@@ -46,7 +46,7 @@ export const ContentBlock = ({
       }}
       {...props}
     >
-      <Container className="container">
+      <Container className="container gsReveal">
         {title && <h2 dangerouslySetInnerHTML={{ __html: title }} />}
         {content && (
           <Box className="content">

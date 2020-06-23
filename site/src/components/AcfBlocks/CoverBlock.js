@@ -7,7 +7,7 @@ import coverBlockStyles from '../../styles/acfBlocksStyles/coverBlockStyles'
 import sectionsStyles from '../../styles/acfBlocksStyles/sectionsStyles'
 
 const Content = ({ content }) => (
-  <Container className="content">
+  <Container className="content gsReveal">
     <ParsedContent content={content} />
   </Container>
 )
@@ -78,6 +78,7 @@ export const CoverBlock = ({
           // height={height}
           sx={{
             ...parallaxStyle,
+            overflow: 'hidden',
           }}
         >
           {<Content content={content} />}

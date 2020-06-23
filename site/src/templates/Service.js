@@ -50,17 +50,15 @@ const Service = ({ data }) => {
 
       {/* <ServiceProjects slug={slug} /> */}
       <Container sx={{ maxWidth: 'l', pb: 100, pt: 50 }}>
-        <ParsedContent content={content} />
+        <div className="gsReveal" sx={{ mb: 40 }}>
+          <ParsedContent content={content} />
+        </div>
+
         <Link
-          to="/services"
-          sx={{ display: 'flex', justifyContent: 'flex-start', pt: 20 }}
+          to={serviceCta ? serviceCta.url : 'contact'}
+          sx={{ variant: `buttons.primary` }}
         >
-          <Link
-            to={serviceCta ? serviceCta.url : 'contact'}
-            sx={{ variant: `buttons.primary` }}
-          >
-            {serviceCta ? serviceCta.title : 'contact us'}
-          </Link>
+          {serviceCta ? serviceCta.title : 'contact us'}
         </Link>
       </Container>
 

@@ -10,11 +10,11 @@ const PostEntryTitle = ({ post, location }) => {
     <Fragment>
       {location === 'single' ? (
         <h1
-          className="entry-title"
+          className="entry-title gsReveal"
           dangerouslySetInnerHTML={{ __html: title }}
         />
       ) : (
-        <h2 className="entry-title">
+        <h2 className="entry-title gsReveal">
           <Link to={`/${uri}`} dangerouslySetInnerHTML={{ __html: title }} />
         </h2>
       )}
