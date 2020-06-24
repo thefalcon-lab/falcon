@@ -7,14 +7,6 @@
 }
 
 @font-face {
-  font-family: 'have_heart_oneregular';
-  src: url('have_heart_one-webfont.woff2') format('woff2'),
-    url('have_heart_one-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'proxima_novalight';
   src: url('proximanova-light-webfont.woff2') format('woff2'),
     url('proximanova-light-webfont.woff') format('woff');
