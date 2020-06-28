@@ -25,10 +25,10 @@ export const Brand = (props) => {
         <rect width="1920" height="1080" fill="#000" />
         <g
           fill="none"
-          stroke-linejoin="round"
-          stroke-linecap="round"
+          strokeLinejoin="round"
+          strokeLinecap="round"
           stroke="#fff"
-          stroke-width="6"
+          strokeWidth="6"
         >
           <path
             id="designLine"
@@ -109,7 +109,7 @@ export const Brand = (props) => {
           width="440"
           height="207"
         />
-        <Link to="service/design">
+        <Link to="/service/design">
           <image
             id="designImg"
             className="img"
@@ -120,7 +120,7 @@ export const Brand = (props) => {
             height="210"
           />
         </Link>
-        <Link to="service/print">
+        <Link to="/service/print">
           <image
             id="printImg"
             className="img"
@@ -131,7 +131,7 @@ export const Brand = (props) => {
             height="270"
           />
         </Link>
-        <Link to="service/apparel">
+        <Link to="/service/apparel">
           <image
             id="apparelImg"
             className="img"
@@ -142,7 +142,7 @@ export const Brand = (props) => {
             height="210"
           />
         </Link>
-        <Link to="service/promo">
+        <Link to="/service/promo">
           <image
             id="promoImg"
             className="img"
@@ -153,7 +153,7 @@ export const Brand = (props) => {
             height="197"
           />
         </Link>
-        <Link to="service/web-dev">
+        <Link to="/service/web-dev">
           <image
             id="webImg"
             className="img"
@@ -164,7 +164,7 @@ export const Brand = (props) => {
             height="205"
           />
         </Link>
-        <Link to="service/marketing">
+        <Link to="/service/marketing">
           <image
             id="marketingImg"
             className="img"
@@ -175,7 +175,7 @@ export const Brand = (props) => {
             height="325"
           />
         </Link>
-        <Link to="service/design">
+        <Link to="/service/design">
           <image
             id="experientialImg"
             className="img"

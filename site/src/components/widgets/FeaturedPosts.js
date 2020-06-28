@@ -1,10 +1,8 @@
 /** @jsx jsx */
 import { jsx, Box, Flex } from 'theme-ui'
-
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import moment from 'moment/moment'
 import Img from 'gatsby-image'
-import normalize from 'normalize-path'
 
 const FEATURED_POSTS = graphql`
   query {

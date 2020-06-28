@@ -1,6 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box } from 'theme-ui'
-import { useStaticQuery, graphql } from 'gatsby'
+import { jsx, Flex, Box } from 'theme-ui'
 import BgImage from '../../images/BgImage'
 
 export const FooterGallery = ({ gallery }) => {

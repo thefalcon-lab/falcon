@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box } from 'theme-ui'
+import { jsx } from 'theme-ui'
 import { Link } from 'gatsby'
 import { useEffect } from 'react'
 import { gsap } from 'gsap'
@@ -83,10 +83,10 @@ const BrandAnimation = () => {
           <rect width="1920" height="1080" fill="#000" />
           <g
             fill="none"
-            stroke-linejoin="round"
-            stroke-linecap="round"
+            strokeLinejoin="round"
+            strokeLinecap="round"
             stroke="#fff"
-            stroke-width="6"
+            strokeWidth="6"
           >
             <path
               id="designLine"
@@ -167,7 +167,7 @@ const BrandAnimation = () => {
             width="440"
             height="207"
           />
-          <Link to="service/design">
+          <Link to="/service/design">
             <image
               id="designImg"
               className="img"
@@ -178,7 +178,7 @@ const BrandAnimation = () => {
               height="210"
             />
           </Link>
-          <Link to="service/print">
+          <Link to="/service/print">
             <image
               id="printImg"
               className="img"
@@ -189,7 +189,7 @@ const BrandAnimation = () => {
               height="270"
             />
           </Link>
-          <Link to="service/apparel">
+          <Link to="/service/apparel">
             <image
               id="apparelImg"
               className="img"
@@ -200,7 +200,7 @@ const BrandAnimation = () => {
               height="210"
             />
           </Link>
-          <Link to="service/promo">
+          <Link to="/service/promo">
             <image
               id="promoImg"
               className="img"
@@ -211,7 +211,7 @@ const BrandAnimation = () => {
               height="197"
             />
           </Link>
-          <Link to="service/web-dev">
+          <Link to="/service/web-dev">
             <image
               id="webImg"
               className="img"
@@ -222,7 +222,7 @@ const BrandAnimation = () => {
               height="205"
             />
           </Link>
-          <Link to="service/marketing">
+          <Link to="/service/marketing">
             <image
               id="marketingImg"
               className="img"
@@ -233,7 +233,7 @@ const BrandAnimation = () => {
               height="325"
             />
           </Link>
-          <Link to="service/design">
+          <Link to="/service/design">
             <image
               id="experientialImg"
               className="img"

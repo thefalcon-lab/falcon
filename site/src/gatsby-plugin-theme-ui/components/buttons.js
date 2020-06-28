@@ -3,7 +3,6 @@ const sharedButtonStyles = {
   border: 'none',
   color: 'white',
   cursor: 'pointer',
-  fontFamily: 'body',
   textTransform: 'uppercase',
   fontSize: 'xs',
   fontFamily: 'bold',

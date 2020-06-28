@@ -1,7 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui'
-import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import { Masonry, MasonryItem } from './ui-components'
 import overlayStyles from '../styles/overlayStyles'
 
@@ -45,7 +44,6 @@ const ServiceProjects = ({ slug, ...props }) => {
             featuredImage,
             projectFields: { projectType, height, bgc },
             title,
-            uri,
           } = project
 
           return (

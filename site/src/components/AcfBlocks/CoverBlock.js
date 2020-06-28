@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Flex, Container } from 'theme-ui'
+import { jsx, Box, Container } from 'theme-ui'
 import { graphql } from 'gatsby'
 import BgImage from '../images/BgImage'
 import ParsedContent from '../../utils/ParsedContent'
@@ -55,7 +55,6 @@ export const CoverBlock = ({
     mt: marginTop,
     mb: marginBottom,
   }
-  console.log('image', content)
 
   const parallaxStyle = parallax && { backgroundAttachment: 'fixed' }
   const overlayClass = overlay && 'overlay'

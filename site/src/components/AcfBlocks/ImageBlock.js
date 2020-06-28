@@ -72,7 +72,7 @@ export const ImageBlock = ({
         {image.localFile.childImageSharp ? (
           <GatsbyImg img={image} />
         ) : (
-          <img src={image.localFile.publicURL} />
+          <img src={image.localFile.publicURL} alt={image.altText} />
         )}
       </Container>
     </Box>

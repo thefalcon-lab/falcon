@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react'
-import { window, document, exists } from 'browser-monads'
+import { window } from 'browser-monads'
 
 // Usage
 function App() {

@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Flex, Box, Container } from 'theme-ui'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from './images/BgImage'
 import { gsap } from 'gsap'

@@ -1,9 +1,9 @@
 /** @jsx jsx */
 import { jsx, Box, Container } from 'theme-ui'
-import React from 'react'
+import { Fragment } from 'react'
 
 export const ProjectTags = ({ items, ...props }) => (
-  <>
+  <Fragment>
     {items && (
       <Box className="projectTags gsReveal" sx={{ ...styles }} {...props}>
         <Container className="container" sx={{ maxWidth: 'm' }}>
@@ -17,7 +17,7 @@ export const ProjectTags = ({ items, ...props }) => (
         </Container>
       </Box>
     )}
-  </>
+  </Fragment>
 )
 
 const styles = {

@@ -61,15 +61,16 @@ export const LogosBlock = ({
           sx={{ flexWrap: 'wrap', justifyContent: 'center' }}
         >
           {logos &&
-            logos.map((logo) => {
+            logos.map((logo, i) => {
               const { url, image } = logo
               const WithLink = (url, children) => (
-                <a href={url} target="_blank" rel="noopener noreferrer">
+                <a key={i} href={url} target="_blank" rel="noopener noreferrer">
                   {children}
                 </a>
               )
               return (
                 <Box
+                  key={i}
                   sx={{
                     minWidth: [150, 200],
                     img: { m: 0 },

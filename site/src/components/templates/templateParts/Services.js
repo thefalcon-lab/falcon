@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { jsx } from 'theme-ui'
 import { useEffect } from 'react'
 import Brand from '../../Brand'
 import { gsap } from 'gsap'

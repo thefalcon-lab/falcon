@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Flex } from 'theme-ui'
+import { jsx } from 'theme-ui'
 import { motion } from 'framer-motion'
 
 export const MasonryItem = ({ height, img, bgc, children, ...props }) => {

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box, Grid, Button } from 'theme-ui'
+import { jsx, Flex, Box, Button } from 'theme-ui'
 
 export const DateFilter = ({ filter, setFilter, months, ...props }) => {
   const handleSetFilter = (e) => {

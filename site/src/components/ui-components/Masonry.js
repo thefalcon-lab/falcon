@@ -1,6 +1,6 @@
 /** @jsx jsx */
-import { jsx, Box, Flex } from 'theme-ui'
-import React, { useEffect, useRef, useState } from 'react'
+import { jsx, Box } from 'theme-ui'
+import { useEffect, useRef, useState } from 'react'
 import { useEventListener } from '../../hooks'
 
 const fillCols = (children, cols) => {

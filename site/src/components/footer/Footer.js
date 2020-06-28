@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { Container, jsx, Box } from 'theme-ui'
-import { Link } from 'gatsby'
 import SocialFollow from '../social/SocialFollows'
 import ContactInfo from '../ContactInfo'
 import Menu from '../header/Menu'

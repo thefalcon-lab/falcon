@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Flex } from 'theme-ui'
+import { jsx, Box, Container } from 'theme-ui'
 import { graphql } from 'gatsby'
 import Slider from 'react-slick'
 // import testimonialsBlockStyles from '../../styles/acfBlocksStyles/testimonialsBlockStyles'

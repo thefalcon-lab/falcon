@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Grid, Flex } from 'theme-ui'
-import React from 'react'
 import { graphql } from 'gatsby'
 import ParsedContent from '../../utils/ParsedContent'
 import BgImage from '../images/BgImage'

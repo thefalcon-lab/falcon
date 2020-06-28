@@ -1,5 +1,3 @@
-import { darken, lighten } from 'polished'
-
 export default {
   '.columnItem': {
     display: 'flex',

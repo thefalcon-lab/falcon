@@ -1,13 +1,13 @@
 /** @jsx jsx */
-import { jsx, Flex, Button } from "theme-ui"
-import React from "react"
-import { Link } from "gatsby"
-import AnchorLink from "react-anchor-link-smooth-scroll"
-import config from "../../../config"
+import { jsx, Flex, Button } from 'theme-ui'
+import { Fragment } from 'react'
+import { Link } from 'gatsby'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import config from '../../../config'
 
 export const ContentButton = ({ button, buy, ...props }) => {
   const { title, target, url } = button
-  const buttonUrl = button && url.replace(config.wordPressUrl, "")
+  const buttonUrl = button && url.replace(config.wordPressUrl, '')
   return (
     <Flex {...props}>
       {buy ? (
@@ -24,12 +24,12 @@ export const ContentButton = ({ button, buy, ...props }) => {
           Buy the themes bundle!
         </Button>
       ) : (
-        <>
-          {target === "_blank" ? (
-            <a href={url} target="_blank">
+        <Fragment>
+          {target === '_blank' ? (
+            <a href={url} target="_blank" rel="noopener noreferrer">
               <Button>{title}</Button>
             </a>
-          ) : url.startsWith("#") ? (
+          ) : url.startsWith('#') ? (
             <AnchorLink href={url} offset={25}>
               <Button>{title}</Button>
             </AnchorLink>
@@ -38,7 +38,7 @@ export const ContentButton = ({ button, buy, ...props }) => {
               <Link to={buttonUrl}>{title}</Link>
             </Button>
           )}
-        </>
+        </Fragment>
       )}
     </Flex>
   )

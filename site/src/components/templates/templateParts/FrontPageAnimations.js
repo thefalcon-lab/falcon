@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui'
-import { useStaticQuery, graphql } from 'gatsby'
 import Parallax from '../../Parallax'
 import BrandAnimation from '../../BrandAnimation'
 import BrandMobile from '../../../images/brandMobile.inline.svg'

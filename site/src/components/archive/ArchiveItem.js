@@ -1,10 +1,8 @@
 /** @jsx jsx */
 import { jsx, Box } from 'theme-ui'
-import { Link } from 'gatsby'
 import Date from '../post/Date'
 import PostEntryTitle from '../post/PostEntryTitle'
 import Image from '../images/Image'
-import Img from 'gatsby-image'
 import PostEntryContent from '../post/PostEntryContent'
 
 const ArchiveItem = ({ post, ...props }) => {

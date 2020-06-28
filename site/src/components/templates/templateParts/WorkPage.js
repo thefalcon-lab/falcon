@@ -1,12 +1,10 @@
 /** @jsx jsx */
 import { jsx, Container, Flex, Box, Button } from 'theme-ui'
-import React, { useState } from 'react'
+import { useState, Fragment } from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { ProjectHeader } from '../../project'
-import { Masonry, MasonryItem } from '../../ui-components'
+import { MasonryItem } from '../../ui-components'
 import overlayStyles from '../../../styles/overlayStyles'
-import { detect } from 'detect-browser'
-const browser = detect()
 
 const PROJECTS_QUERY = graphql`
   query {
@@ -62,7 +60,7 @@ export const WorkPage = ({ page, ...props }) => {
   }
 
   return (
-    <>
+    <Fragment>
       <Container sx={{ ...styles }} {...props}>
         <ProjectHeader title="Our Work" sx={{ mb: 100 }} />
         <Flex className="filters gsReveal" sx={{ ...filtersStyles }}>
@@ -97,7 +95,7 @@ export const WorkPage = ({ page, ...props }) => {
           projects.map((project, i) => {
             const {
               featuredImage,
-              projectFields: { projectType, height, bgc },
+              projectFields: { projectType, bgc },
               title,
               uri,
             } = project
@@ -135,7 +133,7 @@ export const WorkPage = ({ page, ...props }) => {
             )
           })}
       </Flex>
-    </>
+    </Fragment>
   )
 }
 

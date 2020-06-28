@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Box, Flex } from 'theme-ui'
+import { jsx, Container } from 'theme-ui'
 import { Fragment } from 'react'
 
 import { useStaticQuery, graphql } from 'gatsby'
@@ -7,7 +7,6 @@ import SlideSidebar from './SlideSidebar'
 import SiteBranding from './SiteBranding'
 import Menu from './Menu'
 import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
-import { FormDown } from 'grommet-icons'
 
 import Headroom from 'react-headroom'
 
@@ -51,8 +50,6 @@ const styles = {
   '.container': {
     display: ['flex'],
     justifyContent: 'space-between',
-    alignItems: 'center',
-    // flexWrap: 'wrap',
     alignItems: 'center',
     fontSize: 'm',
     margin: '0 auto',

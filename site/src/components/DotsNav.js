@@ -20,7 +20,7 @@ const DotsNav = (props) => {
   `)
 
   const menuItems = data.allWpMenu.nodes[0].menuItems.nodes
-  console.log('menuItems', menuItems)
+
   return (
     <nav className="dotNav" sx={{ ...styles }} {...props}>
       <ul>

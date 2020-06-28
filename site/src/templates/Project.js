@@ -9,8 +9,7 @@ import Img from 'gatsby-image'
 const Project = ({ data }) => {
   const {
     title,
-    featuredImage,
-    projectFields: { projectType, projectSections, topImage },
+    projectFields: { projectSections, topImage },
     terms,
   } = data.wpProject
 

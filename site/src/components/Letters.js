@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui'
-import React, { useEffect } from 'react'
+import { useEffect, Fragment } from 'react'
 import { gsap, Linear } from 'gsap'
 
 import { DrawSVGPlugin } from 'gsap/DrawSVGPlugin'
@@ -673,7 +673,7 @@ const Letters = (props) => {
   }, [])
 
   return (
-    <>
+    <Fragment>
       <DesignLab />
       <PrintLab />
       <MarketingLab />
@@ -681,7 +681,7 @@ const Letters = (props) => {
       <WebDevLab />
       <AppLab />
       <ExpLab />
-    </>
+    </Fragment>
   )
 }
 

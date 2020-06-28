@@ -10,20 +10,12 @@ import normalize from 'normalize-path'
 import Sidebar from '../Sidebar'
 
 const Post = ({ post }) => {
-  const {
-    title,
-    excerpt,
-    slug,
-    featuredImage,
-    uri,
-    template: { templateName },
-    postSubtitle: { postSubtitle },
-  } = post
+  const { title, excerpt, slug, featuredImage, uri } = post
   const media = featuredImage
     ? featuredImage.localFile.childImageSharp.fluid.src
     : null
   const { layoutWidth } = useThemeOptions()
-  const { disqus, addWordPressComments, sidebarWidgets } = useThemeOptions()
+  const { addWordPressComments } = useThemeOptions()
 
   const containerStyles = {
     maxWidth: 1050,
@@ -33,10 +25,6 @@ const Post = ({ post }) => {
     '.sidebar': { width: [`100%`, `100%`, `100%`, `30%`] },
   }
 
-  const disqusConfig = {
-    shortname: disqus,
-    config: { identifier: slug, title },
-  }
   return (
     <Layout page={post} type="post">
       <SEO
@@ -58,11 +46,7 @@ const Post = ({ post }) => {
         </Flex>
         {addWordPressComments && post.commentStatus === 'open' && (
           <Container sx={{ maxWidth: layoutWidth.post }}>
-            {disqus ? (
-              <DiscussionEmbed {...disqusConfig} />
-            ) : (
-              <CommentsList post={post} />
-            )}
+            <CommentsList post={post} />
           </Container>
         )}
       </Container>

@@ -4,7 +4,6 @@ import { graphql, Link } from 'gatsby'
 import { ProjectHeader, ProjectTags } from '../components/project'
 import Layout from '../components/Layout'
 import ParsedContent from '../utils/ParsedContent'
-import ServiceProjects from '../components/ServiceProjects'
 import { FooterGallery } from '../components/templates/templateParts'
 
 const Service = ({ data }) => {
@@ -12,7 +11,6 @@ const Service = ({ data }) => {
     title,
     uri,
     content,
-    slug,
     serviceFields: { serviceIntro, servicesTags, serviceCta },
     footerGallery: { gallery },
   } = data.wpService

@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Grid, Box, Flex } from 'theme-ui'
+import { jsx, Box, Flex } from 'theme-ui'
 import { useStaticQuery, graphql } from 'gatsby'
 import BgImage from '../../images/BgImage'
 

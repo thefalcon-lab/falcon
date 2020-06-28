@@ -56,6 +56,7 @@ const Layout = ({ children, page, type = 'page' }) => {
             <iframe
               src="https://snazzymaps.com/embed/240089"
               width="100%"
+              title="map"
               height="600px"
               sx={{
                 border: 'none',

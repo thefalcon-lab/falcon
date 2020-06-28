@@ -1,10 +1,10 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Flex } from 'theme-ui'
-import React from 'react'
+import { Fragment } from 'react'
 import Img from 'gatsby-image'
 
 export const ProjectSections = ({ items, ...props }) => (
-  <>
+  <Fragment>
     {items && (
       <Box sx={{ ...styles }} {...props}>
         {items.map((item, i) => {
@@ -46,7 +46,7 @@ export const ProjectSections = ({ items, ...props }) => (
         })}
       </Box>
     )}
-  </>
+  </Fragment>
 )
 
 const styles = {

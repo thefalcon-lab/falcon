@@ -1,10 +1,10 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box } from 'theme-ui'
+import { jsx, Container, Box } from 'theme-ui'
 import { useEffect } from 'react'
 import { ProjectHeader } from '../../project'
 import ContactInfo from '../../ContactInfo'
 import ParsedContent from '../../../utils/ParsedContent'
-import { window, document, exists } from 'browser-monads'
+import { document } from 'browser-monads'
 
 export const ContactPage = ({ page, ...props }) => {
   useEffect(() => {
@@ -98,13 +98,6 @@ const styles = {
       py: 15,
       top: 7,
       position: 'relative',
-
-      // '&:hover': {
-      //   transform: 'translateY(-5px)',
-      // },
-      // position: ['relative', 'relative', 'relative', 'absolute'],
-      // // bottom: ['initial', -20],
-      // left: ['initial', 'initial', 'initial', '20%'],
     },
     '.buttons': {
       display: 'flex',

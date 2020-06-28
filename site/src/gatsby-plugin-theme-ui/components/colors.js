@@ -1,5 +1,3 @@
-import { darken } from 'polished'
-
 const primary = '#d83e00'
 const darkGrey = '#242424'
 const lightGrey = '#efefef'

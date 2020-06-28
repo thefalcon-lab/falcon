@@ -1,10 +1,9 @@
 /** @jsx jsx */
-import { jsx, Container, Flex, Box, Grid } from 'theme-ui'
+import { jsx, Container, Flex, Box } from 'theme-ui'
 import { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import ArchiveItem from './ArchiveItem'
 import Pagination from './Pagination'
-import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
 
 import { Spacer } from '../ui-components'
 import moment from 'moment/moment'
@@ -88,53 +87,3 @@ const ArchiveContent = ({ posts, ctx }) => {
 }
 
 export default ArchiveContent
-const sidebarStyles = {
-  pl: [0, 0, 0, 70],
-  // pt: 50,
-  '.widgets': {
-    border: '1.4px solid',
-    borderColor: 'lightGrey',
-    px: 20,
-    pt: 30,
-  },
-  '.widget': {
-    pb: 30,
-    '&:last-of-type': { pb: 50 },
-  },
-  '.widget-title': {
-    fontFamily: 'bold',
-    fontSize: 20,
-    pb: 15,
-    borderBottom: '1.4px solid',
-    borderColor: 'lightGrey',
-  },
-  '.month': {
-    fontSize: 'xs',
-    pb: 15,
-    fontFamily: 'body',
-    fontWeight: 700,
-    '&:last-of-type': { pb: 0 },
-  },
-  '.featuredPosts': {
-    '.gatsby-image-wrapper': {
-      borderRadius: 50,
-    },
-    '.postItem': {
-      pb: 20,
-      '&:last-of-type': { pb: 0 },
-    },
-    '.textual': {
-      pl: 10,
-      fontSize: 16,
-      '.widget-post-title': {
-        color: 'grey',
-        '&:hover': {
-          color: 'primary',
-        },
-      },
-      time: {
-        color: '#C3CCD3',
-      },
-    },
-  },
-}
