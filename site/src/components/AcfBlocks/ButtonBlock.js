@@ -47,8 +47,8 @@ export const ButtonBlock = ({
       id={anchor}
       className={`container buttonBlock ${cssclass || ''}`}
       sx={{ ...margins, ...buttonBlockStyles }}
-      {...props}
       id={anchor}
+      {...props}
     >
       <Flex sx={{ ...positionStyles }}>
         <Button variant={variant || 'primary'} button={button}>

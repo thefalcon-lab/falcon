@@ -4,13 +4,12 @@ import Layout from '../Layout'
 import SEO from '../seo/Seo'
 import PostEntry from '../../components/post/PostEntry'
 import CommentsList from '../../components/comments/CommentsList'
-import { DiscussionEmbed } from 'disqus-react'
 import useThemeOptions from 'gatsby-theme-blog-data/src/hooks/useThemeOptions'
 import normalize from 'normalize-path'
 import Sidebar from '../Sidebar'
 
 const Post = ({ post }) => {
-  const { title, excerpt, slug, featuredImage, uri } = post
+  const { title, excerpt, featuredImage, uri } = post
   const media = featuredImage
     ? featuredImage.localFile.childImageSharp.fluid.src
     : null

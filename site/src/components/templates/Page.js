@@ -8,14 +8,12 @@ import {
   ContentBlock,
   HeadingBlock,
   ImageBlock,
-  // ProjectsBlock,
   CoverBlock,
   ColumnsBlock,
   SpacerBlock,
   TeamBlock,
   TestimonialsBlock,
   LogosBlock,
-  // SubscribeBlock,
 } from '../AcfBlocks'
 import {
   ContactPage,
@@ -30,7 +28,6 @@ const Page = ({ page }) => {
     title,
     excerpt,
     uri,
-    template: { templateName },
     flexLayouts: { flexibleLayouts },
     isFrontPage,
     footerGallery: { gallery },
