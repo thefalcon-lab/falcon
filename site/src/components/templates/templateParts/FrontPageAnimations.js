@@ -1,19 +1,34 @@
 /** @jsx jsx */
-import { jsx, Box } from 'theme-ui'
+import { jsx, Box, Flex } from 'theme-ui'
+import { useStaticQuery, graphql } from 'gatsby'
 import Parallax from '../../Parallax'
 import BrandAnimation from '../../BrandAnimation'
-import BrandMobile from '../../../images/brandMobile.inline.svg'
+import Img from 'gatsby-image'
 
 export const FrontPageAnimations = ({ page, ...props }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "brandMobile.png" }) {
+        childImageSharp {
+          fixed(width: 375) {
+            ...GatsbyImageSharpFixed_noBase64
+          }
+        }
+      }
+    }
+  `)
   return (
     <Box {...props} sx={{ ...style }}>
       <Parallax />
       <div id="brand">
         <BrandAnimation />
       </div>
-      <div className="mobileImage" sx={{ bg: 'black' }}>
-        <BrandMobile />
-      </div>
+      <Flex
+        className="mobileImage"
+        sx={{ bg: 'black', justifyContent: 'center' }}
+      >
+        <Img fixed={data.file.childImageSharp.fixed} />
+      </Flex>
     </Box>
   )
 }
@@ -23,6 +38,6 @@ const style = {
     display: ['none', 'block'],
   },
   '.mobileImage': {
-    display: ['block', 'none'],
+    display: ['flex', 'none'],
   },
 }
