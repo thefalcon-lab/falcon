@@ -8,7 +8,7 @@ import Img from 'gatsby-image'
 export const FrontPageAnimations = ({ page, ...props }) => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "brandMobile.png" }) {
+      file(relativePath: { eq: "brandMobile2.png" }) {
         childImageSharp {
           fixed(width: 375) {
             ...GatsbyImageSharpFixed_noBase64
