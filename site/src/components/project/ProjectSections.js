@@ -36,7 +36,7 @@ export const ProjectSections = ({ items, ...props }) => (
                     images.map((img, i) => {
                       const widthStyle =
                         images.length === 1
-                          ? [350, 600, 900, 750]
+                          ? [350, 600, 900, 900]
                           : [350, 600, 900, 420]
                       return (
                         <div
