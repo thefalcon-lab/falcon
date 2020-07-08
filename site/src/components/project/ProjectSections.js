@@ -24,13 +24,20 @@ export const ProjectSections = ({ items, ...props }) => (
               <Container>
                 <Flex
                   className="gallery"
-                  sx={{ flexWrap: 'wrap', justifyContent: 'center', mt: 50 }}
+                  sx={{
+                    flexWrap: 'wrap',
+                    justifyContent: 'center',
+                    mt: 50,
+                    px: [20, 20, 0],
+                  }}
                   className="gsReveal"
                 >
                   {images?.length > 0 &&
                     images.map((img, i) => {
                       const widthStyle =
-                        images.length === 1 ? [600, 900, 750] : [600, 900, 420]
+                        images.length === 1
+                          ? [350, 600, 900, 750]
+                          : [350, 600, 900, 420]
                       return (
                         <div
                           className="galleryItem"
