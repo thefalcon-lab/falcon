@@ -23,22 +23,27 @@ export const ProjectSections = ({ items, ...props }) => (
               </Container>
               <Container>
                 <Flex
+                  className="gallery"
                   sx={{ flexWrap: 'wrap', justifyContent: 'center', mt: 50 }}
                   className="gsReveal"
                 >
                   {images?.length > 0 &&
-                    images.map((img, i) => (
-                      <div
-                        className="galleryItem"
-                        key={i}
-                        // sx={{ maxWidth: [600, 900, 420] }}
-                      >
-                        <Img
-                          fluid={img.localFile.childImageSharp.fluid}
-                          sx={{ width: [600, 900, 420] }}
-                        />
-                      </div>
-                    ))}
+                    images.map((img, i) => {
+                      const widthStyle =
+                        images.length === 1 ? [600, 900, 750] : [600, 900, 420]
+                      return (
+                        <div
+                          className="galleryItem"
+                          key={i}
+                          // sx={{ maxWidth: [600, 900, 420] }}
+                        >
+                          <Img
+                            fluid={img?.localFile?.childImageSharp?.fluid}
+                            sx={{ width: widthStyle }}
+                          />
+                        </div>
+                      )
+                    })}
                 </Flex>
               </Container>
             </Box>
