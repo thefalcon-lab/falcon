@@ -4,7 +4,11 @@ import { motion } from 'framer-motion'
 
 export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
   return (
-    <div
+    <motion.div
+      positionTransition={{
+        damping: 100,
+        stiffness: 10,
+      }}
       className="masonryItem"
       sx={{
         display: 'flex',
@@ -33,6 +37,6 @@ export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
         sx={{ m: 0, minWidth: '100%' }}
       />
       {children}
-    </div>
+    </motion.div>
   )
 }

@@ -4,6 +4,10 @@ import { useState, Fragment } from 'react'
 import { useStaticQuery, Link, graphql } from 'gatsby'
 import { ProjectHeader } from '../../project'
 import { MasonryItem } from '../../ui-components'
+import { motion } from 'framer-motion'
+import { shuffle } from 'lodash'
+import { document } from 'browser-monads'
+import { gsap } from 'gsap'
 import overlayStyles from '../../../styles/overlayStyles'
 
 const PROJECTS_QUERY = graphql`
@@ -37,6 +41,38 @@ const PROJECTS_QUERY = graphql`
 `
 
 export const WorkPage = ({ page, ...props }) => {
+  function flip(elements, changeFunc, vars) {
+    if (typeof elements === 'string') {
+      elements = document.querySelectorAll(elements)
+    }
+    vars = vars || {}
+    var bounds = [],
+      tl = gsap.timeline({
+        onComplete: vars.onComplete,
+        delay: vars.delay || 0,
+      }),
+      copy = {},
+      i,
+      b,
+      p
+    for (i = 0; i < elements.length; i++) {
+      bounds[i] = elements[i].getBoundingClientRect()
+    }
+    changeFunc()
+    for (p in vars) {
+      if (p !== 'onComplete' && p !== 'delay') {
+        copy[p] = vars[p]
+      }
+    }
+    copy.x = function (i, element) {
+      return '-=' + (element.getBoundingClientRect().left - bounds[i].left)
+    }
+    copy.y = function (i, element) {
+      return '-=' + (element.getBoundingClientRect().top - bounds[i].top)
+    }
+    tl.from(elements, copy)
+    return tl
+  }
   const data = useStaticQuery(PROJECTS_QUERY)
 
   const filters = data.allWpProjectCategory.nodes
@@ -53,6 +89,7 @@ export const WorkPage = ({ page, ...props }) => {
 
   const handleSetFilter = (e) => {
     setFilter(e.currentTarget.value)
+    // flip('.gridItem', shuffle(projects), { duration: 2 })
   }
 
   const cleanFilters = (e) => {
@@ -108,6 +145,7 @@ export const WorkPage = ({ page, ...props }) => {
                     height={300}
                     bgc={bgc}
                     img={featuredImage.localFile.publicURL}
+                    className="gridItem"
                     sx={{ minWidth: '100%' }}
                   >
                     <Link to={uri}>
