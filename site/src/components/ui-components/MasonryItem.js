@@ -14,7 +14,7 @@ export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        minHeight: `${height}px`,
+        minHeight: `300px`,
         bg: `${bgc}`,
         position: 'relative',
         overflow: 'hidden',
@@ -34,7 +34,7 @@ export const MasonryItem = ({ height, img, bgc, children, ...props }) => {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 1.2 }}
         src={img}
-        sx={{ m: 0, minWidth: '100%' }}
+        sx={{ m: 0, minWidth: '100%', minHeight: '100%' }}
       />
       {children}
     </motion.div>

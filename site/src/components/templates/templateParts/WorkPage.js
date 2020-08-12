@@ -41,38 +41,6 @@ const PROJECTS_QUERY = graphql`
 `
 
 export const WorkPage = ({ page, ...props }) => {
-  function flip(elements, changeFunc, vars) {
-    if (typeof elements === 'string') {
-      elements = document.querySelectorAll(elements)
-    }
-    vars = vars || {}
-    var bounds = [],
-      tl = gsap.timeline({
-        onComplete: vars.onComplete,
-        delay: vars.delay || 0,
-      }),
-      copy = {},
-      i,
-      b,
-      p
-    for (i = 0; i < elements.length; i++) {
-      bounds[i] = elements[i].getBoundingClientRect()
-    }
-    changeFunc()
-    for (p in vars) {
-      if (p !== 'onComplete' && p !== 'delay') {
-        copy[p] = vars[p]
-      }
-    }
-    copy.x = function (i, element) {
-      return '-=' + (element.getBoundingClientRect().left - bounds[i].left)
-    }
-    copy.y = function (i, element) {
-      return '-=' + (element.getBoundingClientRect().top - bounds[i].top)
-    }
-    tl.from(elements, copy)
-    return tl
-  }
   const data = useStaticQuery(PROJECTS_QUERY)
 
   const filters = data.allWpProjectCategory.nodes
@@ -125,7 +93,7 @@ export const WorkPage = ({ page, ...props }) => {
       <Flex
         sx={{
           flexWrap: 'wrap',
-          '>div': { minWidth: ['100%', '50%', '33%', '25%'] },
+          '>div': { width: ['100%', '50%', '33%', '25%'] },
         }}
       >
         {projects &&
