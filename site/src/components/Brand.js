@@ -175,7 +175,7 @@ export const Brand = (props) => {
             height="325"
           />
         </Link>
-        <Link to="/service/design">
+        <Link to="/service/experiential">
           <image
             id="experientialImg"
             className="img"
