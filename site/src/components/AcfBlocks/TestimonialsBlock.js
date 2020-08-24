@@ -8,6 +8,7 @@ import ParsedContent from '../../utils/ParsedContent'
 import '../../styles/acfBlocksStyles/slick.css'
 import '../../styles/acfBlocksStyles/slick-theme.css'
 import { QuoteBottom, QuoteTop } from '../Icons'
+import Masonry from 'react-masonry-css'
 
 export const fragment = graphql`
   fragment testimonialsBlockFragment on WpPage_Flexlayouts_FlexibleLayouts_TestimonialsBlock {
@@ -54,7 +55,7 @@ export const TestimonialsBlock = ({
     const { author, content, picture } = item
     return (
       <Box className="testimonial" key={i}>
-        {picture && <img src={picture.sourceURL} alt="logo" />}
+        {picture && <img src={picture.sourceUrl} alt="logo" />}
         <QuoteTop className="quote quoteTop" />
         <Box className="text">{content}</Box>
         <QuoteBottom className="quote quoteBottom" />
@@ -85,7 +86,13 @@ export const TestimonialsBlock = ({
           </Box>
         )}
         {testimonials.length > 0 && cssclass === 'brag' ? (
-          <h3>masonry</h3>
+          <Masonry
+            breakpointCols={{ default: 4, 1100: 3, 900: 2, 600: 1 }}
+            className="masonryGrid"
+            columnClassName="masonryCol"
+          >
+            {items}
+          </Masonry>
         ) : (
           <Slider {...settings}>{items}</Slider>
         )}
@@ -130,6 +137,50 @@ const styles = {
       bottom: 30,
       right: 0,
       width: [30, 40, 67],
+    },
+  },
+  '.masonryGrid': {
+    display: 'flex',
+    mr: 7,
+    width: 'auto',
+  },
+  '.masonryCol': {
+    pl: 7,
+    backgroundClip: 'padding-box',
+    bg: 'white',
+  },
+  '&.brag': {
+    bg: 'white',
+    '.container': {
+      maxWidth: '100%',
+    },
+    '.testimonial': {
+      position: 'relative',
+      mb: 7,
+      px: 30,
+      pt: 60,
+      pb: 20,
+      '.text': {
+        fontSize: 20,
+        mb: 20,
+      },
+      '.quote': {
+        width: 30,
+        '&.quoteTop': {
+          top: 35,
+          left: 15,
+        },
+        '&.quoteBottom': {
+          bottom: 30,
+          right: 15,
+        },
+      },
+      '.author': {
+        textAlign: 'left',
+        strong: {
+          display: 'block',
+        },
+      },
     },
   },
 }

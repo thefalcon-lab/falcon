@@ -62,6 +62,7 @@
     "react-helmet": "^6.0.0",
     "react-hook-form": "^5.6.3",
     "react-icons": "^3.10.0",
+    "react-masonry-css": "^1.0.14",
     "react-share": "^4.1.0",
     "react-slick": "^0.26.1",
     "react-spinners": "^0.8.3",
