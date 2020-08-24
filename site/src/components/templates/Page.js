@@ -21,6 +21,7 @@ import {
   FrontPageAnimations,
   Instagram,
   FooterGallery,
+  BragPage,
 } from './templateParts'
 
 const Page = ({ page }) => {
@@ -46,6 +47,7 @@ const Page = ({ page }) => {
       {page.slug.includes('contact') && <ContactPage page={page} />}
       {page.slug.includes('work') && <WorkPage page={page} />}
       {page.slug.includes('services') && <Brand />}
+      {page.slug.includes('brag') && <BragPage />}
       {isFrontPage && (
         <FrontPageAnimations
           page={page}

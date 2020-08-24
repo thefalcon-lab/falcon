@@ -49,6 +49,19 @@ export const TestimonialsBlock = ({
     slidesToScroll: 1,
     arrows: false,
   }
+
+  const items = testimonials.map((item, i) => {
+    const { author, content, picture } = item
+    return (
+      <Box className="testimonial" key={i}>
+        {picture && <img src={picture.sourceURL} alt="logo" />}
+        <QuoteTop className="quote quoteTop" />
+        <Box className="text">{content}</Box>
+        <QuoteBottom className="quote quoteBottom" />
+        <Box className="author" dangerouslySetInnerHTML={{ __html: author }} />
+      </Box>
+    )
+  })
   return (
     <Box
       as="section"
@@ -71,23 +84,10 @@ export const TestimonialsBlock = ({
             <ParsedContent content={content} />
           </Box>
         )}
-        {testimonials.length > 0 && (
-          <Slider {...settings}>
-            {testimonials.map((item, i) => {
-              const { author, content } = item
-              return (
-                <Box className="testimonial" key={i}>
-                  <QuoteTop className="quote quoteTop" />
-                  <Box className="text">{content}</Box>
-                  <QuoteBottom className="quote quoteBottom" />
-                  <Box
-                    className="author"
-                    dangerouslySetInnerHTML={{ __html: author }}
-                  />
-                </Box>
-              )
-            })}
-          </Slider>
+        {testimonials.length > 0 && cssclass === 'brag' ? (
+          <h3>masonry</h3>
+        ) : (
+          <Slider {...settings}>{items}</Slider>
         )}
       </Container>
     </Box>
