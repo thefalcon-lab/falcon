@@ -14,13 +14,17 @@ export const ProjectHeader = ({ title, subtitle, ...props }) => (
         <Button>View all Projects</Button>
       </Link>
     </Flex>
-    <Spacer className="gsReveal" />
+    <Spacer
+      className="gsReveal"
+      sx={{ '.projectSingle &': { mb: [50, 80] } }}
+    />
     {subtitle && (
       <Box
         className="subtitle gsReveal"
         sx={{
           variant: 'text.subtitle',
           maxWidth: 640,
+          '.projectSingle &': { display: 'none' },
         }}
         dangerouslySetInnerHTML={{ __html: subtitle }}
       />
