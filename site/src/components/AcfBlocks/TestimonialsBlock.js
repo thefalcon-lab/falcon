@@ -21,6 +21,11 @@ export const fragment = graphql`
     testimonials {
       author
       content
+      picture {
+        localFile {
+          url
+        }
+      }
     }
   }
 `
@@ -55,7 +60,9 @@ export const TestimonialsBlock = ({
     const { author, content, picture } = item
     return (
       <Box className="testimonial" key={i}>
-        {picture && <img src={picture.sourceUrl} alt="logo" />}
+        {picture && (
+          <img className="socialIcon" src={picture.localFile.url} alt="logo" />
+        )}
         <QuoteTop className="quote quoteTop" />
         <Box className="text">{content}</Box>
         <QuoteBottom className="quote quoteBottom" />
@@ -180,6 +187,11 @@ const styles = {
         strong: {
           display: 'block',
         },
+      },
+      '.socialIcon': {
+        position: 'absolute',
+        right: 20,
+        top: 20,
       },
     },
   },
