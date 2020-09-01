@@ -102,7 +102,7 @@ const styles = {
     py: 1,
     cursor: 'pointer',
     width: ['100%', '50%', '33%', '25%'],
-    'h3,h4': {
+    h4: {
       m: 0,
     },
     '&:hover': {
