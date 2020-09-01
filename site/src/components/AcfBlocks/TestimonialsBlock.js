@@ -121,7 +121,7 @@ const styles = {
   },
   '.text': {
     fontFamily: 'bold',
-    fontSize: [18, 25],
+    fontSize: [18, 20],
     lineHeight: 1.25,
     mb: 50,
     maxWidth: 600,
