@@ -18,7 +18,7 @@ const Project = ({ data }) => {
       <ProjectHeader
         title={title}
         subtitle={terms && terms[0].name}
-        className="gsReveal"
+        className="gsReveal projectSingle"
       />
       {topImage && (
         <Flex
