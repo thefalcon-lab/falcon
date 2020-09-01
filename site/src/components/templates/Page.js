@@ -19,9 +19,10 @@ import {
   ContactPage,
   WorkPage,
   FrontPageAnimations,
-  Instagram,
+  // Instagram,
   FooterGallery,
   BragPage,
+  TopProjects,
 } from './templateParts'
 
 const Page = ({ page }) => {
@@ -84,7 +85,7 @@ const Page = ({ page }) => {
               return ''
           }
         })}
-      {isFrontPage && <Instagram />}
+      {isFrontPage && <TopProjects />}
       {gallery?.length && <FooterGallery gallery={gallery} />}
     </Layout>
   )
