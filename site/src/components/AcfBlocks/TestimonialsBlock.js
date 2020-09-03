@@ -120,13 +120,14 @@ const styles = {
     pt: [30, 30, 0],
   },
   '.text': {
-    fontFamily: 'bold',
+    fontFamily: 'body',
     fontSize: [18, 20],
     lineHeight: 1.25,
     mb: 50,
     maxWidth: 600,
     mx: 'auto',
     pt: 20,
+    px: [0, 20],
   },
   '.author': {
     fontSize: 14,
