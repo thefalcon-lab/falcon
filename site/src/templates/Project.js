@@ -2,6 +2,7 @@
 import { jsx, Flex } from 'theme-ui'
 import { graphql } from 'gatsby'
 import { ProjectHeader, ProjectSections } from '../components/project'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 import Layout from '../components/Layout'
 import Img from 'gatsby-image'
@@ -9,12 +10,19 @@ import Img from 'gatsby-image'
 const Project = ({ data }) => {
   const {
     title,
+    uri,
     projectFields: { projectSections, topImage },
     terms,
   } = data.wpProject
 
   return (
     <Layout>
+      <Breadcrumbs
+        uri={uri}
+        title={title}
+        archiveUrl="our-work"
+        archiveTitle="work"
+      />
       <ProjectHeader
         title={title}
         subtitle={terms && terms[0].name}

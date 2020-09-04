@@ -5,6 +5,7 @@ import { ProjectHeader, ProjectTags } from '../components/project'
 import Layout from '../components/Layout'
 import ParsedContent from '../utils/ParsedContent'
 import { FooterGallery } from '../components/templates/templateParts'
+import Breadcrumbs from '../components/Breadcrumbs'
 
 const Service = ({ data }) => {
   const {
@@ -17,33 +18,12 @@ const Service = ({ data }) => {
 
   return (
     <Layout>
-      <Container sx={{ px: 20 }} sx={{ position: 'relative' }}>
-        <Flex
-          as="nav"
-          className="breadcrumbs"
-          sx={{
-            position: 'absolute',
-            top: -65,
-            left: [83, 115],
-            fontSize: 14,
-
-            a: {
-              color: 'grey',
-              mr: 15,
-              '&.current,&:hover': { color: 'black' },
-            },
-            textTransform: 'uppercase',
-            fontFamily: 'bold',
-          }}
-        >
-          <Link to="services">Services</Link>
-          <Link
-            className="current"
-            to={uri}
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-        </Flex>
-      </Container>
+      <Breadcrumbs
+        uri={uri}
+        title={title}
+        archiveUrl="services"
+        archiveTitle="services"
+      />
       <ProjectHeader title={title} subtitle={serviceIntro} sx={{ pt: 50 }} />
 
       {/* <ServiceProjects slug={slug} /> */}

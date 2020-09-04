@@ -7,12 +7,6 @@ export const ProjectHeader = ({ title, subtitle, ...props }) => (
   <Container sx={{ maxWidth: 'l' }} {...props}>
     <Flex sx={{ justifyContent: 'space-between' }}>
       <h1 className="gsReveal" dangerouslySetInnerHTML={{ __html: title }} />
-      <Link
-        to="/our-work"
-        sx={{ display: 'none', '.projectSingle &': { display: 'block' } }}
-      >
-        <Button>View all Projects</Button>
-      </Link>
     </Flex>
     <Spacer
       className="gsReveal"
