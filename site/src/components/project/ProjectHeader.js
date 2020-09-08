@@ -13,9 +13,9 @@ export const ProjectHeader = ({ title, subtitle, ...props }) => {
         sx={{ '.projectSingle &': { mb: [50, 80] } }}
       />
       {subtitle && (
-        <Flex sx={{ justifyContent: 'space-between' }}>
+        <Flex sx={{ justifyContent: 'space-between' }} className="gsReveal">
           <Box
-            className="subtitle gsReveal"
+            className="subtitle"
             sx={{
               variant: 'text.subtitle',
               maxWidth: 640,
@@ -23,7 +23,9 @@ export const ProjectHeader = ({ title, subtitle, ...props }) => {
             }}
             dangerouslySetInnerHTML={{ __html: subtitle }}
           />
-          {title.toLowerCase() === 'marketing' && <HubspotLogo />}
+          {title.toLowerCase() === 'marketing' && (
+            <HubspotLogo sx={{ ml: 30 }} />
+          )}
         </Flex>
       )}
     </Container>

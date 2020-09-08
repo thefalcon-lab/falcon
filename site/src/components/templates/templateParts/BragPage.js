@@ -6,7 +6,7 @@ export const BragPage = () => {
   return (
     <ProjectHeader
       title="Not to brag but..."
-      sx={{ h1: { fontSize: [40, 80] } }}
+      sx={{ maxWidth: 1100, h1: { fontSize: [40, 80] } }}
     />
   )
 }
