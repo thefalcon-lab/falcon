@@ -19,7 +19,6 @@ import {
   ContactPage,
   WorkPage,
   FrontPageAnimations,
-  // Instagram,
   FooterGallery,
   BragPage,
   TopProjects,
