@@ -74,12 +74,12 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `1409532186`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-instagram`,
+    //   options: {
+    //     username: `1409532186`,
+    //   },
+    // },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {
