@@ -10,7 +10,7 @@ const config = {
   menuName: 'main',
   addWordPressComments: false,
   // gaTrackingId: 0,
-  googleTagManagerId: 'UA-163899207-1',
+  // googleTagManagerId: 'UA-163899207-1',
   addSiteMap: true,
   // siteMapOptions: {},
 
