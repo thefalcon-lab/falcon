@@ -32,6 +32,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-preload-fonts`,
     {
       resolve: 'gatsby-theme-blog-data',
       options: {

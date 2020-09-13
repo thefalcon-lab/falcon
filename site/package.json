@@ -4,6 +4,7 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "preload-fonts": "gatsby-preload-fonts",
     "dev": "rm -rf .cache && gatsby develop",
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -38,6 +39,7 @@
     "gatsby-plugin-mailchimp": "^5.1.2",
     "gatsby-plugin-manifest": "^2.4.9",
     "gatsby-plugin-postcss": "^2.3.1",
+    "gatsby-plugin-preload-fonts": "^1.2.24",
     "gatsby-plugin-react-helmet": "^3.3.1",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-sass": "^2.3.1",
