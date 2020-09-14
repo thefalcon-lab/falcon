@@ -17,6 +17,7 @@ const ArchiveContent = ({ posts, ctx }) => {
         nodes {
           title
           date
+          uri
           featuredImage {
             ...ImageFluidFragment
           }
