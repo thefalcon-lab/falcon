@@ -7513,6 +7513,13 @@ gatsby-plugin-google-tagmanager@^2.1.24:
   dependencies:
     "@babel/runtime" "^7.8.7"
 
+gatsby-plugin-hubspot@^1.3.4:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-hubspot/-/gatsby-plugin-hubspot-1.3.4.tgz#2fe3d78f414b3740b7ef7e8e5f3c3ab9f6556a3a"
+  integrity sha512-gprtNDFe0TAQBPLSh2DHE2ZUGvdy647uLuBFP1PbdbSWQnurXEJ/SdJkZtl3bkBo9qmUbu9BwYlb1UQ7fyiioA==
+  dependencies:
+    "@babel/runtime" "^7.6.3"
+
 gatsby-plugin-mailchimp@^5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mailchimp/-/gatsby-plugin-mailchimp-5.1.2.tgz#c006369728e33cc8c212dc12a2e25e9e21f791a9"
